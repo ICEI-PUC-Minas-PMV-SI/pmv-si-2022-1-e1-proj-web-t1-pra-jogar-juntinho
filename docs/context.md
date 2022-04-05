@@ -27,12 +27,15 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Estamos caminhando para um mundo cada vez mais acelerado, aumentando o número de atividades realizadas em um dia e, simultaneamente, reduzindo o tempo gasto em cada uma. 
+Nesse contexto, a solução desse projeto implementa um simplificador de busca para os jogadores de jogos cooperativos, sendo o site uma ferramenta de fácil acesso e familiar ao público.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Com isso, objetiva-se evitar o desgaste dos jogadores, poupando seu tempo ao otimizar a pesquisa por jogos cooperativos de possível interesse. Ademais, de forma fácil, o usuário conseguirá compartilhar com amigos uma lista de jogos, os quais considera que vale a pena serem jogados.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Além disso, o site será fonte de informação, estimulando também o aumento do público de jogos cooperativos, esses que, por sua vez, são um dos grupos que mais educa e sociabiliza.
+
+De acordo com Pedro Menezes, professor de Filosofia e Mestre em Ciências da Educação: “por não haver adversários, os jogos cooperativos evitam comportamentos como: enganar, trapacear ou tirar vantagem do outro para conseguir seu próprio sucesso. O desafio consiste na superação de medos, inseguranças e da dificuldade de agir e pensar coletivamente. Os jogos cooperativos são práticas que geram um ambiente de coletividade e ajuda mútua entre os participantes. Seus objetivos focam na resolução de tarefas e desafios com a participação de todos. Esse tipo de jogo visa estabelecer relações de confiança e parceria em um clima descontraído, proporcionando o fortalecimento do grupo e a empatia entre as pessoas.”
+
 
 ## Público-Alvo
 
