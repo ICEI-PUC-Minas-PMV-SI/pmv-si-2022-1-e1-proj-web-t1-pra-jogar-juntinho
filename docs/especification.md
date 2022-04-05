@@ -44,10 +44,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|  ID  | Descrição do Requisito | Prioridade |
+|------|------------------------|------------|
+|RF-001| Disponibilizar área com lista de jogos eletrônicos cooperativos em categorias              | ALTA       | 
+|RF-002| Disponibilizar funcionalidade que permita selecionar um jogo                               | ALTA       |
+|RF-003| Disponibilizar página com informações do jogo eletrônico cooperativo selecionado           | ALTA       |
+|RF-004| Disponibilizar funcionalidade que permita filtrar jogos eletrônicos cooperativos por tipos | ALTA       |
+|RF-005| Disponibilizar área com acesso ao cadastro de usuário                                      | MÉDIA      |
+|RF-006| Disponibilizar página de login                                                             | MÉDIA      |
+|RF-007| Disponibilizar funcionalidade que permita usuário inserir dados de cadastro                | MÉDIA      |
+|RF-008| Disponibilizar área com classificação do jogo                                              | MÉDIA      |
+|RF-009|Disponibilizar funcionalidade que permite classificar o jogo                                | MÉDIA      |
+|RF-010| Disponibilizar área com comentários do jogo                                                | BAIXA      |
+|RF-011| Disponibilizar funcionalidade que permite comentar sobre o jogo                            | BAIXA      |
+|RF-012| Disponibilizar página com lista de jogos favoritados                                       | BAIXA      |
+|RF-013| Disponibilizar funcionalidade que permite favoritar jogos                                  | BAIXA      |
 
 
 ### Requisitos não Funcionais
