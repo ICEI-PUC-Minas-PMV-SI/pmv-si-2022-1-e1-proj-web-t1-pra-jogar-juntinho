@@ -19,10 +19,15 @@ Informações como: quantidade de jogadores suportados, gênero, classificação
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Desenvolver um sistema web que centralize informações relevantes de forma filtrável e organizada, sobre o conteúdo de jogos que possuam o modo cooperativo. Buscando facilitar para quem está a procura de um jogo para se divertir com os amigos.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
+OBJETIVOS ESPECÍFICOS
+
+.Identificar e listar os principais títulos de jogos cooperativos;
+.Coletar os dados relevantes de cada um desses títulos;
+.Construir um mecanismo de busca inteligente e intuitivo para as principais informações desses jogos;
+.Criar um espaço para que os visitantes possam compartilhar suas experiências nos jogos.
+
 
 
 ## Justificativa
