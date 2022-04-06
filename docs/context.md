@@ -7,7 +7,7 @@ Vemos que existe uma demanda para jogar e com muitas opções, temos que ter em 
 
 ## Problema
 Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos
-para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual é problemático para aqueles que querem achar um que atenda ao seu gosto particular, ou gosto de seus amigos para jogar juntinhos.
+para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual, achar um que atenda ao seu gosto particular e de seus amigos é problemático.
 
 Para contextualizar melhor o problema, imagine pessoas que possuem tempo limitado para esse tipo de entretenimento, e a tendência ao avançar da idade cada vez menos tempo terá para esse tipo de lazer, dado as responsabilidades de estudo, trabalho, família e outros. 
 
@@ -19,7 +19,7 @@ Informações como: quantidade de jogadores suportados, gênero, classificação
 
 ## Objetivos
 
-Desenvolver um sistema web que centralize informações relevantes de forma filtrável e organizada, sobre o conteúdo de jogos que possuam o modo cooperativo. Buscando facilitar para quem está a procura de um jogo para se divertir com os amigos.
+Desenvolver um sistema web que centralize informações relevantes de forma filtrável e organizada, sobre o conteúdo de jogos que possuam o modo cooperativo.
 
 ### Objetivos Específicos:
 
@@ -27,7 +27,7 @@ Desenvolver um sistema web que centralize informações relevantes de forma filt
 
 - Coletar os dados relevantes de cada um desses títulos;
 
-- Construir um mecanismo de busca inteligente e intuitivo para as principais informações desses jogos;
+- Construir um mecanismo de busca para as principais informações desses jogos;
 
 - Criar um espaço para que os visitantes possam compartilhar suas experiências nos jogos.
 
