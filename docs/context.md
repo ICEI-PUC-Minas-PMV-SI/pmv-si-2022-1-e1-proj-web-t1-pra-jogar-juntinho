@@ -3,13 +3,14 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos
+para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual é problemático para aqueles que querem achar um que atenda ao seu gosto particular, ou gosto de seus amigos para jogar juntinhos.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Para contextualizar melhor o problema, imagine pessoas que possuem tempo limitado para esse tipo de entretenimento, e a tendência ao avançar da idade cada vez menos tempo terá para esse tipo de lazer, dado as responsabilidades de estudo, trabalho, família e outros. 
 
-Estou definindo um problema.
+Desse público ainda temos aqueles que fazem questão de estar conciliando esse tempo limitado com o de seus amigos para jogar um jogo, e nessa hora ter que gastar muito tempo pesquisando por um que atenda o seu contexto de interesses acaba tornando a experiência que, a princípio era de prazer, em uma experiência de desgaste e frustração.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Informações como: quantidade de jogadores suportados, gênero, classificação indicativa, idioma, tempo de jogo e até mesmo a opinião de outras pessoas que já experienciaram o jogo, geralmente são dados que não são encontrados em uma única fonte e, tudo isso impacta diretamente na experiência individual do jogador. Ter essas informações em um único lugar pode reduzir exponencialmente os transtornos e frustrações ao escolher um jogo para se divertir. Não existem dados concretos que quantificam tais problemas, mas a recorrência é real no debate online de diversos títulos, por exemplo no fórum da Steam, os usuários conseguem deixar, além de nota, comentários acerca dessa questão.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
