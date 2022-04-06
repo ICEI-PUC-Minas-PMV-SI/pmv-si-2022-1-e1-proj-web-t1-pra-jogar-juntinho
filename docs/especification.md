@@ -34,13 +34,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| Disponibilizar funcionalidade que permita selecionar um jogo                               | ALTA       |
 |RF-003| Disponibilizar página com informações do jogo eletrônico cooperativo selecionado           | ALTA       |
 |RF-004| Disponibilizar funcionalidade que permita filtrar jogos eletrônicos cooperativos por tipos | ALTA       |
-|RF-005| Disponibilizar área com acesso ao cadastro de usuário                                      | MÉDIA      |
-|RF-006| Disponibilizar página de login                                                             | MÉDIA      |
-|RF-007| Disponibilizar funcionalidade que permita usuário inserir dados de cadastro                | MÉDIA      |
-|RF-008| Disponibilizar área com classificação do jogo                                              | MÉDIA      |
-|RF-009| Disponibilizar funcionalidade que permite classificar o jogo                               | MÉDIA      |
-|RF-010| Disponibilizar área com comentários do jogo                                                | BAIXA      |
-|RF-011| Disponibilizar funcionalidade que permite favoritar jogos                                  | BAIXA      |
+|RF-005| Disponibilizar página de login                                                             | MÉDIA      |
+|RF-006| Disponibilizar funcionalidade que permita usuário inserir dados de cadastro                | MÉDIA      |
+|RF-007| Disponibilizar área com classificação do jogo                                              | MÉDIA      |
+|RF-008| Disponibilizar funcionalidade que permite classificar o jogo                               | MÉDIA      |
+|RF-009| Disponibilizar área com comentários do jogo                                                | BAIXA      |
+|RF-010| Disponibilizar funcionalidade que permite favoritar jogos                                  | BAIXA      |
 
 
 ### Requisitos não Funcionais
