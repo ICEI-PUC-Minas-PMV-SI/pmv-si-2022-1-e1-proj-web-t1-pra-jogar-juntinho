@@ -7,7 +7,7 @@ Vemos que existe uma demanda para jogar e com muitas opções, temos que ter em 
 
 ## Problema
 Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos
-para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual é problemático para aqueles que querem achar um que atenda ao seu gosto particular, ou gosto de seus amigos para jogar juntinhos.
+para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual, escolher um que atenda ao seu gosto particular, ou gosto de seus amigos para jogar juntinhos, é problemático.
 
 Para contextualizar melhor o problema, imagine pessoas que possuem tempo limitado para esse tipo de entretenimento, e a tendência ao avançar da idade cada vez menos tempo terá para esse tipo de lazer, dado as responsabilidades de estudo, trabalho, família e outros. 
 
