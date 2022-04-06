@@ -24,8 +24,11 @@ Desenvolver um sistema web que centralize informações relevantes de forma filt
 OBJETIVOS ESPECÍFICOS
 
 .Identificar e listar os principais títulos de jogos cooperativos;
+
 .Coletar os dados relevantes de cada um desses títulos;
+
 .Construir um mecanismo de busca inteligente e intuitivo para as principais informações desses jogos;
+
 .Criar um espaço para que os visitantes possam compartilhar suas experiências nos jogos.
 
 
