@@ -1,6 +1,9 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O primeiro jogo eletrônico cooperativo foi Pong Doubles da Atari, lançado em 1973, ele abriu as portas para uma nova experiência no mundo dos games, estimulou amigos a combinarem de se encontrar para terem um ótimo tempo de entretenimento jogando juntinhos, mas com o passar dos anos os jogos evoluíram, a indústria também e seu público não parou de crescer, somaram mais de 2 bilhões de jogadores em 2019, e mais de 3 bilhões em 2020, o mercado de jogos gera mais de 150 bilhões de dólares por ano (Newzoo, 2019; Folha de São Paulo, 2020). De fato, a evolução foi grande, o mercado cresceu muito e consta com pelo menos 6 gêneros, mais três subgêneros, sem contar o tema e modo de jogador, se for verificado o campo de busca da steam.   
+
+Vemos que existe uma demanda para jogar e com muitas opções, temos que ter em mente também que há uma demora ao escolher. Para termos um parâmetro o consumidor alemão demora em média 5 horas para compras on-line, já o brasileiro o dobro (Arthur Kux, Profissional de e-commerce), tendo em vista isso, a demora ao escolher um produto no Brasil é provavelmente mais alta. Um exemplo para nos atentarmos, mesmo que não seja do mercado de jogos, é o tempo alto ao escolher um filme na Netflix, o instituto Reelgood and Learndipity Data Insights estimou em 18 minutos o tempo médio (Cine Set, jul 23, 2016). No Brasil os jogadores somam mais de 70% da população (Drops de jogos, 4 de junho 2020) com tendências fortes à demora na escolha e compra.
+
 
 ## Problema
 Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos
@@ -12,10 +15,7 @@ Desse público ainda temos aqueles que fazem questão de estar conciliando esse 
 
 Informações como: quantidade de jogadores suportados, gênero, classificação indicativa, idioma, tempo de jogo e até mesmo a opinião de outras pessoas que já experienciaram o jogo, geralmente são dados que não são encontrados em uma única fonte e, tudo isso impacta diretamente na experiência individual do jogador. Ter essas informações em um único lugar pode reduzir exponencialmente os transtornos e frustrações ao escolher um jogo para se divertir. Não existem dados concretos que quantificam tais problemas, mas a recorrência é real no debate online de diversos títulos, por exemplo no fórum da Steam, os usuários conseguem deixar, além de nota, comentários acerca dessa questão.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+
 
 ## Objetivos
 
@@ -23,8 +23,7 @@ Aqui você deve descrever os objetivos do trabalho indicando que o objetivo gera
 
 Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+
 
 ## Justificativa
 
