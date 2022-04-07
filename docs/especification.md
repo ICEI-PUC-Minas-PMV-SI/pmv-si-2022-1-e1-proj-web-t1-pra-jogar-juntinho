@@ -19,7 +19,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Um jogador frequente         | de jogos online em larga escala                                       | fazer novas amizades e me divertir           |
 |Um jogador pouco frequente   | filtrar a data dos jogos                                              | ver quais se são da minha época              |
 |Um jogador pouco frequente   | de jogos de facil acesso e simples                                    | eu passar o tempo com meus netinhos          |
-|Um jogador frequente         |                                                                       |                                              |
+|Um jogador inexperiente          | poder ver criticas de jogadores e algum vídeo de demonstração do jogo                                                              | conseguir escolher melhor minhas primeiras experiências nos jogos                                          |
 
 
 ## Requisitos
