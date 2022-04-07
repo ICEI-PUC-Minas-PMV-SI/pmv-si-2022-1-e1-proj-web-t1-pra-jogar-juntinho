@@ -19,7 +19,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Um jogador frequente         | de jogos online em larga escala                                       | fazer novas amizades e me divertir           |
 |Um jogador pouco frequente   | filtrar a data dos jogos                                              | ver quais se são da minha época              |
 |Um jogador pouco frequente   | de jogos de facil acesso e simples                                    | eu passar o tempo com meus netinhos          |
-|Um jogador inexperiente          | poder ver criticas de jogadores e algum vídeo de demonstração do jogo                                                              | conseguir escolher melhor minhas primeiras experiências nos jogos                                          |
+|Um jogador inexperiente          | poder ver criticas de jogadores, algum vídeo de demonstração do jogo e maneiras de colocar os jogos como favoritos                                                             | conseguir escolher melhor minhas primeiras experiências nos jogos                                          |
 
 
 ## Requisitos
@@ -31,16 +31,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |  ID  | Descrição do Requisito | Prioridade |
 |------|------------------------|------------|
 |RF-001| Disponibilizar área com lista de jogos eletrônicos cooperativos em categorias              | ALTA       | 
-|RF-002| Disponibilizar funcionalidade que permita selecionar um jogo                               | ALTA       |
+|RF-002| Implementar a possibilidade de favoritar um jogo                               | ALTA       |
 |RF-003| Disponibilizar página com informações do jogo eletrônico cooperativo selecionado           | ALTA       |
-|RF-004| Disponibilizar funcionalidade que permita filtrar jogos eletrônicos cooperativos por tipos | ALTA       |
+|RF-004| Ter uma funcionalidade que permita filtrar jogos eletrônicos cooperativos por tipos(Categorias) | ALTA       |
 |RF-005| Disponibilizar página de login                                                             | MÉDIA      |
 |RF-006| Disponibilizar funcionalidade que permita usuário inserir dados de cadastro                | MÉDIA      |
 |RF-007| Disponibilizar área com classificação do jogo                                              | MÉDIA      |
-|RF-008| Disponibilizar funcionalidade que permite classificar o jogo                               | MÉDIA      |
-|RF-009| Disponibilizar área com comentários do jogo                                                | BAIXA      |
+|RF-008| Colocar no site a opção de dar nota, ou estrelas ao jogo, uma espécie de voto                               | BAIXA      |
+|RF-009| Disponibilizar área com comentários do jogo, para críticas                                                | MÉDIA     |
 |RF-010| Disponibilizar funcionalidade que permite favoritar jogos                                  | BAIXA      |
-
+|RF-011| Ter um vídeo de apresentação do jogo, mostrando um pouco da mecânica e sinopse | BAIXA | 
 
 ### Requisitos não Funcionais
 
@@ -53,7 +53,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| Disponibilidade de adaptação da interface pró acessibilidade                                  | ALTA  | 
 |RNF-006| Verificar se o sistema está claro e fácil de se utilizar                                      | MÉDIA | 
 |RNF-007| Deve processar requisições de usuário em até 3s                                               | BAIXA | 
-
+|RNF-008| Ter um design bonito, limpo e que deixe as funcionalidades mais intuitivas | BAIXA |
 
 ## Restrições
 
@@ -61,7 +61,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| A abrangência do projeto limita-se aos jogadores de jogos eletrônicos cooperativos                 |
+|01| A abrangência do projeto limita-se aos jogadores de jogos eletrônicos cooperativos e aspirantes                |
 |02| O projeto deverá ser entregue até o final do semestre, não podendo extrapolar a data de 08/07/2022 |
 |03| FrontEnd desenvolvido em HTML, CSS e JavaScript                                                    |
 |04| A página deverá ter disponibilidade em 90% do tempo                                                |
