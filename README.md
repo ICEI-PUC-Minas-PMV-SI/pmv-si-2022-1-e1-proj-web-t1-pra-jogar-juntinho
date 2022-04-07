@@ -6,7 +6,9 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Os jogos que possuem o modo cooperativo atendem uma grande parcela do público da indústria, sempre crescente, de jogos eletrônicos. Por se tratar de um modo de jogo que necessita exclusivamente do envolvimento de mais de uma pessoa, a complexidade no processo de escolha do jogo se torna maior.
+
+Observando a inexistência de plataformas que centralizem em um só lugar as diversas informações sobre os jogos eletrônicos cooperativos, este projeto tem como objetivo criar uma aplicação web que liste os principais títulos de jogos cooperativos, colete dados relevantes acerca de cada um deles, apresente um mecanismo de busca inteligente e intuitivo para as principais informações dos jogos e proporcione um espaço onde os usuários possam compartilhar suas experiências e aprendizados nos jogos. 
 
 ## Integrantes
 
