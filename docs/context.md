@@ -6,15 +6,12 @@ Vemos que existe uma demanda para jogar e com muitas opções, temos que ter em 
 
 
 ## Problema
-Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos
-para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual, achar um que atenda ao seu gosto particular e de seus amigos é problemático.
 
-Para contextualizar melhor o problema, imagine pessoas que possuem tempo limitado para esse tipo de entretenimento, e a tendência ao avançar da idade cada vez menos tempo terá para esse tipo de lazer, dado as responsabilidades de estudo, trabalho, família e outros. 
+Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual, achar um que atenda ao seu gosto particular e de seus amigos é problemático. Para contextualizar melhor o problema, imagine pessoas que possuem tempo limitado para esse tipo de entretenimento, e a tendência ao avançar da idade cada vez menos tempo terá para esse tipo de lazer, dado as responsabilidades de estudo, trabalho, família e outros. 
 
 Desse público ainda temos aqueles que fazem questão de estar conciliando esse tempo limitado com o de seus amigos para jogar um jogo, e nessa hora ter que gastar muito tempo pesquisando por um que atenda o seu contexto de interesses acaba tornando a experiência que, a princípio era de prazer, em uma experiência de desgaste e frustração.
 
 Informações como: quantidade de jogadores suportados, gênero, classificação indicativa, idioma, tempo de jogo e até mesmo a opinião de outras pessoas que já experienciaram o jogo, geralmente são dados que não são encontrados em uma única fonte e, tudo isso impacta diretamente na experiência individual do jogador. Ter essas informações em um único lugar pode reduzir exponencialmente os transtornos e frustrações ao escolher um jogo para se divertir. Não existem dados concretos que quantificam tais problemas, mas a recorrência é real no debate online de diversos títulos, por exemplo no fórum da Steam, os usuários conseguem deixar, além de nota, comentários acerca dessa questão.
-
 
 
 ## Objetivos
@@ -30,7 +27,6 @@ Desenvolver um sistema web que centralize informações relevantes de forma filt
 - Construir um mecanismo de busca para as principais informações desses jogos;
 
 - Criar um espaço para que os visitantes possam compartilhar suas experiências nos jogos.
-
 
 
 ## Justificativa
