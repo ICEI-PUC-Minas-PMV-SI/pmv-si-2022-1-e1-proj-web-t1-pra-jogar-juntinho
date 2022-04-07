@@ -1,18 +1,13 @@
 # Introdução
 
-O primeiro jogo eletrônico cooperativo foi Pong Doubles da Atari, lançado em 1973, ele abriu as portas para uma nova experiência no mundo dos games, estimulou amigos a combinarem de se encontrar para terem um ótimo tempo de entretenimento jogando juntinhos, mas com o passar dos anos os jogos evoluíram, a indústria também e seu público não parou de crescer, somaram mais de 2 bilhões de jogadores em 2019, e mais de 3 bilhões em 2020, o mercado de jogos gera mais de 150 bilhões de dólares por ano (Newzoo, 2019; Folha de São Paulo, 2020). De fato, a evolução foi grande, o mercado cresceu muito e consta com pelo menos 6 gêneros, mais três subgêneros, sem contar o tema e modo de jogador, se for verificado o campo de busca da steam.   
+O primeiro jogo eletrônico cooperativo foi Pong Doubles da Atari, lançado em 1973, ele abriu as portas para uma nova experiência no mundo dos games, estimulou amigos a combinarem de se encontrar para terem um ótimo tempo de entretenimento jogando juntinhos, mas com o passar dos anos os jogos evoluíram, a indústria também e seu público não parou de crescer, somaram mais de 2 bilhões de jogadores em 2019, e mais de 3 bilhões em 2020, o mercado de jogos gera mais de 150 bilhões de dólares por ano (Newzoo et al. 2019. DFC Intelligence et al., 2020). De fato, a evolução foi grande, o mercado cresceu muito e consta com pelo menos 6 gêneros, mais três subgêneros, sem contar o tema e modo de jogador, se for verificado o campo de busca da steam.   
 
-Vemos que existe uma demanda para jogar e com muitas opções, temos que ter em mente também que há uma demora ao escolher os jogos. Para termos um parâmetro o consumidor alemão demora em média 5 horas para compras on-line, já o brasileiro o dobro (Arthur Kux, Profissional de e-commerce), tendo em vista isso, a demora ao escolher um produto no Brasil é provavelmente mais alta. Um exemplo para nos atentarmos, mesmo que não seja do mercado de jogos, é o tempo alto ao escolher um filme na Netflix, o instituto Reelgood and Learndipity Data Insights estimou em 18 minutos o tempo médio (Cine Set, jul 23, 2016). No Brasil os jogadores somam mais de 70% da população (Drops de jogos, 4 de junho 2020) com tendências fortes à demora na escolha e compra.
+Vemos que existe uma demanda para jogar e com muitas opções, temos que ter em mente também que há uma demora ao escolher um jogo. Para termos um parâmetro o consumidor alemão demora em média 5 horas para compras on-line, já o brasileiro o dobro (Arthur Kux, Profissional de e-commerce), tendo em vista isso, a demora ao escolher um produto no Brasil é provavelmente mais alta. Um exemplo para nos atentarmos, mesmo que não seja do mercado de jogos, é o tempo alto ao escolher um filme na Netflix, o instituto Reelgood and Learndipity Data Insights estimou em 18 minutos o tempo médio (Cine Set, jul 23, 2016). No Brasil os jogadores somam mais de 70% da população (Drops de jogos, 4 de junho 2020) com tendências fortes à demora na escolha e compra.
 
 
 ## Problema
-<<<<<<< HEAD
-Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos
-para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual, escolher um que atenda ao seu gosto particular, ou gosto de seus amigos para jogar juntinhos, é um problema.
-=======
->>>>>>> 820952b03e294953806d4e306572dfbc61a13a6f
 
-Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual, achar um que atenda ao seu gosto particular e de seus amigos é problemático. Para contextualizar melhor o problema, imagine pessoas que possuem tempo limitado para esse tipo de entretenimento, e a tendência ao avançar da idade cada vez menos tempo terá para esse tipo de lazer, dado as responsabilidades de estudo, trabalho, família e outros. 
+Nos últimos anos o crescimento do mundo dos jogos trouxe indiretamente obstáculos para os jogadores. Ao olhar pelas combinações que os jogos podem ter, estando diante de milhares de jogos eletrônicos no mercado atual, encontrar um jogo que atenda ao seu gosto particular e de seus amigos é problemático. Para contextualizar melhor o problema, imagine pessoas que possuem tempo limitado para esse tipo de entretenimento, e a tendência ao avançar da idade cada vez menos tempo terá para esse tipo de lazer, dado as responsabilidades de estudo, trabalho, família e outros. 
 
 Desse público ainda temos aqueles que fazem questão de estar conciliando esse tempo limitado com o de seus amigos para jogar um jogo, e nessa hora ter que gastar muito tempo pesquisando por um que atenda o seu contexto de interesses acaba tornando a experiência que, a princípio era de prazer, em uma experiência de desgaste e frustração.
 
@@ -39,7 +34,7 @@ Desenvolver um sistema web que centralize informações relevantes de forma filt
 Estamos caminhando para um mundo cada vez mais acelerado, aumentando o número de atividades realizadas em um dia e, simultaneamente, reduzindo o tempo gasto em cada uma. 
 Nesse contexto, a solução desse projeto implementa um simplificador de busca para os jogadores de jogos cooperativos, sendo o site uma ferramenta de fácil acesso e familiar ao público.
 
-Com isso, objetiva-se evitar o desgaste dos jogadores, poupando seu tempo ao otimizar a pesquisa por jogos cooperativos de possível interesse. Ademais, de forma fácil, o usuário conseguirá compartilhar com amigos uma lista de jogos, os quais considera que vale a pena serem jogados.
+Com isso, esperasse evitar o desgaste dos jogadores, poupando seu tempo ao otimizar a pesquisa por jogos cooperativos de possível interesse. Ademais, de forma fácil, o usuário conseguirá compartilhar com amigos uma lista de jogos, os quais considera que vale a pena serem jogados.
 
 Além disso, o site será fonte de informação, estimulando também o aumento do público de jogos cooperativos, esses que, por sua vez, são um dos grupos que mais educa e sociabiliza.
 
