@@ -50,7 +50,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| Interface responsiva adaptável a qualquer interface utilizada - Browser, Smartphone ou Tablet | ALTA  | 
 |RNF-002| O sistema deve atender os protocolos de segurança https                                       | ALTA  | 
-|RNF-003| Disponibilidade de adaptação da interface pró acessibilidade                                  | ALTA  |  
+|RNF-003| Disponibilidade de adaptação da interface pró acessibilidade                                  | BAIXA |  
 |RNF-004| Deve processar requisições de usuário em até 3s                                               | BAIXA | 
 
 ## Restrições
