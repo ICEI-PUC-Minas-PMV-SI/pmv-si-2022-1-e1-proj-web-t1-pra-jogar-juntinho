@@ -20,7 +20,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Um jogador pouco frequente   | Filtrar jogos cooperativos                                              | Ver quais são do meu interesse              |
 |Um jogador pouco frequente   | Criar lista de jogos cooperativos                           | Encontrá-los rapidamente outro dia        |
 |Um jogador frequente         | Encontrar jogadores                                         | Para jogar e me divertir com eles          |
-|Um jogador inexperiente          | Encontrar avaliações e depoimentos de jogadores                   | Escolher um jogo com maior chance de me agradar                                          |
 
 
 ## Requisitos
