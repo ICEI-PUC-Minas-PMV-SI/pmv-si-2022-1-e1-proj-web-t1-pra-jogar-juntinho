@@ -1,0 +1,18 @@
+.padding-personalizado {
+  padding: 25px 31px 25px 31px;
+}
+
+.btn-primary {
+  background-color: #035AA6;
+  border-color: #035AA6;
+}
+
+.btn-login {
+  margin-left: 40px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.margin-icon {
+  margin-right: 5px !important;
+}
