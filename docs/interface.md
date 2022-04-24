@@ -40,6 +40,22 @@ Através da homepage, no menu de navegação é possível acessar a opção "Que
 ![Página Inicial](img/quem-somos.png)
 
 </div>
+
+### Login
+
+A partir da Homepage, utilizando o menu de navegação, o usuário irá clicar no botão "Login" para acessar a página. Com a página carregada ele irá encontrar dois campos de Nome e Senha. Campos pra preencher com os dados do usuário que já possui cadastro no site  
+
+<div align="center">
+
+![Login](img/login.png)
+
+### Cadastro
+
+Caso o usuário não tem cadastro, ele irá encontrar mais a baixo do site o botão "Inscrever-se no Pra Jogar Juntinho". Clicando nesse botão o usuário será redirecionado para uma nova tela, que é a de Cadastro. Nessa tela ele irá colocar Seu nome ou nick para a identificação no site, e uma senha para fazer login futuramente. Com os campos preenchidos basta clicar no botão de “Inscreva-se” para confirmar seu cadastro.
+
+<div align="center">
+
+![Cadastro no Site](img/cadastro.png)
  
 ### Feedback Positivo
 
