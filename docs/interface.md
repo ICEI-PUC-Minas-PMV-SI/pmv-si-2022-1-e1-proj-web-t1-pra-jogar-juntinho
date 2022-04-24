@@ -58,6 +58,8 @@ Caso o usuário não tem cadastro, ele irá encontrar mais a baixo do site o bot
 <div align="center">
 
 ![Cadastro no Site](img/cadastro.png)
+
+</div>
  
 ### Feedback Positivo
 
