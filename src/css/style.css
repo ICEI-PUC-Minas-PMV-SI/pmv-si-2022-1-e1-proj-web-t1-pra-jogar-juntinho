@@ -127,3 +127,17 @@ footer{
   background-color: #9d031d !important;
   color: white !important;
 }
+
+.logo-reduzida {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  img.logo-maior {
+    display: none;
+  }
+
+  img.logo-reduzida {
+    display: block;
+  }
+}
