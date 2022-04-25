@@ -3,6 +3,24 @@ html, * {
   padding: 0;
 }
 
+.pixxelari {
+  font-family: 'Pixellari';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pixxelari-lighter {
+  font-family: 'Pixellari';
+  font-weight: 100;
+  font-style: normal;
+}
+
+.pixxelari-bold {
+  font-family: 'Pixellari';
+  font-weight: bold;
+  font-style: normal;
+}
+
 .padding-personalizado {
   padding: 25px 31px 25px 31px;
 }
