@@ -85,7 +85,7 @@ Caso o cadastro não tenha sido possível, será mostrada uma mensagem negativa 
  
 Quando o acesso é feito na página do jogo e não está logado, informamos um trailer do jogo como tela principal, três ícones acima dessa tela que são referentes a lista de desejos, ranking que o jogo ocupa no site, e função de compartilhamento. É mostrado abaixo do trailer uma lista de jogos relacionados, e na parte esquerda ao trailer mostramos uma foto miniatura do jogo e informações de preço e feedback positivo ou negativo com base nas análises dos usuários.
  
-<div align-"center">
+<div align="center">
  
 ![tela1](https://user-images.githubusercontent.com/101337049/165205713-aac259d6-aaa9-4588-a1e5-aa8d4a143328.png)
  
@@ -95,7 +95,7 @@ Quando o acesso é feito na página do jogo e não está logado, informamos um t
  
 Quando o acesso é feito na página do jogo e está logado, informamos além do conteúdo anterior, o privilégio do usuário opinar sobre qualquer jogo presente e influenciar a posição dele no ranking, e isso é contabilizado e realizado por comentários e avaliações feitas através de botões de "likes" ou "deslikes" que o jogo obter na semana, o usuário terá acesso a avaliações passadas para poder obter ampla perspectiva tanto dele quanto de outros usuários para concluir se determinado jogo vale ou não a pena.
  
-<div align-"center">
+<div align="center">
  
 ![tela2](https://user-images.githubusercontent.com/101337049/165207151-fa3abd29-c29f-4945-90af-1fb9fc4e565d.png)
  
