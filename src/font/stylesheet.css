@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Pixellari';
+    src: url('Pixellari.eot');
+    src: url('Pixellari.eot?#iefix') format('embedded-opentype'),
+        url('Pixellari.woff2') format('woff2'),
+        url('Pixellari.woff') format('woff'),
+        url('Pixellari.svg#Pixellari') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

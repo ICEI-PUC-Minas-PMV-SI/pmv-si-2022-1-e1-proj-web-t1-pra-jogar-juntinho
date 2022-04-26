@@ -40,6 +40,26 @@ Através da homepage, no menu de navegação é possível acessar a opção "Que
 ![Página Inicial](img/quem-somos.png)
 
 </div>
+
+### Login
+
+A partir da Homepage, utilizando o menu de navegação, o usuário irá clicar no botão "Login" para acessar a página. Com a página carregada ele irá encontrar dois campos de Nome e Senha. Campos pra preencher com os dados do usuário que já possui cadastro no site  
+
+<div align="center">
+
+![Login](img/login.png)
+
+</div>
+
+### Cadastro
+
+Caso o usuário não tem cadastro, ele irá encontrar mais a baixo do site o botão "Inscrever-se no Pra Jogar Juntinho". Clicando nesse botão o usuário será redirecionado para uma nova tela, que é a de Cadastro. Nessa tela ele irá colocar Seu nome ou nick para a identificação no site, e uma senha para fazer login futuramente. Com os campos preenchidos basta clicar no botão de “Inscreva-se” para confirmar seu cadastro.
+
+<div align="center">
+
+![Cadastro no Site](img/cadastro.png)
+
+</div>
  
 ### Feedback Positivo
 
@@ -58,7 +78,17 @@ Caso o cadastro não tenha sido possível, será mostrada uma mensagem negativa 
 <div align="center">
 
 ![Feedback Negativo](https://user-images.githubusercontent.com/102264749/164343121-e72532ca-305e-4c4f-abcd-2a98bf2d72f9.png)
-
+ 
+</div>
+ 
+ ### Tela do Jogo não logado
+ 
+Quando o acesso é feito na página do jogo e não está logado, informamos um trailer do jogo como tela principal, três ícones acima dessa tela que são referentes a lista de desejos, ranking que o jogo ocupa no site, e função de compartilhamento. É mostrado abaixo do trailer uma lista de jogos relacionados, e na parte esquerda ao trailer mostramos uma foto miniatura do jogo e informações de preço e feedback positivo ou negativo com base nas análises dos usuários.
+ 
+<div align="center">
+ 
+![tela1](https://user-images.githubusercontent.com/101337049/165205713-aac259d6-aaa9-4588-a1e5-aa8d4a143328.png)
+ 
 </div>
 
 ### Perfil

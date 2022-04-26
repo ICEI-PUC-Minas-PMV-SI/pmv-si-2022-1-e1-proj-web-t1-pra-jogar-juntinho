@@ -1,0 +1,143 @@
+html, * {
+  margin: 0;
+  padding: 0;
+}
+
+.conteudo {
+  min-height: 600px;
+}
+
+.pixxelari {
+  font-family: 'Pixellari';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pixxelari-lighter {
+  font-family: 'Pixellari';
+  font-weight: 100;
+  font-style: normal;
+}
+
+.pixxelari-bold {
+  font-family: 'Pixellari';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.padding-personalizado {
+  padding: 25px 31px 25px 31px;
+}
+
+.btn-primary {
+  background-color: #035AA6;
+  border-color: #035AA6;
+}
+
+.texto-azul {
+  color: #035AA6 !important;
+}
+
+.bg-azul {
+  background-color: #035AA6 !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.bg-vermelho {
+  background-color: #DC0024 !important;
+}
+
+.btn-secondary{
+  background-color: #DC0024 !important;
+  border-color: #DC0024 !important;
+}
+
+.texto-vermelho {
+  color: #DC0024 !important;
+}
+
+.btn-login {
+  margin-left: 40px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.margin-icon {
+  margin-right: 5px !important;
+}
+
+.body-content{
+  margin-bottom: 152px;
+}
+
+footer{
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
+}
+
+.link-jogo {
+  font-size:small;
+  padding: 0px 5px 2px 5px !important;
+}
+
+.link-jogo:hover {
+  background-color: #9d031d !important;
+  border-color: #9d031d !important;
+}
+
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.radius-10 {
+  border-radius: 10px;
+  border: solid;
+  border-color: transparent;
+}
+
+.accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #212529;
+  background-color: #FFFFFF;
+}
+
+.sem-radius-cima {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-width: 0px;
+}
+
+.legenda-icones {
+  padding: 8px 8px 5px 8px !important;
+}
+
+.legenda-icones:hover {
+  background-color: #9d031d !important;
+  color: white !important;
+}
+
+.logo-reduzida {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  img.logo-maior {
+    display: none;
+  }
+
+  img.logo-reduzida {
+    display: block;
+  }
+}
