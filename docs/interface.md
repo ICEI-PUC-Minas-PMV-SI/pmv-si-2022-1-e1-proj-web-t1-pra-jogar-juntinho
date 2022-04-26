@@ -61,4 +61,30 @@ Caso o cadastro não tenha sido possível, será mostrada uma mensagem negativa 
 
 </div>
 
+### Perfil
+Aqui o usuario pode estar acessando os jogos favoritados e comentado, bem como o acesso para alterar o perfil.
+
+<div align = "center">
+
+</div>
+
+### Alterar login e foto
+Nesta pagina podera ser alterado as informacoes para login, e acessar a alteracao de foto
+
+<div align = "center">
+
+</div>
+
+### Escolhas de perfis
+Agora nessa pagina sera feita a escolha dos perfis, com escolhas limitadas as opcoes predefinidas
+
+<div align = "center">
+
+</div>
+
+### Confimacao da alteracao
+O usuario podera conferir a mudanca comparando-a antiga
+
+<div align = "center">
+
 </div>
