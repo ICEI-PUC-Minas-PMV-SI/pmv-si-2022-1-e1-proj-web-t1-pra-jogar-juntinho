@@ -100,3 +100,13 @@ Quando o acesso é feito na página do jogo e está logado, informamos além do 
 ![tela2](https://user-images.githubusercontent.com/101337049/165207151-fa3abd29-c29f-4945-90af-1fb9fc4e565d.png)
  
 </div>
+
+### Listagem de jogos
+
+Na tela de listagem de jogos temos uma das principais funcionalidades do site, que seria o filtro de jogos, onde podemos pesquisar um jogo específico, gêneros de jogos para achar não somente um mas vários jogos, alterar a ordenação em que os cards aparecem e uma plataforma em específico, ao clicar em algum card de jogo você é levado a uma página para acessar informações adicionais.
+
+<div align="center">
+ 
+![tela1](img/listagem-jogos.PNG)
+ 
+</div>
