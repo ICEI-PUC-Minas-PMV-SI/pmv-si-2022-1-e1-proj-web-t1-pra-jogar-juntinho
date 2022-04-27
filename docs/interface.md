@@ -92,29 +92,33 @@ Quando o acesso é feito na página do jogo e não está logado, informamos um t
 </div>
 
 ### Perfil
-Aqui o usuario pode estar acessando os jogos favoritados e comentado, bem como o acesso para alterar o perfil.
+A partir da Homepage, utilizando o menu de navegação o usuário irá clicar no botão de "perfil" para acessar a página de Perfil. Nela o usuario pode encontrar em formato de lista os jogos que ele favoritou bem como os jogos que ele comentou utilizando o site, outra opção que ele encontrará é um botão que o leva à tela de edição do perfil.
 
 <div align = "center">
+![perfil](img/perfil.png)
 
 </div>
 
-### Alterar login e foto
-Nesta pagina podera ser alterado as informacoes para login, e acessar a alteracao de foto
+### Edição de Perfil
+Partindo da tela de perfil e clicando no botão de edição do perfil, o usuário tem acesso à página de edição do perfil, nela ele pode alterar informações de login (Nome/Nickname e senha) e o botão que o leva à tela de edição do ícone de perfil.
 
 <div align = "center">
+![edição de perfil](img/edi%C3%A7%C3%A3o-perfil.JPG)
 
 </div>
 
-### Escolhas de perfis
-Agora nessa pagina sera feita a escolha dos perfis, com escolhas limitadas as opcoes predefinidas
+### Edição de ícone do perfil
+Ao clicar no botão na tela de Edição de Perfil, o usuário terá acesso à tela de Edição do Ícone do Perfil, nela ele terá acesso à imagens predefinidas que poderão ser utilizadas como ícone de perfil, para escolher a imagem basta que o usuário clique na imagem desejada.
 
 <div align = "center">
+![ícone](img/troca-icone-perfil.JPG)
 
 </div>
 
-### Confimacao da alteracao
-O usuario podera conferir a mudanca comparando-a antiga
+### Confimação da alteração
+Ao clicar na imagem que ele deseja como ícone de perfil, o usuário poderá comparar o ícone utilizado anteriormente com a nova escolha, para confirmar a alteração basta que o usuário clique em "Trocar" ou se deseja cancelar a alteração ele deve clicar em "Agora Não" que será redirecionado à tela de edição de ícone do perfil. 
 
 <div align = "center">
+![confirmação de troca](img/confirma-troca-icone.JPG)
 
 </div>
