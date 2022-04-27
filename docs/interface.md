@@ -96,7 +96,7 @@ A partir da Homepage, utilizando o menu de navegação o usuário irá clicar no
 
 <div align = "center">
  
-![perfil](img/)
+![perfil](img/perfil.png)
 
 </div>
 
