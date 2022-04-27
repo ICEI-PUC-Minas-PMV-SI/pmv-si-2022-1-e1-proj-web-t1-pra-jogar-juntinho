@@ -78,7 +78,51 @@ Caso o cadastro não tenha sido possível, será mostrada uma mensagem negativa 
 <div align="center">
 
 ![Feedback Negativo](https://user-images.githubusercontent.com/102264749/164343121-e72532ca-305e-4c4f-abcd-2a98bf2d72f9.png)
+ 
+</div>
+ 
+ ### Tela do Jogo não logado
+ 
+Quando o acesso é feito na página do jogo e não está logado, informamos um trailer do jogo como tela principal, três ícones acima dessa tela que são referentes a lista de desejos, ranking que o jogo ocupa no site, e função de compartilhamento. É mostrado abaixo do trailer uma lista de jogos relacionados, e na parte esquerda ao trailer mostramos uma foto miniatura do jogo e informações de preço e feedback positivo ou negativo com base nas análises dos usuários.
+ 
+<div align="center">
+ 
+![tela1](https://user-images.githubusercontent.com/101337049/165205713-aac259d6-aaa9-4588-a1e5-aa8d4a143328.png)
+ 
+</div>
+
+### Perfil
+A partir da Homepage, utilizando o menu de navegação o usuário irá clicar no botão de "perfil" para acessar a página de Perfil. Nela o usuario pode encontrar em formato de lista os jogos que ele favoritou bem como os jogos que ele comentou utilizando o site, outra opção que ele encontrará é um botão que o leva à tela de edição do perfil.
+
+<div align = "center">
+ 
+![perfil](img/perfil.png)
 
 </div>
+
+### Edição de Perfil
+Partindo da tela de perfil e clicando no botão de edição do perfil, o usuário tem acesso à página de edição do perfil, nela ele pode alterar informações de login (Nome/Nickname e senha) e o botão que o leva à tela de edição do ícone de perfil.
+
+<div align = "center">
+ 
+![edição de perfil](img/edi%C3%A7%C3%A3o-perfil.JPG)
+
+</div>
+
+### Edição de ícone do perfil
+Ao clicar no botão na tela de Edição de Perfil, o usuário terá acesso à tela de Edição do Ícone do Perfil, nela ele terá acesso à imagens predefinidas que poderão ser utilizadas como ícone de perfil, para escolher a imagem basta que o usuário clique na imagem desejada.
+
+<div align = "center">
+ 
+![ícone](img/troca-icone-perfil.JPG)
+
+</div>
+
+### Confimação da alteração
+Ao clicar na imagem que ele deseja como ícone de perfil, o usuário poderá comparar o ícone utilizado anteriormente com a nova escolha, para confirmar a alteração basta que o usuário clique em "Trocar" ou se deseja cancelar a alteração ele deve clicar em "Agora Não" que será redirecionado à tela de edição de ícone do perfil. 
+
+<div align = "center">
+ 
+![confirmação de troca](img/confirma-troca-icone.JPG)
 
 </div>
