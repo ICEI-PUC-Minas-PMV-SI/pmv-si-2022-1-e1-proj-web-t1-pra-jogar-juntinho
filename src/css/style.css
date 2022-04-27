@@ -141,3 +141,13 @@ footer{
     display: block;
   }
 }
+
+.display-personalizado{
+  display: flex;
+}
+
+@media only screen and (max-width: 650px) {
+  .display-personalizado{
+    display: block;
+  }
+}
