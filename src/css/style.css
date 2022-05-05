@@ -165,3 +165,6 @@ footer{
   display: flex;
   justify-content: center;
 }
+#ImgPerfil {
+  max-height: 150px;
+}
