@@ -3,6 +3,7 @@ Img = Imagem
 Inf = Informacao
 Janela = Area de rolagem so dos marcados como desejo
 TIT = Titulo
+EP = Editar Perfil
 */
 
 
@@ -23,9 +24,6 @@ TIT = Titulo
 #Cardes-Desejos{
   margin-top: 20px;
 }
-.Janela-Desejos{
-  margin-top: 130px;
-}
 #Icon-Desejos{
   margin-left: 3px;
   margin-top: px;
@@ -38,4 +36,7 @@ TIT = Titulo
 }
 .Margem-Entre-Linhas{
   margin-top: 20px;
+}
+#Bottom-EP-Text{
+  size: 20px;
 }
