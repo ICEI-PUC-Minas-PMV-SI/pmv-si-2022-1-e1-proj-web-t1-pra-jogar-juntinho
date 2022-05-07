@@ -32,11 +32,21 @@ EP = Editar Perfil
   float: left;
 }
 #TIT-Desejos{
-  margin-left: 150px;
+  margin-left: 0px;
 }
 .Margem-Entre-Linhas{
   margin-top: 20px;
 }
 #Bottom-EP-Text{
   size: 20px;
+}
+.Container-Scroll{
+  height: 1000px;
+  overflow-x: scroll;
+}
+.Desejos{
+  margin-right: 2px;
+}
+.Comentados{
+  margin-left: 2px;
 }
