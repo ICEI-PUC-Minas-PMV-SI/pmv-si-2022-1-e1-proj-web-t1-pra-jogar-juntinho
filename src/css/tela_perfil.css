@@ -25,15 +25,21 @@ EP = Editar Perfil
   margin-top: 20px;
 }
 #Icon-Desejos{
-  margin-left: 3px;
-  margin-top: px;
+
 }
 .Card-2-Desejos{
   float: left;
 }
-#TIT-Desejos{
-  margin-left: 0px;
-}
+
+.TIT-Desejos{
+  margin-left: 60% !important; 
+  margin-top: 10% !important;
+} 
+
+.TIT-Comentados{
+  margin-left: 40% !important;
+  margin-top: 10% !important;
+}  */
 .Margem-Entre-Linhas{
   margin-top: 20px;
 }
@@ -43,6 +49,7 @@ EP = Editar Perfil
 .Container-Scroll{
   height: 1000px;
   overflow-x: scroll;
+  margin-top: 10%;
 }
 .Desejos{
   margin-right: 2px;
