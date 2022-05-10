@@ -156,3 +156,7 @@ footer{
   background-color: #9d031d !important;
   color: white !important;
 }
+
+#ImgPerfil {
+  max-height: 150px;
+}
