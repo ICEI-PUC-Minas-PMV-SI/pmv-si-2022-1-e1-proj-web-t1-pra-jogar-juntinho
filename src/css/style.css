@@ -1,10 +1,7 @@
+/* GERAL ---------------------------------------------------------------*/
 html, * {
   margin: 0;
   padding: 0;
-}
-
-.conteudo {
-  min-height: 600px;
 }
 
 .pixxelari {
@@ -23,10 +20,6 @@ html, * {
   font-family: 'Pixellari';
   font-weight: bold;
   font-style: normal;
-}
-
-#padding-personalizado {
-  padding: 25px 31px 25px 31px;
 }
 
 .btn-primary {
@@ -59,6 +52,11 @@ html, * {
   color: #DC0024 !important;
 }
 
+#padding-personalizado {
+  padding: 25px 31px 25px 31px;
+}
+
+/* HEADER ---------------------------------------------------------------*/
 .btn-login {
   margin-left: 40px;
   padding-left: 30px !important;
@@ -69,10 +67,30 @@ html, * {
   margin-right: 5px !important;
 }
 
+.logo-reduzida {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  img.logo-maior {
+    display: none;
+  }
+
+  img.logo-reduzida {
+    display: block;
+  }
+}
+
+/* BODY ---------------------------------------------------------------*/
+.conteudo {
+  min-height: 600px;
+}
+
 .body-content{
   margin-bottom: 152px;
 }
 
+/* FOOTER ---------------------------------------------------------------*/
 footer{
   bottom: 0;
   left: 0;
@@ -80,6 +98,17 @@ footer{
   position: relative;
 }
 
+.display-personalizado{
+  display: flex;
+}
+
+@media only screen and (max-width: 650px) {
+  .display-personalizado{
+    display: block;
+  }
+}
+
+/* INDEX ---------------------------------------------------------------*/
 .link-jogo {
   font-size:small;
   padding: 0px 5px 2px 5px !important;
@@ -126,42 +155,4 @@ footer{
 .legenda-icones:hover {
   background-color: #9d031d !important;
   color: white !important;
-}
-
-.logo-reduzida {
-  display: none;
-}
-
-@media only screen and (max-width: 420px) {
-  img.logo-maior {
-    display: none;
-  }
-
-  img.logo-reduzida {
-    display: block;
-  }
-}
-
-.display-personalizado{
-  display: flex;
-}
-
-@media only screen and (max-width: 650px) {
-  .display-personalizado{
-    display: block;
-  }
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.centralizar {
-  justify-content: center;
-  align-items: center;
-}
-
-.justificar-card {
-  display: flex;
-  justify-content: center;
 }
