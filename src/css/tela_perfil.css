@@ -1,0 +1,59 @@
+/*     ----------LEGENDA------------
+Img = Imagem
+Inf = Informacao
+Janela = Area de rolagem so dos marcados como desejo
+TIT = Titulo
+EP = Editar Perfil
+*/
+
+
+#ImgPerfil {
+  max-height: 150px;
+}
+#Perfil-card-text{
+  margin-left: 47px;
+  margin-top: 0px;
+}
+#bottom-EditarPerfil{
+  margin-left: 105px;
+  margin-top: 5px;
+}
+.Bottom-MaisInf{
+  margin-left: 24px;
+}
+#Cardes-Desejos{
+  margin-top: 20px;
+}
+#Icon-Desejos{
+
+}
+.Card-2-Desejos{
+  float: left;
+}
+
+.TIT-Desejos{
+  margin-left: 60% !important; 
+  margin-top: 10% !important;
+} 
+
+.TIT-Comentados{
+  margin-left: 40% !important;
+  margin-top: 10% !important;
+}  */
+.Margem-Entre-Linhas{
+  margin-top: 20px;
+}
+#Bottom-EP-Text{
+  size: 20px;
+}
+.Container-Scroll{
+  height: 1000px;
+  overflow-x: scroll;
+  margin-top: 10%;
+}
+.Desejos{
+  margin-right: 2px;
+}
+.Comentados{
+  margin-left: 2px;
+}

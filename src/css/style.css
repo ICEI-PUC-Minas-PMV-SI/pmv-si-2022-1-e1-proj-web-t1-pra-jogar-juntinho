@@ -25,7 +25,7 @@ html, * {
   font-style: normal;
 }
 
-.padding-personalizado {
+#padding-personalizado {
   padding: 25px 31px 25px 31px;
 }
 
@@ -164,4 +164,7 @@ footer{
 .justificar-card {
   display: flex;
   justify-content: center;
+}
+#ImgPerfil {
+  max-height: 150px;
 }
