@@ -4,37 +4,30 @@ input, label{
     width: 100%;
 }
 
-input:focus, label:focus{
-    outline: none;
-}
-
 #main-container{
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: #DC0024;
     border-radius: 10px;
     padding: 25px;
-}
-
-#full-box{
-    flex: 1 1 100%;
-    position: relative;
-}
-
-#half-box{
-    flex: 1 1 45%;
-    position: relative;
 }
 
 label{
     font-weight: bold;
     font-size: .9rem;
+    width: 50%;
 }
 
 input{
-    border-bottom: 5px solid #212529;
+    border-bottom: 3px solid #212529;
     padding: 5px;
     font-size: 1rem;
     margin-bottom: 3px;
+}
+
+button{
+    display: block;
+    width: 50%;
+    border-radius: 20px;
 }
