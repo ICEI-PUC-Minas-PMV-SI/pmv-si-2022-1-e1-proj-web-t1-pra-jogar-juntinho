@@ -1,0 +1,273 @@
+/* GERAL ---------------------------------------------------------------*/
+html, * {
+  margin: 0;
+  padding: 0;
+}
+
+.pixxelari {
+  font-family: 'Pixellari';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pixxelari-lighter {
+  font-family: 'Pixellari';
+  font-weight: 100;
+  font-style: normal;
+}
+
+.pixxelari-bold {
+  font-family: 'Pixellari';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.btn-primary {
+  background-color: #035AA6;
+  border-color: #035AA6;
+}
+
+.texto-azul {
+  color: #035AA6 !important;
+}
+
+.bg-azul {
+  background-color: #035AA6 !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.bg-vermelho {
+  background-color: #DC0024 !important;
+}
+
+.btn-secondary{
+  background-color: #DC0024 !important;
+  border-color: #DC0024 !important;
+}
+
+.texto-vermelho {
+  color: #DC0024 !important;
+}
+
+#padding-personalizado {
+  padding: 25px 31px 25px 31px;
+}
+
+/* HEADER ---------------------------------------------------------------*/
+.btn-login {
+  margin-left: 40px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.margin-icon {
+  margin-right: 5px !important;
+}
+
+.logo-reduzida {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  img.logo-maior {
+    display: none;
+  }
+
+  img.logo-reduzida {
+    display: block;
+  }
+}
+
+/* BODY ---------------------------------------------------------------*/
+.conteudo {
+  min-height: 600px;
+}
+
+.body-content{
+  margin-bottom: 152px;
+}
+
+/* FOOTER ---------------------------------------------------------------*/
+footer{
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
+}
+
+.display-personalizado{
+  display: flex;
+}
+
+@media only screen and (max-width: 650px) {
+  .display-personalizado{
+    display: block;
+  }
+}
+
+/* INDEX ---------------------------------------------------------------*/
+.link-jogo {
+  font-size:small;
+  padding: 0px 5px 2px 5px !important;
+}
+
+.link-jogo:hover {
+  background-color: #9d031d !important;
+  border-color: #9d031d !important;
+}
+
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.radius-10 {
+  border-radius: 10px;
+  border: solid;
+  border-color: transparent;
+}
+
+.accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #212529;
+  background-color: #FFFFFF;
+}
+
+.sem-radius-cima {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-width: 0px;
+}
+
+.legenda-icones {
+  padding: 8px 8px 5px 8px !important;
+}
+
+.legenda-icones:hover {
+  background-color: #9d031d !important;
+  color: white !important;
+}
+
+#ImgPerfil {
+  max-height: 150px;
+}
+
+.caixa-busca{
+    background-color: #dc0024;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 0px 50px 0px;
+  }
+  
+  .titulo-filtro{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-text{
+    width: 100%;
+    padding: 10px 17px;
+    font-size: 13px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    color: #6c6c6c;
+    height: 45px;
+    border-radius: 3px;
+  }
+  
+  .espaco-label {
+    max-width: 100%;
+    margin-bottom: 4px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .select-options-filtro{
+    display: inline-block;
+    padding: 10px 17px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .dropdown-busca {
+    min-height: 44px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    border-radius: 3px;
+  }
+  
+  .options-filtro{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .botao-buscar{
+    padding: 13px 20px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    margin: 5px auto !important;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .caixa-jogos-filtrados{
+    background-color: #e2e2e2;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+  }
+  
+  :-moz-placeholder {
+    color: rgb(0, 0, 0);
+  }
+  
+  ::-moz-placeholder {
+    color: rgb(0, 0, 0);  
+  }
+  
+  :-ms-input-placeholder {  
+    color: rgb(0, 0, 0);  
+  }
+  
+  .tamanho-card{
+    width: 24%;
+  }
+  
+  .formatacao-titulo{
+    padding: 25px 10px 10px 10px;
+  }
+  
+  .espaco-cards{
+    margin: 0px 0px 10px 0px;
+  }
