@@ -1,0 +1,13 @@
+.text-justify {
+  text-align: justify;
+}
+
+.centralizar {
+  justify-content: center;
+  align-items: center;
+}
+
+.justificar-card {
+  display: flex;
+  justify-content: center;
+}
