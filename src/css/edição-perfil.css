@@ -1,0 +1,73 @@
+#Perfil-card-text{
+    margin-left: 47px;
+    margin-top: 0px;
+  }
+
+.hr1 {
+opacity: 0.8;
+border: 2px;
+background-image: linear-gradient(to right, transparent, rgb(43, 41, 41), transparent); 
+
+  }
+#edição-form { 
+    text-align:center;
+}
+
+#alterar-nome {
+    border-radius: 20px
+}
+
+#alterar-senha {
+    border-radius: 20px
+}
+
+#btn-alteração {
+    border-radius: 5px
+    display: block;
+    width: 50%;
+    border-radius: 20px;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DC0024;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+input{
+    border-bottom: 3px solid #212529;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+
+#lápis-edição{
+    align-content: flex-start;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 2px;
+    right: 2px;
+
+}
+
+
+#imagem-de-perfil {
+    max-width: 300px;
+}
