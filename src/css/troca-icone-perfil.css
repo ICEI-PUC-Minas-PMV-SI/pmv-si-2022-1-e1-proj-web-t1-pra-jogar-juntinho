@@ -1,3 +1,5 @@
 #imagem-de-perfil{
-    text-align: right;
+    max-width: 200px;
+    align-items: right;
 }
+

@@ -96,34 +96,36 @@
         <section>
             
 
-            <div class="row justify-content-center">
-               
-              <div class="col-sm-7 col-md-4 col-lg-3 centralizar">
-                    <div id="Card centralizar" style="width: 18rem;">
-        
-                        <button name="lápis-edição" id="lápis-edição">
-                                <span class="iconify" data-icon="cil:pencil"> </span>
-                        </button>      
-                      
-                        <img src="/src/img/tela_de_perfil/perfil-de-usuario.png" class="card-img-top" id="imagem-de-perfil" alt="...">
-
-                        <div class="col-sm-12 col-md-10 col-lg-12 centralizar"> 
-                        
-                        <div id="Perfil-card-text">
-                            <h2 class="pixxelari">Pedro Augusto</h2>
-                        </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-7 col-md-4 col-lg-3 centralizar">
+              <div id="Card centralizar" style="width: 18rem;">
+                <div class="d-flex">
+                  <img src="/src/img/tela_de_perfil/perfil-de-usuario.png" class="card-img-top" alt="...">
+                  <button type="button" class="btn btn-secondary rounded-pill text-right border border-dark" style="height: 44px;margin-left: -75px;margin-top: 202px;">
+                    <i class="fa-solid fa-pencil"></i>
+                  </button>
+                </div>
+                
+                <div class="col-sm-12 col-md-10 col-lg-12 centralizar">
+                  <div class="card-body-Perfil">
+                    <div id="Perfil-card-text">
+                      <h2 class="pixxelari">Pedro Augusto</h2>
+                    </div>
+                  </div>
 
                         <hr class="hr1">
                         
                         <!-- Formulário de Edição de Perfil -->
                         <form id="edição-form">
                             <div>
+                              <label style="color: rgb(0, 0, 0)" for="name">Alterar Nome/Nickname</label>
                                 <input type="text" name="alterar-nome" id="alterar-nome" 
-                                placeholder="Alterar Nome/Nickname">
+                                placeholder="Digite seu nome/Nickname">
                             </div>
                             <div>
+                              <label style="color: rgb(0, 0, 0)" for="name">Alterar sua senha</label>
                                 <input type="password" name="alterar-senha" id="alterar-senha" 
-                                placeholder="Alterar sua senha">
+                                placeholder="Digite a nova senha">
                             </div>
                               <h5></h5>
                             <div>
