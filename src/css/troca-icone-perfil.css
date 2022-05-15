@@ -1,5 +1,22 @@
 #imagem-de-perfil{
     max-width: 200px;
-    align-items: right;
+   
 }
 
+.card {
+    /* Add sombras para criar "card" efeito */
+    max-width: 200px;
+    background-color: rgb(32, 37, 44);
+    box-shadow: 0 4px 8px 0 rgba(146, 140, 140, 0.2);
+    transition: 0.3s;
+ 
+  }
+  
+  /* On mouse-over, add shadow */
+  .card:hover {
+    box-shadow: 10px 8px 20px 10px rgba(16, 16, 16, 0.2);
+    
+  }
+   #cody{
+       margin: 5px;
+   }
