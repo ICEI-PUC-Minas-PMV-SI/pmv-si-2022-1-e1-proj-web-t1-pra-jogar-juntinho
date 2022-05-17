@@ -206,206 +206,209 @@
             </div>
           </div>
         </div>
+        <!-- Filtro -->
         <div class="row">
-          <!-- Área do filtro -->
-          <div class="col-lg-4 col-md-5 col-xs-12">
-            <div class="caixa-busca">
-              <div class="titulo-filtro">
-                <h4 style="color:white">Filtro de jogos</h4>
+          <!-- Formulário -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-white bg-vermelho mb-3">
+              <div class="card-header">
+                <h3 class="pixxelari text-center mb-0"> Filtro de Jogos</h3>
               </div>
-              <div id="corpo-nome-filtro" class="form-group">
-                <label class="espaco-label" style="color:white; ">Nome do jogo</label>
-                <div>
-                  <input class="input-text" type="text" name="nome_jogo" placeholder="Nome do jogo">
+              <div class="card-body row">
+                <!-- Nome do Jogo -->
+                <div class="col-12">
+                  <label for="exampleDataList" class="form-label">Nome do Jogo</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Digite o nome de um jogo...">
+                  <datalist id="datalistOptions">
+                    <option value="Jogo 1">
+                    <option value="Jogo 2">
+                    <option value="Jogo 3">
+                    <option value="Jogo 4">
+                    <option value="Jogo 5">
+                  </datalist>
                 </div>
-              </div>
-              <div id="corpo-genero-filtro" class="form-group">
-                <label class="espaco-label" style="color:white; ">Gênero</label>
-                <div class="dropdown-busca">
-                  <select class="select-options-filtro select dropdown-toggle select-default">
-                    <option class="options-filtro">Escolha o Gênero</option>
-                    <option class="options-filtro">Fps</option>
-                    <option class="options-filtro">RPG</option>
-                  </select>
+                <!-- Número Máximo de Jogadores -->
+                <div class="col-12">
+                  <label for="numero_max_jogadores" class="form-label mt-3">Número de Jogadores</label>
+                  <input type="number" class="form-control" id="numero_max_jogadores" placeholder="1,2,3...">
                 </div>
-              </div>
-              <div id="lista_generos" class="form-group"></div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-xs-12 form-group">
-                    <label class="espaco-label" style="color:white; ">Classificar por</label>
-                    <div class="dropdown-busca">
-                      <select class="select-options-filtro select dropdown-toggle select-default">
-                        <option class="options-filtro">Recentes</option>
-                        <option class="options-filtro">Bem avaliados</option>
-                      </select>
-                    </div>
+                <!-- Gênero -->
+                <div class="col-6">
+                  <label class="form-label mt-3">Gênero</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Ação
+                    </label>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-xs-12 form-group">
-                    <label class="espaco-label" style="color:white; ">Plataforma</label>
-                    <div class="dropdown-busca">
-                      <select class="select-options-filtro select dropdown-toggle select-default" data-toggle="dropdown">
-                        <option class="options-filtro">Plataforma</option>
-                        <option class="options-filtro">Xbox</option>
-                        <option class="options-filtro">Playstation</option>
-                        <option class="options-filtro">Nintendo</option>
-                        <option class="options-filtro">Celular</option>
-                      </select>
-                    </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Luta
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Tiro
+                    </label>
                   </div>
                 </div>
-              <div id="lista_plataformas" class="form-group"></div>
-                <div class="row">
-                  <div>
-                      <button class="botao-buscar">Buscar</button>
+                <!-- Plataforma -->
+                <div class="col-6">
+                  <label class="form-label mt-3">Plataforma</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      PC
+                    </label>
                   </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      PlayStation
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Xbox
+                    </label>
+                  </div>
+                </div>
+                <!-- Botão de Buscar Jogos -->
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="submit" class="btn btn-light mt-3 w-100 ">Buscar</button>
                 </div>
               </div>
             </div>
-            <div class="col-lg-8 col-md-7 col-xs-12">
-              <div class="caixa-jogos-filtrados">
-                <h4 class="pixxelari formatacao-titulo"> Jogos filtrados</h4>
-                <!-- Cards -->
-                  <div class="row" style="margin: 0px 0px 10px 0px;">
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 py-1">
-                      <div class="card p-3">
-                        <h5 class="card-title">Remnant: From the Ashes</h5>
-                        <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                        <div class="card-body px-0 pb-0 pt-3">
-                          <div class="d-flex justify-content-between">
-                            <div>
-                              <i class="fa-solid fa-users texto-azul"> 5</i>
-                              <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                              <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                              <i class="fa-solid fa-desktop texto-azul"></i>
-                            </div>
-                            <div>
-                              <i class="fa-regular fa-heart texto-vermelho"></i>
-                              <i class="fa-solid fa-paper-plane texto-azul"></i>
-                            </div>
+          </div>
+          <!-- Resultado - Lista de Jogos -->
+          <div class="col-sm-12 col-md-6 col-lg-8">
+            <div class="card text-dark bg-light mb-3">
+              <div class="card-header">
+                <h3 class="pixxelari text-center mb-0"> Jogos Filtrados</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card p-3">
+                      <h5 class="card-title">Remnant: From the Ashes</h5>
+                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
+                      <div class="card-body px-0 pb-0 pt-3">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-users texto-azul"> 5</i>
+                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
+                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
+                            <i class="fa-solid fa-desktop texto-azul"></i>
                           </div>
-                          <br>
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 py-1">
-                      <div class="card p-3">
-                        <h5 class="card-title">Remnant: From the Ashes</h5>
-                        <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                        <div class="card-body px-0 pb-0 pt-3">
-                          <div class="d-flex justify-content-between">
-                            <div>
-                              <i class="fa-solid fa-users texto-azul"> 5</i>
-                              <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                              <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                              <i class="fa-solid fa-desktop texto-azul"></i>
-                            </div>
-                            <div>
-                              <i class="fa-regular fa-heart texto-vermelho"></i>
-                              <i class="fa-solid fa-paper-plane texto-azul"></i>
-                            </div>
+                          <div>
+                            <i class="fa-regular fa-heart texto-vermelho"></i>
+                            <i class="fa-solid fa-paper-plane texto-azul"></i>
                           </div>
-                          <br>
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 py-1">
-                      <div class="card p-3">
-                        <h5 class="card-title">Remnant: From the Ashes</h5>
-                        <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                        <div class="card-body px-0 pb-0 pt-3">
-                          <div class="d-flex justify-content-between">
-                            <div>
-                              <i class="fa-solid fa-users texto-azul"> 5</i>
-                              <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                              <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                              <i class="fa-solid fa-desktop texto-azul"></i>
-                            </div>
-                            <div>
-                              <i class="fa-regular fa-heart texto-vermelho"></i>
-                              <i class="fa-solid fa-paper-plane texto-azul"></i>
-                            </div>
-                          </div>
-                          <br>
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 py-1">
-                      <div class="card p-3">
-                        <h5 class="card-title">Remnant: From the Ashes</h5>
-                        <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                        <div class="card-body px-0 pb-0 pt-3">
-                          <div class="d-flex justify-content-between">
-                            <div>
-                              <i class="fa-solid fa-users texto-azul"> 5</i>
-                              <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                              <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                              <i class="fa-solid fa-desktop texto-azul"></i>
-                            </div>
-                            <div>
-                              <i class="fa-regular fa-heart texto-vermelho"></i>
-                              <i class="fa-solid fa-paper-plane texto-azul"></i>
-                            </div>
-                          </div>
-                          <br>
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 py-1">
-                      <div class="card p-3">
-                        <h5 class="card-title">Remnant: From the Ashes</h5>
-                        <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                        <div class="card-body px-0 pb-0 pt-3">
-                          <div class="d-flex justify-content-between">
-                            <div>
-                              <i class="fa-solid fa-users texto-azul"> 5</i>
-                              <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                              <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                              <i class="fa-solid fa-desktop texto-azul"></i>
-                            </div>
-                            <div>
-                              <i class="fa-regular fa-heart texto-vermelho"></i>
-                              <i class="fa-solid fa-paper-plane texto-azul"></i>
-                            </div>
-                          </div>
-                          <br>
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 py-1">
-                      <div class="card p-3">
-                        <h5 class="card-title">Remnant: From the Ashes</h5>
-                        <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                        <div class="card-body px-0 pb-0 pt-3">
-                          <div class="d-flex justify-content-between">
-                            <div>
-                              <i class="fa-solid fa-users texto-azul"> 5</i>
-                              <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                              <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                              <i class="fa-solid fa-desktop texto-azul"></i>
-                            </div>
-                            <div>
-                              <i class="fa-regular fa-heart texto-vermelho"></i>
-                              <i class="fa-solid fa-paper-plane texto-azul"></i>
-                            </div>
-                          </div>
-                          <br>
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
+                        <br>
+                        <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
                       </div>
                     </div>
                   </div>
+                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card p-3">
+                      <h5 class="card-title">Remnant: From the Ashes</h5>
+                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
+                      <div class="card-body px-0 pb-0 pt-3">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-users texto-azul"> 5</i>
+                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
+                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
+                            <i class="fa-solid fa-desktop texto-azul"></i>
+                          </div>
+                          <div>
+                            <i class="fa-regular fa-heart texto-vermelho"></i>
+                            <i class="fa-solid fa-paper-plane texto-azul"></i>
+                          </div>
+                        </div>
+                        <br>
+                        <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card p-3">
+                      <h5 class="card-title">Remnant: From the Ashes</h5>
+                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
+                      <div class="card-body px-0 pb-0 pt-3">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-users texto-azul"> 5</i>
+                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
+                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
+                            <i class="fa-solid fa-desktop texto-azul"></i>
+                          </div>
+                          <div>
+                            <i class="fa-regular fa-heart texto-vermelho"></i>
+                            <i class="fa-solid fa-paper-plane texto-azul"></i>
+                          </div>
+                        </div>
+                        <br>
+                        <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card p-3">
+                      <h5 class="card-title">Remnant: From the Ashes</h5>
+                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
+                      <div class="card-body px-0 pb-0 pt-3">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-users texto-azul"> 5</i>
+                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
+                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
+                            <i class="fa-solid fa-desktop texto-azul"></i>
+                          </div>
+                          <div>
+                            <i class="fa-regular fa-heart texto-vermelho"></i>
+                            <i class="fa-solid fa-paper-plane texto-azul"></i>
+                          </div>
+                        </div>
+                        <br>
+                        <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card p-3">
+                      <h5 class="card-title">Remnant: From the Ashes</h5>
+                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
+                      <div class="card-body px-0 pb-0 pt-3">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-users texto-azul"> 5</i>
+                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
+                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
+                            <i class="fa-solid fa-desktop texto-azul"></i>
+                          </div>
+                          <div>
+                            <i class="fa-regular fa-heart texto-vermelho"></i>
+                            <i class="fa-solid fa-paper-plane texto-azul"></i>
+                          </div>
+                        </div>
+                        <br>
+                        <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-    </div>
+      </div>
     </main>
 
     <!-- Rodapé -->

@@ -127,7 +127,7 @@ footer{
 }
 
 .radius-10 {
-  border-radius: 10px;
+  border-radius: 7px;
   border: solid;
   border-color: transparent;
 }
@@ -164,7 +164,7 @@ footer{
 .caixa-busca{
     background-color: #dc0024;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0px 0px 50px 0px;
   }
   
