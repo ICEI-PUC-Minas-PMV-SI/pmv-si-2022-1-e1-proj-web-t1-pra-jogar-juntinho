@@ -15,8 +15,20 @@
   /* On mouse-over, add shadow */
   .card:hover {
     box-shadow: 10px 8px 20px 10px rgba(16, 16, 16, 0.2);
+    background-color: #035AA6;
     
   }
    #cody{
        margin: 5px;
    }
+
+.card-transform {
+  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.card-transform:hover {
+  transform: scale(1.1);
+  background: #035AA6;
+}

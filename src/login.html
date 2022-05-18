@@ -96,72 +96,44 @@
 
     <main>
       <!-- Conteúdo -->
-      <div class="container conteudo my-4">
-        <div id="main-container">
-          <!-- Texto -->
-          <div class="centralizar">
-            <h1 style="color: white" class="pixxelari text-center">
-              Faça login no Pra Jogar Juntinhos
-            </h1>
+      <div class="container conteudo my-4 d-flex align-items-center justify-content-center" style="min-height: 670px;">
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <!-- Card -->
+            <div class="card text-white bg-vermelho mb-3" style="width: 500px;">
+              <div class="card-header">
+                <h1 class="pixxelari text-center mb-0"> Faça Login</h1>
+              </div>
+              <div class="card-body row">
+                <!-- Nome do Jogador -->
+                <div class="col-12">
+                  <label for="exampleDataList" class="form-label">Nome/Nickname</label>
+                  <input class="form-control" type="text" placeholder="Digite seu Nome/Nickname">
+                </div>
+                <!-- Senha -->
+                <div class="col-12">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <!-- Botão de Logar -->
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary mt-3 w-100 ">Logar</button>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <!-- Formulários -->
-          <form id="register-form">
-            <div>
-              <label style="color: white" for="name"
-                >Digite seu Nome/Nickname</label
-              >
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Digite seu Nome/Nickname"
-              />
-            </div>
-            <div>
-              <label style="color: white" for="password">Senha</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Digite sua senha"
-              />
-            </div>
-            <h5></h5>
-            <div>
-              <input
-                type="button"
-                class="btn btn-primary"
-                id="btn-submit"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                value="Entrar"
-              />
-            </div>
-          </form>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-          <!-- Template de erro -->
-          <p class="error-validation template"></p>
         </div>
+
       </div>
     </main>
 
     <!-- Rodapé -->
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
-      <div
-        class="display-personalizado justify-content-between padding-personalizado"
-      >
+      <div id="padding-personalizado" class="display-personalizado justify-content-between">
         <!-- Logotipo -->
-        <section>
+        <div>
           <a class="navbar-brand" href="/src/index.html">
             <img
               class="image-nav mr-3"
@@ -169,10 +141,10 @@
               alt="Logo"
             />
           </a>
-        </section>
+        </div>
 
         <!-- Link Github -->
-        <section>
+        <div>
           <!-- Github -->
           <a
             class="btn btn-outline-light btn-floating m-1"
@@ -183,7 +155,7 @@
             <i class="fab fa-github"></i>
             github.com/parajogarjuntinhos
           </a>
-        </section>
+        </div>
       </div>
       <!-- Grid container -->
 

@@ -92,7 +92,7 @@
 
     <main>
       <!-- Conteúdo -->
-      <div class="container conteudo my-4">
+      <div class="container conteudo my-4" style="min-height: 710px;">
         <section>
             
 
@@ -113,29 +113,33 @@
                     </div>
                   </div>
 
-                        <hr class="hr1">
-                        
-                        <!-- Formulário de Edição de Perfil -->
-                        <form id="edição-form">
-                            <div>
-                              <label style="color: rgb(0, 0, 0)" for="name">Alterar Nome/Nickname</label>
-                                <input type="text" name="alterar-nome" id="alterar-nome" 
-                                placeholder="Digite seu nome/Nickname">
-                            </div>
-                            <div>
-                              <label style="color: rgb(0, 0, 0)" for="name">Alterar sua senha</label>
-                                <input type="password" name="alterar-senha" id="alterar-senha" 
-                                placeholder="Digite a nova senha">
-                            </div>
-                              <h5></h5>
-                            <div>
-                                <input type="button" class="btn btn-primary" id="btn-alteração" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" value="Salvar Alterações">
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                <hr class="hr1">
+                
+                <!-- Formulário de Edição de Perfil -->
+                <form id="edição-form">
+                  <!-- Nome do Jogador -->
+                  <div class="col-12">
+                    <label for="exampleDataList" class="form-label" style="text-align: start;">Nome/Nickname</label>
+                    <input class="form-control" type="text" placeholder="Digite seu Nome/Nickname">
+                  </div>
+                  <!-- Senha -->
+                  <div class="col-12 mt-2">
+                    <label for="senha" class="form-label" style="text-align: start;">Password</label>
+                    <input type="password" class="form-control" id="senha">
+                  </div>
+                  <!-- Confirmar Senha -->
+                  <div class="col-12 mt-2">
+                    <label for="confirmar-senha" class="form-label" style="text-align: start;">Confirmar Password</label>
+                    <input type="password" class="form-control" id="confirmar-senha">
+                  </div>
+                  <!-- Botão de Logar -->
+                  <div class="col-12 d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary mt-3 w-100 ">Salvar</button>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </section>
       </div>
     </main>
@@ -143,9 +147,9 @@
     <!-- Rodapé -->
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
-      <div class="display-personalizado justify-content-between padding-personalizado">
+      <div id="padding-personalizado" class="display-personalizado justify-content-between">
         <!-- Logotipo -->
-        <section>
+        <div>
           <a class="navbar-brand" href="/src/index.html">
             <img
               class="image-nav mr-3"
@@ -153,10 +157,10 @@
               alt="Logo"
             />
           </a>
-        </section>
+        </div>
 
         <!-- Link Github -->
-        <section>
+        <div>
           <!-- Github -->
           <a
             class="btn btn-outline-light btn-floating m-1"
@@ -167,13 +171,13 @@
             <i class="fab fa-github"></i>
             github.com/parajogarjuntinhos
           </a>
-        </section>
+        </div>
       </div>
       <!-- Grid container -->
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        Para Jogar Juntinhos © 2020 Copyright
+        Para Jogar Juntinhos © 2022 Copyright
       </div>
     </footer>
 
