@@ -70,88 +70,85 @@
 
   <main>
     <!-- Conteúdo -->
-    <div class="container conteudo my-4">
-      <div id="main-container">
+    <div class="container conteudo my-4 d-flex align-items-center justify-content-center" style="min-height: 670px;">
 
-        <!-- Texto -->
-        <div class="centralizar">
-          <h1 style="color: white" class="pixxelari text-center">Inscreva-se grátis e comece a aproveitar o site ao
-            máximo!</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img src="/src/img/game-analytics-animate.svg" alt="Cadastrar"  height="400">
         </div>
-
-        <!-- Formulários -->
-        <form id="register-form">
-          <div>
-            <label style="color: white" for="name">Digite seu nome/Nickname</label>
-            <input type="text" name="name" id="name" placeholder="Digite seu Nome/Nickname">
-          </div>
-          <div>
-            <label style="color: white" for="password">Crie uma senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite a sua senha">
-          </div>
-          <div>
-            <label style="color: white" for="passwordconfirm">Confirme sua Senha</label>
-            <input type="password" name="passwordconfirm" id="passwordconfirm" placeholder="Confirme a sua senha">
-          </div>
-          <h5></h5>
-          <div>
-            <input type="button" class="btn btn-primary" id="btn-submit" data-bs-toggle="modal"
-              data-bs-target="#exampleModal" value="Registrar">
-          </div>
-        </form>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-center" id="exampleModalLabel">Cadastro Concluído</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                Agora você pode salvar seus favoritos,
-                acessar seu histórico do site, comentar e
-                classificar os melhores games!
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Fazer Login</button>
+        <div class="col-sm-12 col-md-6">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <!-- Card -->
+              <div class="card text-white bg-vermelho mb-3" style="width: 500px;">
+                <div class="card-header">
+                  <h1 class="pixxelari text-center mb-0"> Inscreva-se grátis e comece a aproveitar o site ao
+                    máximo!</h1>
+                </div>
+                <div class="card-body row">
+                  <!-- Nome do Jogador -->
+                  <div class="col-12">
+                    <label for="exampleDataList" class="form-label">Nome/Nickname</label>
+                    <input class="form-control" type="text" placeholder="Digite seu Nome/Nickname">
+                  </div>
+                  <!-- Senha -->
+                  <div class="col-12 mt-2">
+                    <label for="senha" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="senha">
+                  </div>
+                  <!-- Confirmar Senha -->
+                  <div class="col-12 mt-2">
+                    <label for="confirmar-senha" class="form-label">Confirmar Password</label>
+                    <input type="password" class="form-control" id="confirmar-senha">
+                  </div>
+                  <!-- Botão de Logar -->
+                  <div class="col-12 d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary mt-3 w-100 ">Cadastrar</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Template de erro -->
-        <p class="error-validation template"></p>
       </div>
+
     </div>
   </main>
 
   <!-- Rodapé -->
   <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
-    <div class="display-personalizado justify-content-between padding-personalizado">
+    <div id="padding-personalizado" class="display-personalizado justify-content-between">
       <!-- Logotipo -->
-      <section>
+      <div>
         <a class="navbar-brand" href="/src/index.html">
-          <img class="image-nav mr-3" src="/src/img/logo_navbar.png" alt="Logo" />
+          <img
+            class="image-nav mr-3"
+            src="/src/img/logo_navbar.png"
+            alt="Logo"
+          />
         </a>
-      </section>
+      </div>
 
       <!-- Link Github -->
-      <section>
+      <div>
         <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" target="_blank"
-          href="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-1-e1-proj-web-t1-pra-jogar-juntinho" role="button">
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          target="_blank"
+          href="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-1-e1-proj-web-t1-pra-jogar-juntinho"
+          role="button"
+        >
           <i class="fab fa-github"></i>
           github.com/parajogarjuntinhos
         </a>
-      </section>
+      </div>
     </div>
     <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      Para Jogar Juntinhos © 2020 Copyright
+      Para Jogar Juntinhos © 2022 Copyright
     </div>
   </footer>
 
