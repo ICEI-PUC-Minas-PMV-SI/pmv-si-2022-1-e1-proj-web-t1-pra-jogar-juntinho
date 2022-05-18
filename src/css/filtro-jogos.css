@@ -119,6 +119,11 @@ footer{
   border-color: #9d031d !important;
 }
 
+.btn-vermelho {
+  background-color: #DC0024 !important;
+  border-color: #DC0024 !important;
+}
+
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
