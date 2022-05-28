@@ -56,6 +56,11 @@ html, * {
   padding: 25px 31px 25px 31px;
 }
 
+.fa-paper-plane:hover{
+  color: #DC0024 !important;
+  cursor: pointer;
+}
+
 /* HEADER ---------------------------------------------------------------*/
 .btn-login {
   margin-left: 40px;
@@ -160,6 +165,29 @@ footer{
 #ImgPerfil {
   max-height: 150px;
 }
-.MG-INF{
-  margin: 0px 0px 0px 0px;
+
+.titulo-jogo-card {
+  text-align: center;
+  min-height: 22px;
+  word-break: break-all;
+  max-width: 60ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+
+.corpo-jogo-card{
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  padding-top: 12px !important;
+  padding-bottom: 5px !important;
+}
+
+.margin-icone-plataforma {
+  margin-left: 5px;
+  margin-right: 5px;
 }
