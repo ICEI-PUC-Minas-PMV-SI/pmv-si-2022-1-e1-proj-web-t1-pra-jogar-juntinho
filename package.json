@@ -11,7 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "npx json-server db/jogos.json --watch --port 3000"
+    "start": "npx json-server db/jogos.json --watch --port 3000",
+    "dev-start": "node js/server.js"
   },
   "repository": {
     "type": "git",
