@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults()
 server.use(middlewares)
 server.use(router)
 server.listen(3000, () => {
-  console.log('JSON Server esta rodando! Acesso em: http://localhost:3000')
+  console.log('JSON Server esta rodando! Acesso em: http://localhost:3001')
 })
 
-// cmd => node server.js
+// cmd => node src/js/server.js
