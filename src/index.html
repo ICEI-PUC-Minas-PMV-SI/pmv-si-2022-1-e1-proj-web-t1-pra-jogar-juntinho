@@ -26,9 +26,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- JS Iconify Kit Free Ícones -->
-    <script
-      src="https://code.iconify.design/2/2.2.1/iconify.min.js"
-    ></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <!-- CSS Font Pixxelari -->
     <link href="/src/font/stylesheet.css" rel="stylesheet" />
   </head>
@@ -77,15 +75,23 @@
                 <i class="fa-solid fa-house margin-icon"></i>
                 Home
               </a>
-              <a class="nav-link text-white d-flex align-items-center" href="/src/quem-somos.html">
+              <a
+                class="nav-link text-white d-flex align-items-center"
+                href="/src/quem-somos.html"
+              >
                 <i class="fa-solid fa-people-group margin-icon"></i>
                 Quem Somos
               </a>
-              <a class="nav-link text-white d-flex align-items-center" href="/src/filtro-jogos.html">
+              <a
+                class="nav-link text-white d-flex align-items-center"
+                href="/src/filtro-jogos.html"
+              >
                 <i class="fa-solid fa-filter margin-icon"></i>
                 Filtro de Jogos
               </a>
-              <a class="nav-link text-white btn btn-primary btn-login" href="/src/login.html"
+              <a
+                class="nav-link text-white btn btn-primary btn-login"
+                href="/src/login.html"
                 >Login
               </a>
             </div>
@@ -97,7 +103,6 @@
     <main>
       <!-- Conteúdo -->
       <div class="container conteudo my-4">
-
         <!-- Carrossel -->
         <div
           id="carrossel-jogos"
@@ -136,7 +141,10 @@
               />
               <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
                 <h5 class="text-white">Magicka</h5>
-                <p class="text-white">Faça combinações de elementos e crie magias únicas nessa aventura de até 4 jogadores com seus amigos!</p>
+                <p class="text-white">
+                  Faça combinações de elementos e crie magias únicas nessa
+                  aventura de até 4 jogadores com seus amigos!
+                </p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
@@ -148,7 +156,10 @@
               />
               <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
                 <h5 class="text-white">Astronner</h5>
-                <p class="text-white">Convide seus amigos para explorar planetas únicos e desvendar seus mistérios!</p>
+                <p class="text-white">
+                  Convide seus amigos para explorar planetas únicos e desvendar
+                  seus mistérios!
+                </p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
@@ -160,7 +171,11 @@
               />
               <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
                 <h5 class="text-white">Conan Exiles</h5>
-                <p class="text-white">Sobreviva a um mundo hostil em uma aventura classica de RPG com sistema de building, chame o máximo de amigos para te ajudar!</p>
+                <p class="text-white">
+                  Sobreviva a um mundo hostil em uma aventura classica de RPG
+                  com sistema de building, chame o máximo de amigos para te
+                  ajudar!
+                </p>
               </div>
             </div>
           </div>
@@ -192,39 +207,88 @@
               <div class="accordion mb-4" id="accordionExample">
                 <div class="accordion-item sem-focus">
                   <h2 class="accordion-header sem-focus" id="headingTwo">
-                    <button class="accordion-button collapsed pixxelari sem-focus texto-vermelho legenda-icones" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button
+                      class="accordion-button collapsed pixxelari sem-focus texto-vermelho legenda-icones"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
                       Legenda de Icones
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body card sem-radius-cima bg-azul text-white">
-                      <p class="mb-0">Plataformas que o jogo se encontra disponível: <i class="fa-brands fa-windows"></i> Windows <i class="fa-brands fa-apple"></i> MacBook <i class="fa-brands fa-linux"></i> Linux</p>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div
+                      class="accordion-body card sem-radius-cima bg-azul text-white"
+                    >
+                      <p class="mb-0">
+                        Plataformas que o jogo se encontra disponível:
+                        <i class="fa-brands fa-windows"></i> Windows
+                        <i class="fa-brands fa-apple"></i> MacBook
+                        <i class="fa-brands fa-linux"></i> Linux
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <h4 class="pixxelari"> Categoria Ação</h4>
+          <h4 class="pixxelari">Categoria Ação</h4>
+
           <!-- Cards -->
-          <div id="acao" class="row mb-4">
+          <ul
+            id="acao"
+            style="
+              background-color: white;
+              white-space: nowrap;
+              overflow: auto;
+              padding-left: 0;
+              padding-bottom: 30px;
+            "
+          ></ul>
 
-          </div>
-
-          <h4 class="pixxelari"> Categoria Aventura</h4>
+          <h4 class="pixxelari">Categoria Aventura</h4>
           <!-- Cards -->
-          <div id="aventura" class="row mb-4">
+          <ul
+            id="aventura"
+            style="
+              background-color: white;
+              white-space: nowrap;
+              overflow: auto;
+              padding-left: 0;
+              padding-bottom: 35px;
+            "
+          ></ul>
 
-          </div>
+          <h4 class="pixxelari">Categoria RPG</h4>
+          <!-- Cards -->
+          <ul
+            id="rpg"
+            style="
+              background-color: white;
+              white-space: nowrap;
+              overflow: auto;
+              padding-left: 0;
+              padding-bottom: 35px;
+            "
+          ></ul>
         </section>
-
       </div>
     </main>
 
     <!-- Rodapé -->
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
-      <div id="padding-personalizado" class="display-personalizado justify-content-between">
+      <div
+        id="padding-personalizado"
+        class="display-personalizado justify-content-between"
+      >
         <!-- Logotipo -->
         <div>
           <a class="navbar-brand" href="/src/index.html">
@@ -260,45 +324,54 @@
 
     <script>
       // URL DA API DE DADOS
-      URL = 'http://localhost:3001/jogos?_page=0&_limit=100'
+      URL = "http://localhost:3001/jogos?_page=0&_limit=300";
 
       // Plantaformas HTML
-      const icone_win = '<i class="fa-brands fa-windows texto-azul margin-icone-plataforma"></i>';
-      const icone_mac = '<i class="fa-brands fa-apple texto-azul margin-icone-plataforma"></i>'
-      const icone_lin = '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>'
+      const icone_win =
+        '<i class="fa-brands fa-windows texto-azul margin-icone-plataforma"></i>';
+      const icone_mac =
+        '<i class="fa-brands fa-apple texto-azul margin-icone-plataforma"></i>';
+      const icone_lin =
+        '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>';
 
       // Pegar lista de jogos
       fetch(URL)
-      .then(res => res.json())
-      .then(jogos => {
+        .then((res) => res.json())
+        .then((jogos) => {
+          // AÇÃO =================================================================================================
+          // Filtra jogos com gênero Ação
+          jogos = jogos.filter((j) => {
+            if (j.genres != null || j.genres !== []) {
+              genero = j.genres.find((g) => g === "Ação");
+              genero === undefined ? false : true;
+              return genero;
+            } else {
+              return false;
+            }
+          });
 
-        // AÇÃO =================================================================================================
-        // Filtra jogos com gênero Ação
-        jogos = jogos.filter(j => {
-          if(j.genres != null || j.genres !== []) {
-            genero = j.genres.find(g => g === "Ação")
-            genero === undefined ? false : true
-            return genero
-          } else {
-            return false
-          }
-        })
+          let lista_jogos = "";
+          // Monta a lista de jogos
+          for (let i = 0; i < 20; i++) {
+            let jogo = jogos[i];
+            let plataformas = "";
 
-        let lista_jogos = '';
-        // Monta a lista de jogos
-        for (let i = 0; i < 20; i++) {
-          let jogo = jogos[i];
-          let plataformas = "";
-
-          if(jogo.plataforms != null || jogo.plataforms !== []) {
-            jogo.plataforms.forEach(plataforma => {
-              if (plataforma === 'Windows') plataformas = plataformas + icone_win;
-              if (plataforma === 'MacBook') plataformas = plataformas + icone_mac;
-              if (plataforma === 'Linux') plataformas = plataformas + icone_lin;
-            })
-          }
-          lista_jogos +=`
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-1">
+            if (jogo.plataforms != null || jogo.plataforms !== []) {
+              jogo.plataforms.forEach((plataforma) => {
+                if (plataforma === "Windows")
+                  plataformas = plataformas + icone_win;
+                if (plataforma === "MacBook")
+                  plataformas = plataformas + icone_mac;
+                if (plataforma === "Linux")
+                  plataformas = plataformas + icone_lin;
+              });
+            }
+            lista_jogos += `
+          <li class="" style="
+            display: inline-block;
+            width: 210px;
+            margin-right: 10px;"
+          >
             <div class="card shadow-lg">
               <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
               <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
@@ -318,40 +391,47 @@
                 </div>
               </div>
             </div>
-          </div>
+          </li>
           `;
-        }
-
-        // Coloca a lista de jogos na página
-        document.getElementById('acao').innerHTML = lista_jogos;
-
-        // AVENTURA =================================================================================================
-        // Filtra jogos com gênero Aventura
-        jogos = jogos.filter(j => {
-          if(j.genres != null || j.genres !== []) {
-            genero = j.genres.find(g => g === "Aventura")
-            genero === undefined ? false : true
-            return genero
-          } else {
-            return false
           }
-        })
 
-        // Monta a lista de jogos
-        lista_jogos = '';
-        for (let i = 0; i < 20; i++) {
-          let jogo = jogos[i];
-          let plataformas = "";
+          // Coloca a lista de jogos na página
+          document.getElementById("acao").innerHTML = lista_jogos;
 
-          if(jogo.plataforms != null || jogo.plataforms !== []) {
-            jogo.plataforms.forEach(plataforma => {
-              if (plataforma === 'Windows') plataformas = plataformas + icone_win;
-              if (plataforma === 'MacBook') plataformas = plataformas + icone_mac;
-              if (plataforma === 'Linux') plataformas = plataformas + icone_lin;
-            })
-          }
-          lista_jogos +=`
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 py-1">
+          // AVENTURA =================================================================================================
+          // Filtra jogos com gênero Aventura
+          jogos = jogos.filter((j) => {
+            if (j.genres != null || j.genres !== []) {
+              genero = j.genres.find((g) => g === "Aventura");
+              genero === undefined ? false : true;
+              return genero;
+            } else {
+              return false;
+            }
+          });
+
+          // Monta a lista de jogos
+          lista_jogos = "";
+          for (let i = 0; i < 20; i++) {
+            let jogo = jogos[i];
+            let plataformas = "";
+
+            if (jogo.plataforms != null || jogo.plataforms !== []) {
+              jogo.plataforms.forEach((plataforma) => {
+                if (plataforma === "Windows")
+                  plataformas = plataformas + icone_win;
+                if (plataforma === "MacBook")
+                  plataformas = plataformas + icone_mac;
+                if (plataforma === "Linux")
+                  plataformas = plataformas + icone_lin;
+              });
+            }
+            lista_jogos += `
+            <li class="" style="
+            display: inline-block;
+            width: 210px;
+            margin-right: 10px;"
+          >
             <div class="card shadow-lg">
               <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
               <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
@@ -371,13 +451,73 @@
                 </div>
               </div>
             </div>
-          </div>
+          </li>
           `;
-        }
+          }
 
-        // Coloca a lista de jogos na página
-        document.getElementById('aventura').innerHTML = lista_jogos;
-      });
+          // Coloca a lista de jogos na página
+          document.getElementById("aventura").innerHTML = lista_jogos;
+
+          // AVENTURA =================================================================================================
+          // Filtra jogos com gênero Aventura
+          jogos = jogos.filter((j) => {
+            if (j.genres != null || j.genres !== []) {
+              genero = j.genres.find((g) => g === "RPG");
+              genero === undefined ? false : true;
+              return genero;
+            } else {
+              return false;
+            }
+          });
+
+          // Monta a lista de jogos
+          lista_jogos = "";
+          for (let i = 0; i < 20; i++) {
+            let jogo = jogos[i];
+            let plataformas = "";
+
+            if (jogo.plataforms != null || jogo.plataforms !== []) {
+              jogo.plataforms.forEach((plataforma) => {
+                if (plataforma === "Windows")
+                  plataformas = plataformas + icone_win;
+                if (plataforma === "MacBook")
+                  plataformas = plataformas + icone_mac;
+                if (plataforma === "Linux")
+                  plataformas = plataformas + icone_lin;
+              });
+            }
+            lista_jogos += `
+            <li class="" style="
+            display: inline-block;
+            width: 210px;
+            margin-right: 10px;"
+          >
+            <div class="card shadow-lg">
+              <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
+              <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+              <div class="card-body corpo-jogo-card">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    ${plataformas}
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-heart texto-vermelho"></i>
+                    <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
+                  </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                  <a href="http://localhost:3000/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          `;
+          }
+
+          // Coloca a lista de jogos na página
+          document.getElementById("rpg").innerHTML = lista_jogos;
+        });
     </script>
 
     <!-- Script JS Bootstrap -->
