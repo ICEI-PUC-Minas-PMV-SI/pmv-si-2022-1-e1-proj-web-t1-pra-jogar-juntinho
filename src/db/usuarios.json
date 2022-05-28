@@ -1,0 +1,34 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Lucas",
+      "senha": "Brasil1010",
+      "confirmarSenha": "Brasil1010"
+    },
+    {
+      "id": 2,
+      "nome": "PedrinhoGamer",
+      "senha": "Coxinha123",
+      "confirmarSenha": "Coxinha123"
+    },
+    {
+      "id": 3,
+      "nome": "fwafa",
+      "senha": "devomudar",
+      "confirmarSenha": "devomudar"
+    },
+    {
+      "id": 4,
+      "nome": "Teste",
+      "senha": "Teste",
+      "confirmarSenha": "Teste"
+    },
+    {
+      "id": 5,
+      "nome": "tettwetfrwafderf",
+      "senha": "teste",
+      "confirmarSenha": "teste"
+    }
+  ]
+}
