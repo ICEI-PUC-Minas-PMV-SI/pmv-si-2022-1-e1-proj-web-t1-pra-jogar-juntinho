@@ -43,11 +43,7 @@
         <!-- Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a
-              class="nav-link text-white active d-flex align-items-center"
-              aria-current="page"
-              href="/src/index.html"
-            >
+            <a class="nav-link text-white active d-flex align-items-center" aria-current="page" href="/src/index.html">
               <i class="fa-solid fa-house margin-icon"></i>
               Home
             </a>
@@ -59,8 +55,7 @@
               <i class="fa-solid fa-filter margin-icon"></i>
               Filtro de Jogos
             </a>
-            <a class="nav-link text-white btn btn-primary btn-login" href="/src/login.html"
-              >Login
+            <a class="nav-link text-white btn btn-primary btn-login" href="/src/login.html">Login
             </a>
           </div>
         </div>
@@ -80,40 +75,40 @@
         </div>
         <div class="col-sm-12 col-md-6">
           <div class="row">
+            <form id="cadastro-form">
             <div class="col-12 d-flex justify-content-center">
               <!-- Card -->
               <div class="card text-white bg-vermelho mb-3">
                 <div class="card-header">
-                  <h1 class="pixxelari text-center mb-0"> Inscreva-se grátis e comece a aproveitar o site ao
-                    máximo!</h1>
+                  <h1 class="pixxelari text-center mb-0"> Inscreva-se grátis e comece a aproveitar o site ao máximo!</h1>
                 </div>
                 <div class="card-body row">
                   <!-- Nome do Jogador -->
                   <div class="col-12">
-                    <label for="exampleDataList" class="form-label">Nome/Nickname</label>
-                    <input class="form-control" type="text" placeholder="Digite seu Nome/Nickname">
+                    <label for="nome" class="form-label">Nome/Nickname</label>
+                    <input class="form-control" type="text" placeholder="Digite seu Nome/Nickname" name ="nome" id="nome">
                   </div>
                   <!-- Senha -->
                   <div class="col-12 mt-2">
-                    <label for="senha" class="form-label">Password</label>
+                    <label for="senha" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="senha">
                   </div>
                   <!-- Confirmar Senha -->
                   <div class="col-12 mt-2">
-                    <label for="confirmar-senha" class="form-label">Confirmar Password</label>
+                    <label for="confirmar-senha" class="form-label">Confirmar Senha</label>
                     <input type="password" class="form-control" id="confirmar-senha">
                   </div>
                   <!-- Botão de Logar -->
                   <div class="col-12 d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary mt-3 w-100 ">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary mt-3 w-100 ">Cadastrar</button>
                   </div>
                 </div>
               </div>
             </div>
+            </form>
           </div>
         </div>
       </div>
-
     </div>
   </main>
 
@@ -124,23 +119,15 @@
       <!-- Logotipo -->
       <div>
         <a class="navbar-brand" href="/src/index.html">
-          <img
-            class="image-nav mr-3"
-            src="/src/img/logo_navbar.png"
-            alt="Logo"
-          />
+          <img class="image-nav mr-3" src="/src/img/logo_navbar.png" alt="Logo" />
         </a>
       </div>
 
       <!-- Link Github -->
       <div>
         <!-- Github -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          target="_blank"
-          href="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-1-e1-proj-web-t1-pra-jogar-juntinho"
-          role="button"
-        >
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank"
+          href="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-1-e1-proj-web-t1-pra-jogar-juntinho" role="button">
           <i class="fab fa-github"></i>
           github.com/parajogarjuntinhos
         </a>
@@ -159,6 +146,7 @@
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="/src/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/js/cadastro.js"></script>
 </body>
 
 </html>
