@@ -1,12 +1,14 @@
 {
     "usuarios": [
         {
-            "nick": "Lucas",
-            "senha": "Brasil1010"
+            "nome": "Lucas",
+            "senha": "Brasil1010",
+            "confirmarSenha": "Brasil1010"
         },
         {
-            "nick": "PedrinhoGamer",
-            "senha": "Coxinha123"
+            "nome": "PedrinhoGamer",
+            "senha": "Coxinha123",
+            "confirmarSenha": "Coxinha123"
         }
     ]
 }
