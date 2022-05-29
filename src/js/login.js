@@ -1,33 +1,24 @@
-// import usuariosLista from "./../db/usuarios.json";
-
 // URL DA API DE DADOS
 URL = "http://localhost:3002/usuarios"; //Usuários cadastrados
 
 const logar = document.getElementById("logar");
 var localStorage = Window.localStorage;
-let nome = document.getElementById("nome").value;
-let senha = document.getElementById("senha").value;
+
 let validacao = false;
 let usuario = {};
 
 logar.addEventListener("click", (evt) => {
-  // console.log("teste", usuariosLista.json());
   fetch(URL)
-    .then((res) => {
-      console.log(res);
-      res.json();
-    })
+    .then((res) => res.json())
     .then((usuarios) => {
-      console.log(usuarios);
       validacao = usuarios.some((u) => {
-        if (u.nome === nome && u.senha === senha) {
+        if (u.nome === document.getElementById('nome').value && u.senha === document.getElementById("senha").value) {
           usuario = u;
           return true;
         } else {
           return false;
         }
       });
-
       if (validacao) {
         localStorage.setItem(
           "usuario",
