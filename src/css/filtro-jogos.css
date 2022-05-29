@@ -276,3 +276,9 @@ footer{
   .espaco-cards{
     margin: 0px 0px 10px 0px;
   }
+
+  .card-title {
+    margin-bottom: 0.5rem;
+    min-height: 48px;
+    text-align: center;
+}

@@ -95,95 +95,8 @@
     </header>
 
     <main>
-     <!-- Conteúdo -->
-     <div class="container conteudo my-4">
-
-      <!-- Carrossel 
-      <div
-        id="carrossel-jogos"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carrossel-jogos"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carrossel-jogos"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carrossel-jogos"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner radius-10">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img
-              src="/src/img/carrossel/magicka.png"
-              height="200"
-              class="d-block w-100"
-              alt="Magicka"
-            />
-            <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
-              <h5 class="text-white">Magicka</h5>
-              <p class="text-white">Faça combinações de elementos e crie magias únicas nessa aventura de até 4 jogadores com seus amigos!</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="/src/img/carrossel/astronner.png"
-              height="200"
-              class="d-block w-100"
-              alt="Astronner"
-            />
-            <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
-              <h5 class="text-white">Astronner</h5>
-              <p class="text-white">Convide seus amigos para explorar planetas únicos e desvendar seus mistérios!</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="/src/img/carrossel/conan-exiles.png"
-              height="200"
-              class="d-block w-100"
-              alt="Conan-Exiles"
-            />
-            <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
-              <h5 class="text-white">Conan Exiles</h5>
-              <p class="text-white">Sobreviva a um mundo hostil em uma aventura classica de RPG com sistema de building, chame o máximo de amigos para te ajudar!</p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carrossel-jogos"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carrossel-jogos"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
-
+    <!-- Conteúdo -->
+    <div class="container conteudo my-4">
       <section class="mt-5">
         <!-- Legenda de Icones -->
         <div class="row">
@@ -220,11 +133,6 @@
                   <label for="exampleDataList" class="form-label">Nome do Jogo</label>
                   <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Digite o nome de um jogo...">
                   <datalist id="datalistOptions">
-                    <option value="Jogo 1">
-                    <option value="Jogo 2">
-                    <option value="Jogo 3">
-                    <option value="Jogo 4">
-                    <option value="Jogo 5">
                   </datalist>
                 </div>
                 <!-- Número Máximo de Jogadores -->
@@ -236,19 +144,19 @@
                 <div class="col-6">
                   <label class="form-label mt-3">Gênero</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" name="acao" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                       Ação
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" name="luta" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                       Luta
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" name="tiro" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                       Tiro
                     </label>
@@ -259,18 +167,18 @@
                   <label class="form-label mt-3">Plataforma</label>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <label class="form-check-label" name="pc" for="flexCheckDefault">
                       PC
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" name="play" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                       PlayStation
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <input class="form-check-input" name="xbox" type="checkbox" value="" id="flexCheckChecked">
                     <label class="form-check-label" for="flexCheckChecked">
                       Xbox
                     </label>
@@ -278,7 +186,7 @@
                 </div>
                 <!-- Botão de Buscar Jogos -->
                 <div class="col-12 d-flex justify-content-center">
-                  <button type="button" class="btn btn-light mt-3 w-100 ">Buscar</button>
+                  <button id="filtrar-jogos" type="button" class="btn btn-light mt-3 w-100 ">Buscar</button>
                 </div>
               </div>
             </div>
@@ -290,127 +198,7 @@
                 <h3 class="pixxelari text-center mb-0"> Jogos Filtrados</h3>
               </div>
               <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
-                    <div class="card p-3">
-                      <h5 class="card-title">Remnant: From the Ashes</h5>
-                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                      <div class="card-body px-0 pb-0 pt-3">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <i class="fa-solid fa-users texto-azul"> 5</i>
-                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                            <i class="fa-solid fa-desktop texto-azul"></i>
-                          </div>
-                          <div>
-                            <i class="fa-regular fa-heart texto-vermelho"></i>
-                            <i class="fa-solid fa-paper-plane texto-azul"></i>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="MG-INF Bottom-MaisInf d-flex justify-content-center">
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
-                    <div class="card p-3">
-                      <h5 class="card-title">Remnant: From the Ashes</h5>
-                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                      <div class="card-body px-0 pb-0 pt-3">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <i class="fa-solid fa-users texto-azul"> 5</i>
-                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                            <i class="fa-solid fa-desktop texto-azul"></i>
-                          </div>
-                          <div>
-                            <i class="fa-regular fa-heart texto-vermelho"></i>
-                            <i class="fa-solid fa-paper-plane texto-azul"></i>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="MG-INF Bottom-MaisInf d-flex justify-content-center">
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
-                    <div class="card p-3">
-                      <h5 class="card-title">Remnant: From the Ashes</h5>
-                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                      <div class="card-body px-0 pb-0 pt-3">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <i class="fa-solid fa-users texto-azul"> 5</i>
-                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                            <i class="fa-solid fa-desktop texto-azul"></i>
-                          </div>
-                          <div>
-                            <i class="fa-regular fa-heart texto-vermelho"></i>
-                            <i class="fa-solid fa-paper-plane texto-azul"></i>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="MG-INF Bottom-MaisInf d-flex justify-content-center">
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
-                    <div class="card p-3">
-                      <h5 class="card-title">Remnant: From the Ashes</h5>
-                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                      <div class="card-body px-0 pb-0 pt-3">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <i class="fa-solid fa-users texto-azul"> 5</i>
-                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                            <i class="fa-solid fa-desktop texto-azul"></i>
-                          </div>
-                          <div>
-                            <i class="fa-regular fa-heart texto-vermelho"></i>
-                            <i class="fa-solid fa-paper-plane texto-azul"></i>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="MG-INF Bottom-MaisInf d-flex justify-content-center">
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-4 mb-3">
-                    <div class="card p-3">
-                      <h5 class="card-title">Remnant: From the Ashes</h5>
-                      <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                      <div class="card-body px-0 pb-0 pt-3">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <i class="fa-solid fa-users texto-azul"> 5</i>
-                            <span class="iconify texto-azul" style="width: 16px;height: 16px;vertical-align: baseline;" data-icon="bi:xbox"></span>
-                            <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                            <i class="fa-solid fa-desktop texto-azul"></i>
-                          </div>
-                          <div>
-                            <i class="fa-regular fa-heart texto-vermelho"></i>
-                            <i class="fa-solid fa-paper-plane texto-azul"></i>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="MG-INF Bottom-MaisInf d-flex justify-content-center">
-                          <a href="#" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="row" id="lista-jogos">
                 </div>
               </div>
             </div>
@@ -465,5 +253,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/src/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/filtro-jogos.js"></script>
   </body>
 </html>
