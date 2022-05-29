@@ -89,7 +89,7 @@ Para atender ao requisito RF-005 foi desenvolvido a página de cadastro.
 
 Será disponibilizado ao usuário um formulário onde ele poderá cadastras informações como Name/Nickname e senha para criar o usuário e fazer login.
 
-![cadastro] (img/entrega03/cadastro.JPG)
+![cadastro](img/entrega03/cadastro.JPG)
 
 O formulario é do tipo `x` com campos do tipo `y`.
 
