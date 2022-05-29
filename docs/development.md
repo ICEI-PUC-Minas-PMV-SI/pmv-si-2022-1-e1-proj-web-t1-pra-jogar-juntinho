@@ -1,9 +1,5 @@
 # Programação de Funcionalidades
 
-<div align="justify"> 
-  
-# Programação de Funcionalidades
-
 Nesta seção estão descritos os artefatos e estruturas de dados criados para atender aos requisitos previstos nas <a href="./especification.md">Especificações do Projeto</a>, bem como as instruções para acesso e verificação da implementação. As tecnologias utilizadas se baseiam nas linguagens HTML, CSS e JavaScript.
 
 
@@ -15,15 +11,15 @@ Nesta seção estão descritos os artefatos e estruturas de dados criados para a
 - RF-003 - Filtrar jogos eletrônicos cooperativos por categorias
 - RF-004 - Permitir que o usuário navegue pelas categorias de jogos
 
-Para atender aos requisitos RF-001, RF003 e RF004 foi desenvolvido a página de Filtro de Jogos.
+Para atender aos requisitos RF-001, RF-003 e RF-004 foi desenvolvido a página de Filtro de Jogos.
 
 Ao acessar a página de filtro de perfil será exibido um botão do tipo `button` onde o usuário terá acesso a uma legenda dos ícones que ele encontrará nos cards dos jogos.
 
 >adicionar a imagem da legenda
 
-Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, numero de jogadores desejado, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponiveis no site.
+Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, número de jogadores desejado, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponiveis no site.
 
->adicioanr foto do filtro de jogos
+>adicionar foto do filtro de jogos
 
 O filtro é do tipo `x` que apresenta campos do tipo `y` para pesquisa de Nome do Jogo e Número de Jogadores, além de botões do tipo `z` para filtrar por gênero e plataforma. 
 
@@ -53,7 +49,7 @@ Ao clicar em um card de um jogo específico aparecerá para o usuário a página
 
 O vídeo foi adicionado da `seguinte maneira` e a descrição `assim`.
 
-Do lado direito da página aparecerá as informações do jogo, tais como uma imagem do jogo acompanhada de ícones descritivos, informações sobre o tipo de co-op dísponível, as plataformas que o usuário poderá jogar o jogo, gêneros, tema e a data de lançamento.
+Do lado direito da página aparecerá as informações do jogo, tais como uma imagem do jogo acompanhada de ícones descritivos, informações sobre o tipo de co-op disponível, as plataformas que o usuário poderá jogar o jogo, gêneros, tema e a data de lançamento.
 
 >adicionar imagem do card lateral 
 
