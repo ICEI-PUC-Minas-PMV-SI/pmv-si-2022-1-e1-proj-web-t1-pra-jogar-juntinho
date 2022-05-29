@@ -45,7 +45,8 @@ function AlterarDesejados(sDesejados) {
                     nComentados = false;
                 };
 
-            })
+            }
+        })
 
     function AlterarComentados(sDesejados) {
         if (sDesejados = True) {

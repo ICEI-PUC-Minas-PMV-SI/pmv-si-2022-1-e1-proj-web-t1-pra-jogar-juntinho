@@ -131,7 +131,7 @@
                 <!-- Nome do Jogo -->
                 <div class="col-12">
                   <label for="exampleDataList" class="form-label">Nome do Jogo</label>
-                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Digite o nome de um jogo...">
+                  <input class="form-control" list="datalistOptions" id="nome_jogo" placeholder="Digite o nome de um jogo...">
                   <datalist id="datalistOptions">
                   </datalist>
                 </div>
@@ -198,8 +198,12 @@
                 <h3 class="pixxelari text-center mb-0"> Jogos Filtrados</h3>
               </div>
               <div class="card-body">
-                <div class="row" id="lista-jogos">
-                </div>
+                <div class="row" id="lista-jogos"></div>
+              </div>
+              <div class="loader">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
               </div>
             </div>
           </div>
