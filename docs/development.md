@@ -32,6 +32,7 @@ O resultado da pesquisa será apresentado ao lado do Filtro de Jogos após o usu
 Nele aparecerão os cards dos jogos organizados `de tal maneira`.
 
 <br/>
+
 ## Informações do Jogo
 
 ### Requisitos
