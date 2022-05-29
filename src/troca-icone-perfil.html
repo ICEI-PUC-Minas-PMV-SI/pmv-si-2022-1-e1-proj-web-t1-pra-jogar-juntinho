@@ -111,18 +111,24 @@
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
                 <div>
-                  <img
-                    src="/src/img/tela_de_perfil/perfil-de-usuario.png"
-                    class="card-img-top"
-                    id="imagem-de-perfil"
-                    alt="Avatar"
-                  />
+                  <div id="imagem-avatar" class="shadow-lg rounded-circle">
+                    <img
+                      src="/src/img/tela_de_perfil/perfil-de-usuario.png"
+                      class="card-img-top"
+                      id="imagem-de-perfil"
+                      alt="Avatar"
+                    />
+                  </div>
                   <div id="Perfil-card-text">
-                    <h2 class="pixxelari text-center">Pedro Augusto</h2>
+                      <h2 class="pixxelari text-center">Pedro Augusto</h2>
                   </div>
                 </div>
+                
               </div>
               <div class="col-12 d-flex justify-content-center">
+                <div id="bottom-salvar-foto">
+                  <a id="bottom-salvar-icone" href="#" onclick="salvar();">
+                </div>
                 <button type="button" class="btn btn-primary">Salvar</button>
               </div>
             </div>
@@ -133,10 +139,10 @@
         <section>
           <div class="row mt-5">
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('cody');">
                 <div class="card">
                   <img
-                    class="card-img-top"
+                    class="card-img-top img-avatar"
                     src="/src/img/icones/cody.png"
                     alt="Card image cap"
                   />
@@ -144,10 +150,10 @@
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('may');">
                 <div class="card">
                   <img
-                    class="card-img-top"
+                    class="card-img-top img-avatar"
                     src="/src/img/icones/may.png"
                     alt="Card image cap"
                   />
@@ -155,110 +161,110 @@
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('01');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/cody.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/01.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('02');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/may.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/02.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('03');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/cody.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/03.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('04');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/may.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/04.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('05');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/cody.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/05.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('06');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/may.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/06.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('07');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/cody.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/07.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('08');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/may.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/08.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('09');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/cody.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/09.png"
                     alt="Card image cap"
                   />
                 </div>
               </a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-              <a href="#" class="card-transform">
+              <a href="#" class="card-transform" onclick="trocarImagemAvatar('10');">
                 <div class="card">
                   <img
-                    class="card-img-top"
-                    src="/src/img/icones/may.png"
+                    class="card-img-top img-avatar"
+                    src="/src/img/icones/10.png"
                     alt="Card image cap"
                   />
                 </div>
@@ -316,5 +322,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/src/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/troca-icone.js"></script>
   </body>
 </html>
