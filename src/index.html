@@ -280,6 +280,9 @@
           ></ul>
         </section>
       </div>
+      <div id="teste">
+        
+      </div>
     </main>
 
     <!-- Rodapé -->
@@ -321,6 +324,23 @@
         Para Jogar Juntinhos © 2022 Copyright
       </div>
     </footer>
+
+    <script>
+      URL = "http://www.gamespot.com/api/releases/?api_key=26fe1805330b5dafd2b07677de397e70eff7426b&format=json";
+
+      let img = "";
+
+      fetch(URL,{method: 'GET', mode: 'no-cors'})
+        .then((res) => {
+          console.log(res)
+          res.json()})
+        .then((releases) => {
+          console.log(releases)
+          // img = releases.results[0].images_api_url;
+        })
+
+        // document.getElementById('teste').innerHTML = `<img src="${img}" alt="">`
+    </script>
 
     <script>
       // URL DA API DE DADOS
