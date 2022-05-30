@@ -77,7 +77,7 @@ fetch(URL)
           </div>
           <br>
           <div class="d-flex justify-content-center">
-            <a href="http://localhost:3000/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+            <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@ fetch(URL)
           </div>
           <br>
           <div class="d-flex justify-content-center">
-            <a href="http://localhost:3000/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+            <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
           </div>
         </div>
       </div>
@@ -178,30 +178,30 @@ fetch(URL)
       }
       lista_jogos += `
       <li class="" style="
-      display: inline-block;
-      width: 210px;
-      margin-right: 10px;"
-    >
-      <div class="card shadow-lg">
-        <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
-        <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
-        <div class="card-body corpo-jogo-card">
-          <div class="d-flex justify-content-between">
-            <div>
-              ${plataformas}
+        display: inline-block;
+        width: 210px;
+        margin-right: 10px;"
+      >
+        <div class="card shadow-lg">
+          <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
+          <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+          <div class="card-body corpo-jogo-card">
+            <div class="d-flex justify-content-between">
+              <div>
+                ${plataformas}
+              </div>
+              <div>
+                <i class="fa-regular fa-heart texto-vermelho"></i>
+                <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
+              </div>
             </div>
-            <div>
-              <i class="fa-regular fa-heart texto-vermelho"></i>
-              <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
+            <br>
+            <div class="d-flex justify-content-center">
+              <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
             </div>
-          </div>
-          <br>
-          <div class="d-flex justify-content-center">
-            <a href="http://localhost:3000/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
           </div>
         </div>
-      </div>
-    </li>
+      </li>
     `;
     }
 
