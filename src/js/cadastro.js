@@ -11,16 +11,10 @@ cadastroForm.addEventListener("submit", (evt) => {
     fetch(URL) // Busca lista de usuários existentes
       .then((res) => res.json())
       .then((usuarios) => { // Retorna lista de usuários
-        validacao = usuarios.some((u) => { // Verifica se o nome de usuário já está sendo utilizado
-          if (u.nome === document.getElementById('nome').value) {
-            console.log("false",u.nome,document.getElementById('nome').value)
-            return false;
-          } else {
-            console.log("true",u.nome,document.getElementById('nome').value)
-            return true;
-          }
+        validacao = usuarios.some(u => {
+          return u.nome === document.getElementById('nome').value ? true : false;
         });
-        if (validacao) { // Se o nome não estiver sendo utilizado, cadastra um novo usuário
+        if (!validacao) { // Se o nome não estiver sendo utilizado, cadastra um novo usuário
           fetch(URL, {
             method: "POST",
             headers: {
