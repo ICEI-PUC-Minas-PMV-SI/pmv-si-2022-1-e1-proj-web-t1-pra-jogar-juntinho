@@ -35,6 +35,12 @@
       "nome": "Luana",
       "senha": "123",
       "avatar": "06"
+    },
+    {
+      "id": 7,
+      "nome": "Sandro",
+      "senha": "1234",
+      "avatar": ""
     }
   ]
 }
