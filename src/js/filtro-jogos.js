@@ -93,31 +93,28 @@ window.addEventListener("scroll", () => {
 this.showJogos();
 
 function filtrarJogos() {
-    console.log("teste");
-
-    lista_jogos.innerHTML = '';
+  lista_jogos.innerHTML = '';
 
   // input Nome do jogo
   let nome = document.getElementById("nome_jogo");
   // radio de Gêneros dos jogos
-  let genero = document.querySelector('input[name="radio-genero"]:checked').value;
-
+  let genero = document.querySelector('input[name="radio-genero"]:checked') === null ? null : document.querySelector('input[name="radio-genero"]:checked').value;
   // radio de Plataformas dos jogos
-  let plataforms = document.querySelector('input[name="radio-genero"]:checked').value;
+  let plataforms = document.querySelector('input[name="radio-plataforma"]:checked') === null ? null : document.querySelector('input[name="radio-plataforma"]:checked').value;
 
   limit = 100;
   page = 1;
-
+  console.log(plataforms);
   if(genero == null && plataforms == null){
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
   } else if(genero != null && plataforms == null) {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;
-  } else if(genero == null && plataforms != null) {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&plataforms=${plataforms}`;
-  } else {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&plataforms=${plataforms}`;
-  }
-
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;}
+//   } else if(genero == null && plataforms != null) {
+//     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&plataforms=${plataforms}`;
+//   } else {
+//     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&plataforms=${plataforms}`;
+//   }
+  console.log("teste", URL);
   fetch(URL)
     .then((res) => res.json())
     .then((jogos) => {
