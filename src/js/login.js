@@ -5,14 +5,13 @@ const logar = document.getElementById("logar");
 var localStorage = Window.localStorage;
 
 let validacao = false;
-let usuario = {};
 
 logar.addEventListener("click", (evt) => {
   fetch(URL)
     .then((res) => res.json())
     .then((usuarios) => {
       validacao = usuarios.some((u) => {
-        if (u.nome === document.getElementById('nome').value && u.senha === document.getElementById("senha").value) {
+        if (u.nome === document.getElementById("nome").value && u.senha === document.getElementById("senha").value) {
           usuario = u;
           return true;
         } else {

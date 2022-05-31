@@ -14,32 +14,20 @@
     },
     {
       "id": 3,
-      "nome": "fwafa",
-      "senha": "devomudar",
-      "avatar": ""
-    },
-    {
-      "id": 4,
       "nome": "Vitória3",
       "senha": "Teste",
       "avatar": ""
     },
     {
-      "id": 5,
-      "nome": "tettwetfrwafderf",
-      "senha": "teste",
+      "id": 4,
+      "nome": "Sandro",
+      "senha": "1234",
       "avatar": ""
     },
     {
-      "id": 6,
-      "nome": "Luana",
-      "senha": "123",
-      "avatar": "06"
-    },
-    {
-      "id": 7,
-      "nome": "Sandro",
-      "senha": "1234",
+      "id": 5,
+      "nome": "Super",
+      "senha": "",
       "avatar": ""
     }
   ]
