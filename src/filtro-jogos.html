@@ -136,30 +136,43 @@
                   <datalist id="datalistOptions">
                   </datalist>
                 </div>
-                <!-- Número Máximo de Jogadores -->
-                <div class="col-12">
-                  <label for="numero_max_jogadores" class="form-label mt-3">Número de Jogadores</label>
-                  <input type="number" class="form-control" id="numero_max_jogadores" placeholder="1,2,3...">
-                </div>
                 <!-- Gênero -->
                 <div class="col-6">
                   <label class="form-label mt-3">Gênero</label>
-                  <div class="form-check">
-                    <input class="form-check-input" name="acao" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                  <div class="form-radio">
+                    <input class="form-radio-input" name="radio-genero" type="radio" value="Ação" id="acao-radio">
+                    <label class="form-radio-label" for="acao-radio">
                       Ação
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" name="luta" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
+                  <div class="form-radio">
+                    <input class="form-radio-input" name="radio-genero" type="radio" value="Luta" id="luta-radio">
+                    <label class="form-radio-label" for="luta-radio">
                       Luta
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" name="tiro" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
+                  <div class="form-radio">
+                    <input class="form-radio-input" name="radio-genero" type="radio" value="Tiro" id="tiro-radio">
+                    <label class="form-radio-label" for="tiro-radio">
                       Tiro
+                    </label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" name="radio-genero" type="radio" value="RPG" id="rpg-radio">
+                    <label class="form-radio-label" for="rpg-radio">
+                      RPG
+                    </label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" name="radio-genero" type="radio" value="Indie" id="indie-radio">
+                    <label class="form-radio-label" for="indie-radio">
+                      Indie
+                    </label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" name="radio-genero" type="radio" value="Simulação" id="simulacao-radio">
+                    <label class="form-radio-label" for="simulacao-radio">
+                      Simulação
                     </label>
                   </div>
                 </div>
@@ -187,7 +200,7 @@
                 </div>
                 <!-- Botão de Buscar Jogos -->
                 <div class="col-12 d-flex justify-content-center">
-                  <button id="filtrar-jogos" type="button" class="btn btn-light mt-3 w-100 ">Buscar</button>
+                  <button onclick="filtrarJogos()" id="filtrar-jogos" type="button" class="btn btn-light mt-3 w-100 ">Buscar</button>
                 </div>
               </div>
             </div>
