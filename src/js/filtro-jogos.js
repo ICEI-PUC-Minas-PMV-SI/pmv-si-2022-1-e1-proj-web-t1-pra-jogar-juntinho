@@ -6,18 +6,24 @@ const icone_mac =
 const icone_lin =
   '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>';
 
+// Elementos do DOM
 const lista_jogos = document.getElementById("lista-jogos");
 const loading = document.querySelector(".loader");
 const filtro_nome_jogo = document.getElementById("nome_jogo");
+let nome = document.getElementById("nome_jogo").value;
+let genero = document.querySelector('input[name="radio-genero"]:checked') === null ? null : document.querySelector('input[name="radio-genero"]:checked').value;
 
-let limit = 21;
+// Parâmetros da rota
+let limit = 10;
 let page = 1;
 
 async function getJogos() {
-  const res = await fetch(
-    `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`
-  );
-
+  if (genero === null) {
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
+  } else if (genero !== null) {
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;
+  }
+  const res = await fetch(URL);
   const data = await res.json();
 
   return data;
@@ -83,85 +89,16 @@ function showLoading() {
 }
 
 window.addEventListener("scroll", () => {
-  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-
-  if (scrollTop + clientHeight >= scrollHeight - 1) {
-    showLoading();
-  }
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    if (scrollTop + clientHeight >= scrollHeight - 1) showLoading();
 });
 
 this.showJogos();
 
-function filtrarJogos() {
-  lista_jogos.innerHTML = '';
-
-  // input Nome do jogo
-  let nome = document.getElementById("nome_jogo");
-  // radio de Gêneros dos jogos
-  let genero = document.querySelector('input[name="radio-genero"]:checked') === null ? null : document.querySelector('input[name="radio-genero"]:checked').value;
-  // radio de Plataformas dos jogos
-  let plataforms = document.querySelector('input[name="radio-plataforma"]:checked') === null ? null : document.querySelector('input[name="radio-plataforma"]:checked').value;
-
-  limit = 100;
-  page = 1;
-  console.log(plataforms);
-  if(genero == null && plataforms == null){
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
-  } else if(genero != null && plataforms == null) {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;}
-//   } else if(genero == null && plataforms != null) {
-//     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&plataforms=${plataforms}`;
-//   } else {
-//     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&plataforms=${plataforms}`;
-//   }
-  console.log("teste", URL);
-  fetch(URL)
-    .then((res) => res.json())
-    .then((jogos) => {
-        jogos.forEach((jogo) => {
-            let plataformas = "";
-        
-            if (jogo.plataforms != null || jogo.plataforms !== []) {
-              jogo.plataforms.forEach((plataforma) => {
-                if (plataforma === "Windows") plataformas = plataformas + icone_win;
-                if (plataforma === "MacBook") plataformas = plataformas + icone_mac;
-                if (plataforma === "Linux") plataformas = plataformas + icone_lin;
-              });
-            }
-        
-            const jogoEl = document.createElement("div");
-            jogoEl.classList.add("jogos");
-            jogoEl.classList.add("col-sm-12");
-            jogoEl.classList.add("col-md-12");
-            jogoEl.classList.add("col-lg-4");
-            jogoEl.classList.add("mb-3");
-            jogoEl.innerHTML = `
-        
-              <div class="card shadow-lg">
-                <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
-                <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
-                <div class="card-body corpo-jogo-card">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      ${plataformas}
-                    </div>
-                    <div>
-                      <i class="fa-regular fa-heart texto-vermelho"></i>
-                      <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div class="d-flex justify-content-center pb-3">
-                  <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
-                </div>
-              </div>
-                `;
-        
-            lista_jogos.appendChild(jogoEl);
-        })
-    })
-    .catch(err => console.error(err));
+async function filtrarJogos() {
+  page = 1
+  nome = document.getElementById("nome_jogo").value;
+  genero = document.querySelector('input[name="radio-genero"]:checked') === null ? null : document.querySelector('input[name="radio-genero"]:checked').value;
+  lista_jogos.innerHTML = "";
+  this.showJogos();
 }
-
-
