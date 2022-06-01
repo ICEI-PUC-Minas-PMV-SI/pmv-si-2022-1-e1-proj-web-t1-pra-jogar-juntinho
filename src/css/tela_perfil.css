@@ -6,10 +6,6 @@ TIT = Titulo
 EP = Editar Perfil
 */
 
-h2 {
-  text-align: center;
-}
-
 #ImgPerfil {
   max-height: 150px;
 }
