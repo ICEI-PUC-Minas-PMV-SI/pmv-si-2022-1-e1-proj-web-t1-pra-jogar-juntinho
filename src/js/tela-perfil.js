@@ -1,13 +1,7 @@
 usuario = JSON.parse(window.localStorage.getItem("usuario")) 
-let nomeUsuario = `<h2 class="pixxelari">${usuario.nome}</h2>`
+let nomeUsuario = `<h2 class="pixxelari mt-3">${usuario.nome}</h2>`
 
 document.getElementById("perfil-card-text").innerHTML = nomeUsuario
-
-if (usuario.avatar !== ""){
-    let avtHtml = `<img src="/src/img/icones/${usuario.avatar}.png" class="card-img-top" alt="...">`
-    document.getElementById("imagem-de-perfil").classList.add("d-none")
-    document.getElementById("imagem-avatar").innerHTML = avtHtml
-}
 
 URL = "http://localhost:3001/jogos"
 URL = "http://localhost:3002/usuarios"
