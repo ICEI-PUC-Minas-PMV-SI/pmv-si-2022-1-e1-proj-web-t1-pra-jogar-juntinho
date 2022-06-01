@@ -25,6 +25,7 @@ logar.addEventListener("click", (evt) => {
             id: usuario.id,
             nome: usuario.nome,
             senha: usuario.senha,
+            avatar: usuario.avatar,
           })
         );
       } else {
