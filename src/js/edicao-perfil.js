@@ -7,7 +7,6 @@ if (usuario.avatar !== ""){
     document.getElementById("imagem-avatar").innerHTML = avtHtml
 }
 
-
 document.getElementById("perfil-card-text").innerHTML = nomeUsuario
 
 URL = "http://localhost:3002/usuarios"; //Usuários cadastrados
