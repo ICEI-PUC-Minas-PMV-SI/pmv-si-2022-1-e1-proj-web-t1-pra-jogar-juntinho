@@ -3,8 +3,14 @@ let nomeUsuario = `<h2 class="pixxelari">${usuario.nome}</h2>`
 
 document.getElementById("perfil-card-text").innerHTML = nomeUsuario
 
+if (usuario.avatar !== ""){
+    let avtHtml = `<img src="/src/img/icones/${usuario.avatar}.png" class="card-img-top" alt="...">`
+    document.getElementById("imagem-de-perfil").classList.add("d-none")
+    document.getElementById("imagem-avatar").innerHTML = avtHtml
+}
 
 URL = "http://localhost:3000/jogos"
+URL = "http://localhost:3002/usuarios"
 
 /* Alguns erros sao devidos a nao ter achado  */ 
 
@@ -13,7 +19,7 @@ const JogosDesejados = document.getElementById("Jogos-Desejados")
 fetch(URL)
     .then(res => res.json())
     .then(jogos => {
-        let jogos = "";
+        jogos = "";
         for (let i = 0; i < jogos.length; i++) {
             if (jogo[i].desejados = true) {
                 sDesejados = true;
@@ -39,7 +45,7 @@ function AlterarDesejados(sDesejados) {
     fetch(URL)
         .then(res => res.json())
         .then(jogos => {
-            let jogos = "";
+            jogos = "";
             for (let i = 0; i < jogos.length; i++) {
                 if (jogos[i].comentados = true) {
                     sComentados = true;

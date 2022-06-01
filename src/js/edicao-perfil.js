@@ -1,8 +1,6 @@
 usuario = JSON.parse(window.localStorage.getItem("usuario"))
 let nomeUsuario = `<h2 class="pixxelari">${usuario.nome}</h2>`
 
-console.log(usuario);
-
 if (usuario.avatar !== ""){
     let avtHtml = `<img src="/src/img/icones/${usuario.avatar}.png" class="card-img-top" alt="...">`
     document.getElementById("imagem-de-perfil").classList.add("d-none")
