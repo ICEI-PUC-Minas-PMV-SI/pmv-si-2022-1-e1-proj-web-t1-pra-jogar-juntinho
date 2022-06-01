@@ -71,3 +71,16 @@ EP = Editar Perfil
 .AJ-CARDS{
   margin-top: 5%;
 }
+
+.loader {
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  bottom: 50px;
+  transition: opacity 0.3s ease-in;
+  justify-content: center;
+}
+
+.loader.show {
+  opacity: 1;
+}

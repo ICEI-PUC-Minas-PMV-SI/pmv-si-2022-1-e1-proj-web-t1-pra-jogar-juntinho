@@ -18,10 +18,12 @@ let limit = 10;
 let page = 1;
 
 async function getJogos() {
-  if (genero === null) {
+  if (genero === null && nome === null) {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
-  } else if (genero !== null) {
+  } else if (genero !== null && nome === null) {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;
+  } else if (genero === null && nome !== null) {
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&title_like=${nome.replace(' ', '%20')}`
   }
   const res = await fetch(URL);
   const data = await res.json();
