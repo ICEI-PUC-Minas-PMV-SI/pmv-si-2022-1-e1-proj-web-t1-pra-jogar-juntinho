@@ -4,7 +4,7 @@
 <head>
 
   <!-- Meta tags -->
-  <title>JJ/Tela de perfil</title>
+  <title>Tela de perfil</title>
   <link rel="shortcut icon" type="imagex/png" href="/src/img/logo.png" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -73,12 +73,19 @@
             <div id="Card centralizar" style="width: 18rem;">
               <div class="d-flex">
                 <img src="/src/img/tela_de_perfil/perfil-de-usuario.png" class="card-img-top" alt="...">
+                <a id="Bottom-ConfigFoto" href="/src/troca-icone-perfil.html">
+                  <button type="button" class="btn btn-secondary rounded-pill text-right border border-dark" style="height: 44px;margin-left: -75px;margin-top: 202px;">
+                    <i class="fa-solid fa-pencil"></i>
+                    <div id="bottom-EditarFoto">
+                    </div>
+                  </button>
+                </a>
               </div>
 
               <div class="col-sm-12 col-md-10 col-lg-12 centralizar">
                 <div class="card-body-Perfil">
-                  <div id="Perfil-card-text">
-                    <h2 class="pixxelari">Pedro Augusto</h2>
+                  <div id="perfil-card-text">
+                    <h2 class="pixxelari"></h2>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-10 col-lg-12 centralizar">
@@ -1924,6 +1931,7 @@
     crossorigin="anonymous"></script>
   <script src="/src/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="/src/js/script.js"></script>
+  <script src="/src/js/tela-perfil.js"></script>
 </body>
 
 </html>
