@@ -1,4 +1,4 @@
-let usuario = JSON.parse(window.localStorage.getItem("usuario")) 
+usuario = JSON.parse(window.localStorage.getItem("usuario")) 
 let nomeUsuario = `<h2 class="pixxelari">${usuario.nome}</h2>`
 
 document.getElementById("perfil-card-text").innerHTML = nomeUsuario
