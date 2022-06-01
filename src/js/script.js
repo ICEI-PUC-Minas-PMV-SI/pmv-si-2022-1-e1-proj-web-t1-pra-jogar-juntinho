@@ -5,7 +5,7 @@ if(usuario !== null) {
   const nomeUsuarioHtml = document.createElement("a");
   nomeUsuarioHtml.setAttribute("id", "botao-perfil");
   nomeUsuarioHtml.setAttribute("class", "nav-link text-white btn btn-primary btn-login");
-  nomeUsuarioHtml.setAttribute("href", "/src/edicao-perfil.html");
+  nomeUsuarioHtml.setAttribute("href", "/src/TelaPerfil.html");
   nomeUsuarioHtml.innerHTML = usuario.nome
 
   document.querySelector('.navbar-nav').children[3].classList.add("d-none");
