@@ -12,23 +12,15 @@ Nesta seção estão descritos os artefatos e estruturas de dados criados para a
 
 Para atender aos requisitos RF-001, RF-003 e RF-004 foi desenvolvido a página de Filtro de Jogos.
 
-Ao acessar a página de filtro de perfil será exibido um botão do tipo `button` onde o usuário terá acesso a uma legenda dos ícones que ele encontrará nos cards dos jogos.
+Será exibido um botão que recolhe e expande onde o usuário terá acesso a uma legenda dos ícones que ele encontrará nos cards dos jogos que facilitará quais plataformas o jogo se encontra.
 
 ![legenda](img/entrega03/legenda.JPG)
 
-Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, número de jogadores desejado, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponiveis no site.
+Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, número de jogadores desejado, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponíveis no site.
 
 ![filtro](img/entrega03/filtro.JPG)
 
-O filtro é do tipo `x` que apresenta campos do tipo `y` para pesquisa de Nome do Jogo e Número de Jogadores, além de botões do tipo `z` para filtrar por gênero e plataforma.
-
-Feito o processo de filtro o usuário deverá clicar no botão buscar to tipo `v` que atualizará a página com os resultados da pesquisa feita pelo usuário.
-
-O resultado da pesquisa será apresentado ao lado do Filtro de Jogos após o usuário clicar em buscar.
-
-> adicionar a foto do resultado da busca (ainda não ta funcionando)
-
-Nele aparecerão os cards dos jogos organizados `de tal maneira`.
+Feito o processo de filtro o usuário deverá clicar no botão buscar que atualizará a página com os resultados da pesquisa feita pelo usuário. O resultado da pesquisa será apresentado ao lado do Filtro de Jogos
 
 <br/>
 
@@ -69,13 +61,13 @@ Os comentários foram feitos da `seguinte forma`
 
 - RF-006 - Permitir login do usuário
 
-Para atender ao requisito RF-006 foi desenvolvido a página de login.
+Para atender ao requisito RF-006 foi desenvolvido a página de Login.
 
-Ao clicar em fazer login, disponível no menu da página, aparecerá os compos de login para o usuário.
+Ao clicar em fazer login, disponível no menu da página inicial, irá carregar a tela de login para o usuário.
 
-![login](img/entrega03/login.JPG))
+![login](img/entrega03/login.JPG)
 
-Será exibido dois campos, Nome/Nickname e Password respectivamente para o usuário entrar com um cadastro já realizado no site, se não possuir cadastro haverá um botão que levará até a tela de Cadastro
+Será exibido dois campos, Nome/Nickname e Password respectivamente para o usuário entrar com um cadastro já realizado no site, se não possuir cadastro haverá um botão que levará até a tela de Cadastro.
 
 <br/>
 
@@ -85,13 +77,13 @@ Será exibido dois campos, Nome/Nickname e Password respectivamente para o usuá
 
 - RF-005 - Permitir cadastro de usuário
 
-Para atender ao requisito RF-005 foi desenvolvido a página de cadastro.
+Para atender ao requisito RF-005 foi desenvolvido a página de Cadastro.
 
-Será disponibilizado ao usuário um formulário onde ele poderá cadastras informações como Name/Nickname e senha para criar o usuário e fazer login.
+Será disponibilizado ao usuário um formulário onde ele poderá cadastrar suas informações como Nome/Nickname e senha para criar um usuário no site e fazer login futuramente.
 
 ![cadastro](img/entrega03/cadastro.JPG)
 
-O formulario é do tipo `x` com campos do tipo `y`.
+Ao final depois de inserir seus dados, para confirmar cadastro no Pra Jogar Juntinho basta clicar no botão "Cadastrar". Pronto você será redirecionado para a tela inicial e agora você consegue comentar e favoritar seus jogos preferidos para poder jogar mais tarde com seus amigos.
 
 <br/>
 
@@ -104,9 +96,7 @@ O formulario é do tipo `x` com campos do tipo `y`.
 
 Para atender aos requisitos RF-007 e RF-009 foi desenvolvido dois botões disponiveis no card do jogo.
 
-> adicionar imagens dos botões.
 
-Os botões são do tipo `x`.
 
 <br/>
 
