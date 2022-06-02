@@ -12,18 +12,27 @@ const loading = document.querySelector(".loader");
 const filtro_nome_jogo = document.getElementById("nome_jogo");
 let nome = document.getElementById("nome_jogo").value;
 let genero = document.querySelector('input[name="radio-genero"]:checked') === null ? null : document.querySelector('input[name="radio-genero"]:checked').value;
+let plataforms = document.querySelector('input[name="radio-plataforma"]:checked') === null ? null : document.querySelector('input[name="radio-plataforma"]:checked').value;
 
 // Parâmetros da rota
 let limit = 10;
 let page = 1;
 
 async function getJogos() {
-  if (genero === null && nome === null) {
+  if (genero === null && nome === null && plataforms === null) {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
-  } else if (genero !== null && nome === null) {
+  } else if (genero !== null && nome === null && plataforms === null) {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;
-  } else if (genero === null && nome !== null) {
+  } else if (genero === null && nome !== null && plataforms === null) {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&title_like=${nome.replace(' ', '%20')}`
+  } else if (genero !== null && nome !== null && plataforms === null) {
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&title_like=${nome.replace(' ', '%20')}`
+  } else if (genero === null && nome === null && plataforms !== null) {
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&plataforms=${plataforms}`
+  } else if (genero !== null && nome === null && plataforms !== null) {
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&plataforms=${plataforms}`
+  } else if (genero !== null && nome !== null && plataforms !== null) {
+    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&plataforms=${plataforms}&title_like=${nome.replace(' ', '%20')}`
   }
   const res = await fetch(URL);
   const data = await res.json();
@@ -94,6 +103,17 @@ window.addEventListener("scroll", () => {
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
     if (scrollTop + clientHeight >= scrollHeight - 1) showLoading();
 });
+
+// // Filtra jogos com gênero Aventura
+// jogos = jogos.filter((j) => {
+//   if (j.genres != null || j.genres !== []) {
+//     genero = j.genres.find((g) => g === "RPG");
+//     genero === undefined ? false : true;
+//     return genero;
+//   } else {
+//     return false;
+//   }
+// });
 
 this.showJogos();
 

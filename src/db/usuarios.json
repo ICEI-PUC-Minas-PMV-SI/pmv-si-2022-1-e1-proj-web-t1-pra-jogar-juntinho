@@ -29,6 +29,12 @@
       "nome": "Super",
       "senha": "",
       "avatar": ""
+    },
+    {
+      "id": 6,
+      "nome": "Hugo",
+      "senha": "1234",
+      "avatar": "10"
     }
   ]
 }
