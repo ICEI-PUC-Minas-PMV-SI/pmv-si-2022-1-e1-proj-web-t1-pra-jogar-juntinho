@@ -16,11 +16,11 @@ Será exibido um botão que recolhe e expande onde o usuário terá acesso a uma
 
 ![legenda](img/entrega03/legenda.JPG)
 
-Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, número de jogadores desejado, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponíveis no site.
+Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponíveis no site.
 
 ![filtro](img/entrega03/filtro.JPG)
 
-Feito o processo de filtro o usuário deverá clicar no botão buscar que atualizará a página com os resultados da pesquisa feita pelo usuário. O resultado da pesquisa será apresentado ao lado do Filtro de Jogos
+Feito o processo de filtro o usuário deverá clicar no botão buscar que retornará os resultados da pesquisa feita pelo usuário. O resultado da pesquisa será apresentado ao lado do Filtro de Jogos em forma de lista, onde apareceram os cards com algumas informações do jogos, podendo também favoritar, compartilhar o link do jogo ou ver mais informações do jogos escolhido.
 
 <br/>
 
