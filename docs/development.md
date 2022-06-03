@@ -2,6 +2,24 @@
 
 Nesta seção estão descritos os artefatos e estruturas de dados criados para atender aos requisitos previstos nas <a href="./especification.md">Especificações do Projeto</a>, bem como as instruções para acesso e verificação da implementação. As tecnologias utilizadas se baseiam nas linguagens HTML, CSS e JavaScript.
 
+## Página Inicial
+
+Aqui onde nosso site se inicia, uma tela repleta de funções que faz ligação com as demais do site. No início da página será disponibilizado um carrossel dos jogos mais buscados no site.
+
+![carrosel](img/entrega03/carrossel.JPG)
+
+Logo em seguida terá um legenda com informações sobre qual plataforma os jogos se encontram disponíveis.
+
+![legenda](img/entrega03/legenda.JPG)
+
+E por fim a exibição dos jogos em formato de cards com alguma seleções de gêneros pré definidos.
+
+![cards](img/entrega03/cards.JPG)
+
+Caso prefira buscar por outras modalidades basta ir no botão "Filtro de Jogos" que se encontra na nosso Menu
+
+<br/>
+
 ## Filtro de Jogos
 
 ### Requisitos
@@ -94,9 +112,13 @@ Ao final depois de inserir seus dados, para confirmar cadastro no Pra Jogar Junt
 - RF-007 - Permitir o usuário a favoritar jogos
 - RF-009 - Permitir usuário avaliar um jogo
 
-Para atender aos requisitos RF-007 e RF-009 foi desenvolvido dois botões disponiveis no card do jogo.
+Para atender aos requisitos RF-007 foi desenvolvido nos cards dos jogos um botão com símbolo de coração.
 
+![favoritos](img/entrega03/favoritar.JPG)
 
+Os jogos favoritados ficará disponível no perfil do usuário.
+
+`Falta ainda a parte de avaliar o jogo`
 
 <br/>
 
@@ -108,12 +130,10 @@ Para atender aos requisitos RF-007 e RF-009 foi desenvolvido dois botões dispon
 
 Para atender ao requisito foi desenvolvido a página de Tela de Perfil.
 
-Ao clicar no botão de perfil no menu disponivel após o login aparecerá a tela de perfil.
+Ao clicar no botão onde estiver escrito seu Nome/NickName no menu disponivel após o login aparecerá a tela de perfil.
 
-> adicionar imagem da tela de perfil.
+![perfil](img/entrega03/telaPerfil.JPG)
 
 Nela o usuário podera visualizar a lista de jogos favoritadas e comentados, além de poder editar informações como o ícone de perfil, nome/nickname e senha.
-
-São do tipo `c`.
 
 <br/>
