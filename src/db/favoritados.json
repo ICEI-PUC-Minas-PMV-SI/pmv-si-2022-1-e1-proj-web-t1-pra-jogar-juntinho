@@ -1,0 +1,12 @@
+{
+  "favoritados": [
+    {
+      "id_jogo": 1,
+      "id_usuario": 1
+    },
+    {
+      "id_jogo": 1,
+      "id_usuario": 2
+    }
+  ]
+}

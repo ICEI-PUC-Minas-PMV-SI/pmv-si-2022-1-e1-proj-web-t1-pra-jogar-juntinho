@@ -77,13 +77,37 @@ async function showJogos() {
         </div>
         <br>
         <div class="d-flex justify-content-center pb-3">
-          <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+          <a href="#" onclick="maisInformacoes(
+            ${jogo.id},
+            '${jogo.title}',
+            '${jogo.description}',
+            '${jogo.developers}',
+            '${jogo.distributor}',
+            '${jogo.serie}',
+            '${jogo.release_date}',
+            '${jogo.genres}',
+            '${jogo.plataforms}',
+            '${jogo.tags}',
+            '${jogo.img_sm}',
+            '${jogo.img_md}',
+            '${jogo.img_lg}',
+            '${jogo.trailer}',
+            '${jogo.steam_link}'
+            )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
         </div>
       </div>
         `;
 
     lista_jogos.appendChild(jogoEl);
   });
+}
+
+function maisInformacoes(id, title, description, developers, distributor, serie, release_date, genres, plataforms, tags, img_sm, img_md, img_lg, trailer, steam_link) {
+  window.localStorage.setItem('jogo',JSON.stringify({
+    id, title, description, developers, distributor, serie, release_date, genres: genres.split(','), plataforms: plataforms.split(','), tags: tags.split(','), img_sm, img_md, img_lg, trailer, steam_link
+  }))
+
+  window.location.href = "http://127.0.0.1:5500/src/informacoes-jogo.html";
 }
 
 function showLoading() {

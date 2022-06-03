@@ -13,6 +13,9 @@
   "scripts": {
     "jogos": "npx json-server src/db/jogos.json --watch --port 3001",
     "usuarios": "npx json-server src/db/usuarios.json --watch --port 3002",
+    "comentarios": "npx json-server src/db/comentarios.json --watch --port 3003",
+    "curtidas": "npx json-server src/db/curtidas.json --watch --port 3004",
+    "favoritados": "npx json-server src/db/favoritados.json --watch --port 3005",
     "dev-start": "node src/js/server.js"
   },
   "repository": {

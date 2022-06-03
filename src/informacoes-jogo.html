@@ -97,118 +97,97 @@
     <main>
         <!-- Conteúdo -->
         <div class="container conteudo my-4">
-            <div class="row">
-                <!-- Capa do Jogo -->
-                <div class="col-9">
-                    <div class="card">
-                        <video src="/src/mp4/Remnant_vid1.mp4" controls></video>
-                        <div class="card-body bg-black text-white">
-                          <h5 class="card-title">Remnant</h5>
-                          <p class="card-text" style="text-align: justify;">Remnant: From the Ashes é um jogo de sobrevivência em terceira pessoa, 
-                            em um mundo pós-apocalíptico infestado de criaturas monstruosas. Você, um dos últimos remanescentes da humanidade, vai enfrentar sozinho - ou acompanhado por até dois outros sobreviventes - 
-                            as hordas de inimigos mortais e os chefes épicos para tentar retomar o que foi perdido.</p>   
-                        </div>
-                      </div>
-                      <!-- Comentário Usuário -->
-                      <div class="col-12">
-                        <div class="card-header">
-                          Comentários
-                        </div>
-                          <div class="card-body">
-                          
-                            <h5 class="card-title">Luíz Otávio</h5>
-                            <img src="/src/img/tela_de_jogo/icon1.png" width="80" height="70">
-                            <div class="card">
-                              <div class="card-body">
-                                Ótimo jogo, perfeito para jogar com os amigos
-                              </div>
-                            </div>
-                            <div>
-                              <i class="fa-solid fa-paper-plane texto-azul justify-content-end"></i>
-                              <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
-                          </div>
-                            <h5 class="card-title">Marcela Alcantra</h5>
-                            <img src="/src/img/tela_de_jogo/icon2.png" width="80" height="70">
-                            <div class="card">
-                              <div class="card-body">
-                                Gampeplay INSANA, lembra muito Dark Souls, só que com armas de fogo rsrsrs
-                              </div>
-                            </div>
-                            <div>
-                              <i class="fa-solid fa-paper-plane texto-azul justify-content-end"></i>
-                              <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
-                          </div>
-                            <h5 class="card-title">Pedrinho Gamer</h5>
-                            <img src="/src/img/tela_de_jogo/icon3.png" width="80" height="70">
-                            <div class="card">
-                              <div class="card-body">
-                                Arte do jogo muito bonita, boa movimentação, peca em algumas particularidades, mas a nota é 8.
-                              </div>
-                            </div>   
-                            <div>
-                              <i class="fa-solid fa-paper-plane texto-azul justify-content-end"></i>
-                              <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
-                          </div>
-                          </p>
-                          <div class="form-group">
-                           <p><input type="comentário" class="form-control" id="exampleInputComent1" aria-describedby="comentHelp" placeholder="Deixe aqui seu comentário"></p>
-                          </div>
-                          <a href="#" class="btn btn-primary">Enviar</a>
-                          </div>
-                          </div>
+
+          <div class="row">
+            <!-- Capa do Jogo -->
+            <div class="col-9">
+              <div class="card">
+                <!-- Trailer -->
+                <video id="trailer" src="#" controls></video>
+                <div class="card-body bg-black text-white">
+                  <!-- Título -->
+                  <h5 id="title" class="card-title"></h5>
+                  <!-- Descrição -->
+                  <p id="description" class="card-text" style="text-align: justify;"></p>
                 </div>
-                <!-- Informações do Jogo -->
-                <div class="col-3">
-                  <div class="card p-3">
-                    <h5 class="h6 card-title">Remnant: From the Ashes</h5>
-                    <img src="/src/img/cards/remnant-from-the-ashes.png" class="card-img-top" alt="Remnant from the ashes">
-                    <div class="card-body px-0 pb-0 pt-3">
-                      <div class="d-flex justify-content-between">
-                        <div>
-                          <i class="fa-solid fa-users texto-azul"> 3</i>
-                          <span class="iconify texto-azul" style="width: 25px;height: 25px;vertical-align: bottom;" data-icon="mdi:sony-playstation"></span>
-                          <i class="fa-solid fa-desktop texto-azul"></i>
-                        </div>
-                        <div>
-                          <i class="fa-regular fa-heart texto-vermelho"></i>
-                          <i class="fa-solid fa-paper-plane texto-azul"></i>
-                        </div>
+              </div>
+              <div>
+                <!-- Comentário Usuário -->
+                <div class="col-12 mt-5">
+                  <div class="card-header">
+                    Comentários
+                  </div>
+                  <div class="card-body">
+                    <!-- Comentário -->
+                    <h5 class="card-title">Luíz Otávio</h5>
+                    <img src="/src/img/tela_de_jogo/icon1.png" width="80" height="70">
+                    <div class="card">
+                      <div class="card-body">
+                        Ótimo jogo, perfeito para jogar com os amigos
                       </div>
-                      <br>
-                      <hr class="mt-0">
-                      <h5 class="pixxelari">Co-op</h5>
-                      <ul>
-                        <li>Online</li>
-                        <li>Local</li>
-                      </ul>
-                      <hr>
-                      <h5 class="pixxelari">Plataformas</h5>
-                      <ul>
-                        <li>Playstation 4</li>
-                        <li>Playstation 5</li>
-                        <li>PC</li>
-                      </ul>
-                      <hr>
-                      <h5 class="pixxelari">Gêneros</h5>
-                      <ul>
-                        <li>Ação</li>
-                        <li>Tiro</li>
-                      </ul>
-                      <hr>
-                      <h5 class="pixxelari">Tema</h5>
-                      <ul>
-                        <li>Futurista</li>
-                        <li>Fantasia</li>
-                      </ul>
-                      <hr>
-                      <h5 class="pixxelari">Lançamento</h5>
-                      <p class="card-text">31/12/2000</p>
                     </div>
+                    <div>
+                      <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
+                    </div>
+                    <!-- ---------------------------------------------- -->
+                    <h5 class="card-title">Marcela Alcantra</h5>
+                    <img src="/src/img/tela_de_jogo/icon2.png" width="80" height="70">
+                    <div class="card">
+                      <div class="card-body">
+                          Gampeplay INSANA, lembra muito Dark Souls, só que com armas de fogo rsrsrs
+                      </div>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-paper-plane texto-azul justify-content-end"></i>
+                      <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
+                    </div>
+                    <h5 class="card-title">Pedrinho Gamer</h5>
+                    <img src="/src/img/tela_de_jogo/icon3.png" width="80" height="70">
+                    <div class="card">
+                      <div class="card-body">
+                        Arte do jogo muito bonita, boa movimentação, peca em algumas particularidades, mas a nota é 8.
+                      </div>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-paper-plane texto-azul justify-content-end"></i>
+                      <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
+                    </div>
+                    <hr>
+                    <div class="form-group mb-3">
+                      <input type="text" class="form-control" id="exampleInputComent1" aria-describedby="comentHelp" placeholder="Deixe aqui seu comentário">
+                    </div>
+                    <a href="#" class="btn btn-primary">Enviar</a>
                   </div>
                 </div>
+              </div>
             </div>
-            
-        
+            <!-- Informações do Jogo -->
+            <div class="col-3">
+              <div class="card p-3">
+                <h5 id="title-two" class="h6 card-title"></h5>
+                <img id="img_sm" src="" class="card-img-top" alt="Remnant from the ashes">
+                <div class="card-body px-0 pb-0 pt-3">
+                  <div class="d-flex justify-content-between">
+                    <div id="plataforms"></div>
+                    <div>
+                      <i class="fa-regular fa-heart texto-vermelho"></i>
+                      <i class="fa-solid fa-paper-plane texto-azul"></i>
+                    </div>
+                  </div>
+                  <br>
+                  <hr class="mt-0">
+                  <h5 class="pixxelari">Gêneros</h5>
+                  <ul id="genres"></ul>
+                  <hr>
+                  <h5 class="pixxelari">Tags</h5>
+                  <ul id="tags"></ul>
+                  <hr>
+                  <h5 class="pixxelari">Lançamento</h5>
+                  <p id="release_date" class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
     </main>
@@ -258,5 +237,6 @@
       ></script>
       <script src="/src/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
       <script src="/src/js/script.js"></script>
+      <script src="/src/js/informacoes-jogo.js"></script>
     </body>
   </html>
