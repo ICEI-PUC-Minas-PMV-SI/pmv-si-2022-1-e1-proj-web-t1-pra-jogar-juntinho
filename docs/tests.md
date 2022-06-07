@@ -1,28 +1,35 @@
 # Plano de Testes de Software
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+## Resultados Esperados
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| Nº Teste | Página | Cenário de teste |
+|-----------|-----------------------------------------|----|
+|TF-001| Home | Ao abrir a index, é esperado que sejam carregados os "cards" de Depoimento, Denúncia, Redes de Apoio e o carrossel de notícias, bem como a topbar e a footbar. |
+|TF-001| Home | Ao abrir a index, é esperado que sejam carregados os "cards" de Depoimento, Denúncia, Redes de Apoio e o carrossel de notícias, bem como a topbar e a footbar. |
 
 # Registro de Testes de Software
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+## Resultados Obtidos
+
+| Nº Teste | Página | Resultado do Teste | Bugs? |
+|----|-----------------------------------------|----|----|
+|RTF-001| Home | Todos os "cards" previstos foram carregados na index/homepage sem atrasos ou bugs. | NÃO |
+|RTF-002| Home | O botão direciona corretamente o usuário para a página esperada. | NÃO |
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Foram realizados testes funcionais do sistema, de acordo com o Plano de testes funcionais, no ambiente de produção no dia 00 de Junho de 2022 às 00h00.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+Foram reportados os seguintes bugs:
+
+- (RTF-004) Ao clicar na opção "Ver mais" em um dos cards "Redes de Apoio" da homepage, o usuário é direcionado para a página de Redes de Apoio sem a apresentação das informações da instituição selecionada na index.
+
+- (RTF-009) Ao fazer a seleção de uma cidade na página "Redes de Apoio", os dados da cidade selecionada anteriormente permanecem na tela, apenas acumulando as informações junto às da nova seleção.
+
+Os bugs ainda não foram resolvidos até a escrita deste documento.
+
+Novos testes serão realizados em breve após a correção dos problemas.
+
+<hr>
+ 
+<p align="left"><a href="./development.md">Programação de Funcionalidades</a>
