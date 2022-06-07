@@ -1,18 +1,3 @@
-// URL = "http://www.gamespot.com/api/articles/?api_key=26fe1805330b5dafd2b07677de397e70eff7426b&format=json";
-
-// let img = "";
-
-// fetch(URL,{method: 'GET', mode: 'no-cors'})
-//   .then((res) => {
-//     console.log(res)
-//     res.json()})
-//   .then((releases) => {
-//     console.log(releases)
-//     // img = releases.results[0].images_api_url;
-//   })
-
-//   // document.getElementById('teste').innerHTML = `<img src="${img}" alt="">`
-
 // URL DA API DE DADOS
 URL = "http://localhost:3001/jogos?_page=0&_limit=300";
 
@@ -76,8 +61,24 @@ fetch(URL)
             </div>
           </div>
           <br>
-          <div class="d-flex justify-content-center">
-            <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+          <div class="d-flex justify-content-center pb-3">
+            <a href="#" onclick="maisInformacoes(
+              ${jogo.id},
+              '${jogo.title}',
+              '${jogo.description}',
+              '${jogo.developers}',
+              '${jogo.distributor}',
+              '${jogo.serie}',
+              '${jogo.release_date}',
+              '${jogo.genres}',
+              '${jogo.plataforms}',
+              '${jogo.tags}',
+              '${jogo.img_sm}',
+              '${jogo.img_md}',
+              '${jogo.img_lg}',
+              '${jogo.trailer}',
+              '${jogo.steam_link}'
+            )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
           </div>
         </div>
       </div>
@@ -136,8 +137,24 @@ fetch(URL)
             </div>
           </div>
           <br>
-          <div class="d-flex justify-content-center">
-            <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+          <div class="d-flex justify-content-center pb-3">
+            <a href="#" onclick="maisInformacoes(
+              ${jogo.id},
+              '${jogo.title}',
+              '${jogo.description}',
+              '${jogo.developers}',
+              '${jogo.distributor}',
+              '${jogo.serie}',
+              '${jogo.release_date}',
+              '${jogo.genres}',
+              '${jogo.plataforms}',
+              '${jogo.tags}',
+              '${jogo.img_sm}',
+              '${jogo.img_md}',
+              '${jogo.img_lg}',
+              '${jogo.trailer}',
+              '${jogo.steam_link}'
+            )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
           </div>
         </div>
       </div>
@@ -196,8 +213,24 @@ fetch(URL)
               </div>
             </div>
             <br>
-            <div class="d-flex justify-content-center">
-              <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+            <div class="d-flex justify-content-center pb-3">
+              <a href="#" onclick="maisInformacoes(
+                ${jogo.id},
+                '${jogo.title}',
+                '${jogo.description}',
+                '${jogo.developers}',
+                '${jogo.distributor}',
+                '${jogo.serie}',
+                '${jogo.release_date}',
+                '${jogo.genres}',
+                '${jogo.plataforms}',
+                '${jogo.tags}',
+                '${jogo.img_sm}',
+                '${jogo.img_md}',
+                '${jogo.img_lg}',
+                '${jogo.trailer}',
+                '${jogo.steam_link}'
+              )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
             </div>
           </div>
         </div>
@@ -208,3 +241,11 @@ fetch(URL)
     // Coloca a lista de jogos na página
     document.getElementById("rpg").innerHTML = lista_jogos;
   });
+
+function maisInformacoes(id, title, description, developers, distributor, serie, release_date, genres, plataforms, tags, img_sm, img_md, img_lg, trailer, steam_link) {
+  window.localStorage.setItem('jogo',JSON.stringify({
+    id, title, description, developers, distributor, serie, release_date, genres: genres.split(','), plataforms: plataforms.split(','), tags: tags.split(','), img_sm, img_md, img_lg, trailer, steam_link
+  }))
+
+  window.location.href = "http://127.0.0.1:5500/src/informacoes-jogo.html";
+}

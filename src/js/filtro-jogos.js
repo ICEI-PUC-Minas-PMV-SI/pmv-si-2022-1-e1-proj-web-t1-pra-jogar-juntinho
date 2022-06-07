@@ -93,7 +93,7 @@ async function showJogos() {
             '${jogo.img_lg}',
             '${jogo.trailer}',
             '${jogo.steam_link}'
-            )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+          )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
         </div>
       </div>
         `;
