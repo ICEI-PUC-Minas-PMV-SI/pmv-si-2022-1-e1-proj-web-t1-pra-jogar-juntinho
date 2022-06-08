@@ -54,7 +54,7 @@ Para atender aos requisitos RF-002, RF-010 e RF-011 foi desenvolvido a página d
 
 Ao clicar em um card de um jogo específico aparecerá para o usuário a página de Informações do Jogo, nela ele tera acesso à esquerda um vídeo do jogo acompanhado de uma descrição do jogo.
 
-> adicioanar imagem do video e da descrição (ainda não funciona)
+> adicionar imagem do video e da descrição (ainda não funciona)
 
 O vídeo foi adicionado da `seguinte maneira` e a descrição `assim`.
 
@@ -97,11 +97,11 @@ Será exibido dois campos, Nome/Nickname e Password respectivamente para o usuá
 
 Para atender ao requisito RF-005 foi desenvolvido a página de Cadastro.
 
-Será disponibilizado ao usuário um formulário onde ele poderá cadastrar suas informações como Nome/Nickname e senha para criar um usuário no site e fazer login futuramente.
+Será disponibilizado ao usuário um formulário onde ele poderá cadastrar suas informações como Nome/Nickname e senha (que são IDs armazenados em .json e fazem a validação atráves do JavaScript) para criar um usuário no site e fazer login futuramente.
 
 ![cadastro](img/entrega03/cadastro.JPG)
 
-Ao final depois de inserir seus dados, para confirmar cadastro no Pra Jogar Juntinho basta clicar no botão "Cadastrar". Pronto você será redirecionado para a tela inicial e agora você consegue comentar e favoritar seus jogos preferidos para poder jogar mais tarde com seus amigos.
+Ao final depois de inserir seus dados, para confirmar cadastro no Pra Jogar Juntinho basta clicar no botão "Cadastrar" que executará a linha de códigos seguinte: `cadastroForm.addEventListener("submit", (evt) => {`, após o JavaScript conferir se a senha está igual ao campo de confirmar a senha dado por: `if (document.getElementById("senha").value === document.getElementById("confirmar-senha").value) {`, ele verificará se o usuário já existe no storage da seguinte forma: `validacao = usuarios.some(u => {return u.nome === document.getElementById('nome').value ? true : false;});`. As validações estando OK, o cadastro será efetivado e o usuário será levado de volta a tela inicial `window.location.href = "http://127.0.0.1:5500/src/index.html";`, pronto, agora você consegue comentar e favoritar seus jogos preferidos para poder jogar mais tarde com seus amigos.
 
 <br/>
 
