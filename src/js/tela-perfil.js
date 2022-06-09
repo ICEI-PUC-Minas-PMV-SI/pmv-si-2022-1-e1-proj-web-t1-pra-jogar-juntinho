@@ -1,4 +1,4 @@
-usuario = JSON.parse(window.localStorage.getItem("usuario")) 
+usuario = JSON.parse(window.localStorage.getItem("usuario"))
 let nomeUsuario = `<h2 class="pixxelari mt-3">${usuario.nome}</h2>`
 
 if (usuario.avatar !== ""){

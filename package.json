@@ -19,7 +19,7 @@
     "curtidas": "npx json-server src/db/curtidas.json --watch --port 3004",
     "favoritados": "npx json-server src/db/favoritados.json --watch --port 3005",
     "artigos": "npx json-server src/db/artigos.json --watch --port 3006",
-    "dev-start": "node src/js/server.js"
+    "noticias": "node ./src/js/server.js"
   },
   "repository": {
     "type": "git",

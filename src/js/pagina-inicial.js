@@ -9,6 +9,18 @@ const icone_mac =
 const icone_lin =
   '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>';
 
+
+let favoritados = []
+
+// Buscar Favoritados
+fetch(`http://localhost:3005/favoritados?id_usuario=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
+  .then((res) => res.json())
+  .then((favoritadosRes) => {
+    favoritados = favoritadosRes;
+  })
+  .catch(error => console.error(error)
+);
+
 // Pegar lista de jogos
 fetch(URL)
   .then((res) => res.json())
@@ -30,6 +42,8 @@ fetch(URL)
     for (let i = 0; i < 20; i++) {
       let jogo = jogos[i];
       let plataformas = "";
+      let displayNoneRegular = "";
+      let displayNoneSolid = "d-none";
 
       if (jogo.plataforms != null || jogo.plataforms !== []) {
         jogo.plataforms.forEach((plataforma) => {
@@ -41,6 +55,14 @@ fetch(URL)
             plataformas = plataformas + icone_lin;
         });
       }
+
+      if(favoritados.length > 0) {
+        if(favoritados.some(f => f.id_jogo === jogo.id)) {
+          displayNoneRegular = "d-none";
+          displayNoneSolid = "";
+        }
+      }
+
       lista_jogos += `
     <li class="" style="
       display: inline-block;
@@ -56,7 +78,8 @@ fetch(URL)
               ${plataformas}
             </div>
             <div>
-              <i class="fa-regular fa-heart texto-vermelho"></i>
+              <i id="regular_heart_acao_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'acao')"></i>
+              <i id="solid_heart_acao_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
@@ -106,6 +129,8 @@ fetch(URL)
     for (let i = 0; i < 20; i++) {
       let jogo = jogos[i];
       let plataformas = "";
+      let displayNoneRegular = "";
+      let displayNoneSolid = "d-none";
 
       if (jogo.plataforms != null || jogo.plataforms !== []) {
         jogo.plataforms.forEach((plataforma) => {
@@ -117,6 +142,14 @@ fetch(URL)
             plataformas = plataformas + icone_lin;
         });
       }
+
+      if(favoritados.length > 0) {
+        if(favoritados.some(f => f.id_jogo === jogo.id)) {
+          displayNoneRegular = "d-none";
+          displayNoneSolid = "";
+        }
+      }
+
       lista_jogos += `
       <li class="" style="
       display: inline-block;
@@ -132,7 +165,8 @@ fetch(URL)
               ${plataformas}
             </div>
             <div>
-              <i class="fa-regular fa-heart texto-vermelho"></i>
+            <i id="regular_heart_aventura_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'aventura')"></i>
+              <i id="solid_heart_aventura_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
@@ -182,6 +216,8 @@ fetch(URL)
     for (let i = 0; i < 20; i++) {
       let jogo = jogos[i];
       let plataformas = "";
+      let displayNoneRegular = "";
+      let displayNoneSolid = "d-none";
 
       if (jogo.plataforms != null || jogo.plataforms !== []) {
         jogo.plataforms.forEach((plataforma) => {
@@ -193,6 +229,14 @@ fetch(URL)
             plataformas = plataformas + icone_lin;
         });
       }
+
+      if(favoritados.length > 0) {
+        if(favoritados.some(f => f.id_jogo === jogo.id)) {
+          displayNoneRegular = "d-none";
+          displayNoneSolid = "";
+        }
+      }
+
       lista_jogos += `
       <li class="" style="
         display: inline-block;
@@ -208,7 +252,8 @@ fetch(URL)
                 ${plataformas}
               </div>
               <div>
-                <i class="fa-regular fa-heart texto-vermelho"></i>
+              <i id="regular_heart_rpg_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'rpg')"></i>
+                <i id="solid_heart_rpg_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}"></i>
                 <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
               </div>
             </div>
@@ -248,4 +293,30 @@ function maisInformacoes(id, title, description, developers, distributor, serie,
   }))
 
   window.location.href = "http://127.0.0.1:5500/src/informacoes-jogo.html";
+}
+
+function favoritar(jogoId, jogoGenero) {
+  if(window.localStorage.getItem('usuario') === null) {
+    window.location.href = "http://127.0.0.1:5500/src/login.html";
+  } else {
+    document.getElementById('regular_heart_' + jogoGenero + '_' + jogoId).classList.add("d-none")
+    document.getElementById('solid_heart_' + jogoGenero + '_' + jogoId).classList.remove("d-none")
+    fetch("http://localhost:3005/favoritados", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: null,
+          id_jogo: jogoId,
+          id_usuario: JSON.parse(window.localStorage.getItem("usuario")).id
+        }),
+      })
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response)
+      })
+      .catch(error => console.error(error)
+    );
+  }
 }
