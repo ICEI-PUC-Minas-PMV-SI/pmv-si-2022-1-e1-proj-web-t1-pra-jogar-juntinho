@@ -42,12 +42,13 @@ cadastroForm.addEventListener("submit", (evt) => {
             })
             .catch(error => console.error(error)); // Retorna error no console
         } else {
-          alert("Usuário já existente, use outro nome!");
+          var modalusuario = new bootstrap.Modal(document.getElementById('modalusuario'), {})
+          modalusuario.show()
           return false;
         }
       })
   } else {
-    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
-    myModal.show()
+    var modalsenhas = new bootstrap.Modal(document.getElementById('modalsenhas'), {})
+    modalsenhas.show()
   }
 }, false);
