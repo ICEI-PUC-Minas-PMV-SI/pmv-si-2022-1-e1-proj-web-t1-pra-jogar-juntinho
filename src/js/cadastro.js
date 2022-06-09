@@ -47,6 +47,7 @@ cadastroForm.addEventListener("submit", (evt) => {
         }
       })
   } else {
-    alert('As senhas não coincidem!')
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+    myModal.show()
   }
 }, false);

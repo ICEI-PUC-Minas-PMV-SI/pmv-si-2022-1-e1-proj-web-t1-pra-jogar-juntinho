@@ -97,11 +97,11 @@ Será exibido dois campos, Nome/Nickname e Password respectivamente para o usuá
 
 Para atender ao requisito RF-005 foi desenvolvido a página de Cadastro.
 
-Será disponibilizado ao usuário um formulário onde ele poderá cadastrar suas informações como Nome/Nickname e senha para criar um usuário no site e fazer login futuramente.
+Será disponibilizado ao usuário um formulário onde ele poderá cadastrar suas informações como Nome/Nickname e senha para criar um usuário no site e fazer login futuramente. Estes usuários cadastrados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/cadastro.js`.
 
 ![cadastro](img/entrega03/cadastro.JPG)
 
-Ao final depois de inserir seus dados, para confirmar cadastro no Pra Jogar Juntinho basta clicar no botão "Cadastrar". Pronto você será redirecionado para a tela inicial e agora você consegue comentar e favoritar seus jogos preferidos para poder jogar mais tarde com seus amigos.
+Após inserir seus dados, para confirmar cadastro no Pra Jogar Juntinho basta clicar no botão "Cadastrar", então os dados informados são armazenados em um arquivo JSON `src/db/usuarios.json`. Pronto você será redirecionado para a tela inicial e agora você consegue comentar e favoritar seus jogos preferidos para poder jogar mais tarde com seus amigos. 
 
 <br/>
 
