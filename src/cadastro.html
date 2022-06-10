@@ -86,7 +86,7 @@
                   <div class="card-body row">
                     <!-- Nome do Jogador -->
                     <div class="col-12">
-                      <label for="nome" class="form-label" ><i class="fa-solid fa-user"></i>  Nome/Nickname</label>
+                      <label for="nome" class="form-label"><i class="fa-solid fa-user"></i> Nome/Nickname</label>
                       <input class="form-control" type="text" placeholder="Digite seu Nome/Nickname" name="nome"
                         id="nome">
                     </div>
@@ -106,25 +106,43 @@
                     </div>
                   </div>
                 </div>
-                <!-- Modal JavaScript -->
-                <div class="modal fade" id="myModal" role="dialog">
+                <!-- Modal Confirmar Senhas JavaScript -->
+                <div class="modal fade" id="modalsenhas" role="dialog">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header text-center">
-                        <h4 class="modal-title w-100">Não Cadastrado</h4>
+                        <h4 class="modal-title w-100">Senhas não conferem</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
                         <p>Não foi possível realizar o cadastro pois as senhas não conferem, favor tentar novamente!</p>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary mt-3 w-100" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary mt-3 w-100" data-bs-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim do Modal -->
+                <!-- Modal Usuário já existe JavaScript -->
+                <div class="modal fade" id="modalusuario" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header text-center">
+                        <h4 class="modal-title w-100">Usuário já existente</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Não foi possível realizar o cadastro pois o usuário cadastrado já existe!
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mt-3 w-100" data-bs-dismiss="modal">Fechar</button>
                       </div>
                     </div>
                   </div>
                   <!-- Fim do Modal -->
                 </div>
-              </div>
             </form>
           </div>
         </div>
