@@ -29,18 +29,19 @@ const loading = document.querySelector(".loader");
 let limit = 10;
 let page = 1;
 
-async function getJogos() {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
-
+async function getJogos(URL) {
   const res = await fetch(URL);
   const data = await res.json();
 
   return data;
 }
 
+// Jogos Favoritados ====================================================================
+
 async function showJogosFavoritos() {
-  const jogos = await getJogos();
-  jogos.forEach((jogo) => {
+  const favoritados = await getJogos(`http://localhost:3001/favoritados?usuarioId=${usuario.id}&_expand=jogo&_limit=${limit}&_page=${page}`);
+  favoritados.forEach((favorito) => {
+    let jogo = favorito.jogo;
     let plataformas = "";
 
     if (jogo.plataforms != null || jogo.plataforms !== []) {
@@ -49,6 +50,13 @@ async function showJogosFavoritos() {
         if (plataforma === "MacBook") plataformas = plataformas + icone_mac;
         if (plataforma === "Linux") plataformas = plataformas + icone_lin;
       });
+    }
+
+    if(favoritados.length > 0) {
+      if(favoritados.some(f => f.jogoId === jogo.id)) {
+        displayNoneRegular = "d-none";
+        displayNoneSolid = "";
+      }
     }
 
     const jogoEl = document.createElement("div");
@@ -68,14 +76,31 @@ async function showJogosFavoritos() {
               ${plataformas}
             </div>
             <div>
-              <i class="fa-regular fa-heart texto-vermelho"></i>
+              <i id="regular_heart_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id})"></i>
+              <i id="solid_heart_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id})"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
         </div>
         <br>
         <div class="d-flex justify-content-center pb-3">
-          <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+          <a href="#" onclick="maisInformacoes(
+            ${jogo.id},
+            '${jogo.title}',
+            '${jogo.description}',
+            '${jogo.developers}',
+            '${jogo.distributor}',
+            '${jogo.serie}',
+            '${jogo.release_date}',
+            '${jogo.genres}',
+            '${jogo.plataforms}',
+            '${jogo.tags}',
+            '${jogo.img_sm}',
+            '${jogo.img_md}',
+            '${jogo.img_lg}',
+            '${jogo.trailer}',
+            '${jogo.steam_link}'
+          )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
         </div>
       </div>
         `;
@@ -103,6 +128,8 @@ window.addEventListener("scroll", () => {
 });
 
 this.showJogosFavoritos();
+
+// Jogos Comentados ====================================================================
 
 async function showJogosComentarios() {
     const jogos = await getJogos();
@@ -134,95 +161,112 @@ async function showJogosComentarios() {
                 ${plataformas}
               </div>
               <div>
-                <i class="fa-regular fa-heart texto-vermelho"></i>
-                <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
-              </div>
+              <i id="regular_heart_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id})"></i>
+              <i id="solid_heart_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id})"></i>
+              <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
-          <br>
-          <div class="d-flex justify-content-center pb-3">
-            <a href="http://localhost:3001/jogos/${jogo.id}" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center pb-3">
+          <a href="#" onclick="maisInformacoes(
+            ${jogo.id},
+            '${jogo.title}',
+            '${jogo.description}',
+            '${jogo.developers}',
+            '${jogo.distributor}',
+            '${jogo.serie}',
+            '${jogo.release_date}',
+            '${jogo.genres}',
+            '${jogo.plataforms}',
+            '${jogo.tags}',
+            '${jogo.img_sm}',
+            '${jogo.img_md}',
+            '${jogo.img_lg}',
+            '${jogo.trailer}',
+            '${jogo.steam_link}'
+          )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
           </div>
         </div>
           `;
   
           lista_jogos_comentados.appendChild(jogoEl);
     });
-  }
-  
-  function showLoading() {
-    loading.classList.add("show");
-  
+}
+
+function showLoading() {
+  loading.classList.add("show");
+
+  setTimeout(() => {
+    loading.classList.remove("show");
+
     setTimeout(() => {
-      loading.classList.remove("show");
-  
-      setTimeout(() => {
-        page++;
-        showJogosComentarios();
-      }, 300);
-    }, 1000);
+      page++;
+      showJogosComentarios();
+    }, 300);
+  }, 1000);
+}
+
+window.addEventListener("scroll", () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    if (scrollTop + clientHeight >= scrollHeight - 1) showLoading();
+});
+
+this.showJogosComentarios();
+
+function maisInformacoes(id, title, description, developers, distributor, serie, release_date, genres, plataforms, tags, img_sm, img_md, img_lg, trailer, steam_link) {
+  window.localStorage.setItem('jogo',JSON.stringify({
+    id, title, description, developers, distributor, serie, release_date, genres: genres.split(','), plataforms: plataforms.split(','), tags: tags.split(','), img_sm, img_md, img_lg, trailer, steam_link
+  }))
+
+  window.location.href = "http://127.0.0.1:5500/src/informacoes-jogo.html";
+}
+
+function favoritar(jogoId) {
+  if(window.localStorage.getItem('usuario') === null) {
+    window.location.href = "http://127.0.0.1:5500/src/login.html";
+  } else {
+    document.getElementById('regular_heart_' + jogoId).classList.add("d-none")
+    document.getElementById('solid_heart_' + jogoId).classList.remove("d-none")
+    fetch("http://localhost:3001/favoritados", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: null,
+          jogoId: jogoId,
+          usuarioId: JSON.parse(window.localStorage.getItem("usuario")).id
+        }),
+      })
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response)
+      })
+      .catch(error => console.error(error)
+    );
   }
-  
-  window.addEventListener("scroll", () => {
-      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      if (scrollTop + clientHeight >= scrollHeight - 1) showLoading();
-  });
-  
-  this.showJogosComentarios();
+}
 
-
-// /* Alguns erros sao devidos a nao ter achado  */ 
-
-// /*-----------------------Pegar informacoes cards desejados------------------------------------*/
-// const JogosDesejados = document.getElementById("Jogos-Desejados")
-// fetch(URL)
-//     .then(res => res.json())
-//     .then(jogos => {
-//         jogos = "";
-//         for (let i = 0; i < jogos.length; i++) {
-//             if (jogo[i].desejados = true) {
-//                 sDesejados = true;
-//                 nomeJogoDesejados = jogo[i].nome;
-//                 capaJogoDesejados = jogo[i].capa;
-//             }
-//             else {
-//                 nDesejados = false;
-//             };
-//         }
-//     })
-// function AlterarDesejados(sDesejados) {
-//     if (sDesejados = True) {
-//         const TrocarCardDesejados = document.getElementsByClassName(card - title, card - img - top);
-//         TrocarCardDesejados.innerHTML = "+nomeJogoDesejados+";
-//         TrocarCardDesejados.innerHTML = "+capaJogoDesejados+";
-//     };
-
-//     /* chamar um "for" para sempre que um card for marcado como desejado ou favorito ele puxa a funcao que vai ficar montando os cards*/
-
-//     /*-----------------------Pegar informacoes cards comentados------------------------------------*/
-//     const JogosComentados = document.getElementById("Jogos-Comentados")
-//     fetch(URL)
-//         .then(res => res.json())
-//         .then(jogos => {
-//             jogos = "";
-//             for (let i = 0; i < jogos.length; i++) {
-//                 if (jogos[i].comentados = true) {
-//                     sComentados = true;
-//                     nomeJogoComentados = jogo[i].nome;
-//                     capaJogoComentados = jogo[i].capa;
-//                 }
-//                 else {
-//                     nComentados = false;
-//                 };
-
-//             }
-//         })
-
-//     function AlterarComentados(sDesejados) {
-//         if (sDesejados = True) {
-//             const TrocarCardComentados = document.getElementsByClassName(card - title, card - img - top);
-//             TrocarCardComentados.innerHTML = "nomeJogoComentados";
-//             TrocarCardComentados.innerHTML = "capaJogoComentados";
-//         };
-//     }
-// }
+function desfavoritar(jogoId) {
+  if(window.localStorage.getItem('usuario') === null) {
+    window.location.href = "http://127.0.0.1:5500/src/login.html";
+  } else {
+    document.getElementById('regular_heart_' + jogoId).classList.remove("d-none")
+    document.getElementById('solid_heart_' + jogoId).classList.add("d-none")
+    fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
+      .then((res) => res.json())
+      .then((favorito) => {
+        console.log("teste2",favorito[0].id);
+        fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
+          method: "DELETE",
+        })
+        .then((res) => res.json())
+        .then((response) => {
+          console.log(response)
+        })
+        .catch(error => console.error(error)
+      );
+    })
+  }
+}

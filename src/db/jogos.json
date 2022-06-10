@@ -1,4 +1,61 @@
 {
+  "favoritados": [
+    {
+      "id": 1,
+      "jogoId": 1,
+      "usuarioId": 1
+    },
+    {
+      "id": 2,
+      "jogoId": 1,
+      "usuarioId": 2
+    },
+    {
+      "id": 3,
+      "jogoId": 2,
+      "usuarioId": 4
+    },
+    {
+      "id": 4,
+      "jogoId": 13,
+      "usuarioId": 4
+    },
+    {
+      "id": 5,
+      "jogoId": 19,
+      "usuarioId": 4
+    },
+    {
+      "id": 10,
+      "jogoId": 10,
+      "usuarioId": 4
+    },
+    {
+      "id": 11,
+      "jogoId": 14,
+      "usuarioId": 4
+    },
+    {
+      "id": 12,
+      "jogoId": 25,
+      "usuarioId": 4
+    },
+    {
+      "id": 13,
+      "jogoId": 5,
+      "usuarioId": 4
+    },
+    {
+      "id": 14,
+      "jogoId": 12,
+      "usuarioId": 4
+    },
+    {
+      "id": 15,
+      "jogoId": 15,
+      "usuarioId": 4
+    }
+  ],
   "jogos": [
     {
       "id": 1,

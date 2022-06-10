@@ -13,7 +13,7 @@ const icone_lin =
 let favoritados = []
 
 // Buscar Favoritados
-fetch(`http://localhost:3005/favoritados?id_usuario=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
+fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
   .then((res) => res.json())
   .then((favoritadosRes) => {
     favoritados = favoritadosRes;
@@ -57,7 +57,7 @@ fetch(URL)
       }
 
       if(favoritados.length > 0) {
-        if(favoritados.some(f => f.id_jogo === jogo.id)) {
+        if(favoritados.some(f => f.jogoId === jogo.id)) {
           displayNoneRegular = "d-none";
           displayNoneSolid = "";
         }
@@ -79,7 +79,7 @@ fetch(URL)
             </div>
             <div>
               <i id="regular_heart_acao_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'acao')"></i>
-              <i id="solid_heart_acao_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}"></i>
+              <i id="solid_heart_acao_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'acao')"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
@@ -144,7 +144,7 @@ fetch(URL)
       }
 
       if(favoritados.length > 0) {
-        if(favoritados.some(f => f.id_jogo === jogo.id)) {
+        if(favoritados.some(f => f.jogoId === jogo.id)) {
           displayNoneRegular = "d-none";
           displayNoneSolid = "";
         }
@@ -166,7 +166,7 @@ fetch(URL)
             </div>
             <div>
             <i id="regular_heart_aventura_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'aventura')"></i>
-              <i id="solid_heart_aventura_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}"></i>
+              <i id="solid_heart_aventura_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'aventura')"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
@@ -231,7 +231,7 @@ fetch(URL)
       }
 
       if(favoritados.length > 0) {
-        if(favoritados.some(f => f.id_jogo === jogo.id)) {
+        if(favoritados.some(f => f.jogoId === jogo.id)) {
           displayNoneRegular = "d-none";
           displayNoneSolid = "";
         }
@@ -252,8 +252,8 @@ fetch(URL)
                 ${plataformas}
               </div>
               <div>
-              <i id="regular_heart_rpg_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'rpg')"></i>
-                <i id="solid_heart_rpg_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}"></i>
+                <i id="regular_heart_rpg_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'rpg')"></i>
+                <i id="solid_heart_rpg_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'rpg')"></i>
                 <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
               </div>
             </div>
@@ -301,15 +301,15 @@ function favoritar(jogoId, jogoGenero) {
   } else {
     document.getElementById('regular_heart_' + jogoGenero + '_' + jogoId).classList.add("d-none")
     document.getElementById('solid_heart_' + jogoGenero + '_' + jogoId).classList.remove("d-none")
-    fetch("http://localhost:3005/favoritados", {
+    fetch("http://localhost:3001/favoritados", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           id: null,
-          id_jogo: jogoId,
-          id_usuario: JSON.parse(window.localStorage.getItem("usuario")).id
+          jogoId: jogoId,
+          usuarioId: JSON.parse(window.localStorage.getItem("usuario")).id
         }),
       })
       .then((res) => res.json())
@@ -318,5 +318,28 @@ function favoritar(jogoId, jogoGenero) {
       })
       .catch(error => console.error(error)
     );
+  }
+}
+
+function desfavoritar(jogoId, jogoGenero) {
+  if(window.localStorage.getItem('usuario') === null) {
+    window.location.href = "http://127.0.0.1:5500/src/login.html";
+  } else {
+    document.getElementById('regular_heart_' + jogoGenero + '_' + jogoId).classList.remove("d-none")
+    document.getElementById('solid_heart_' + jogoGenero + '_' + jogoId).classList.add("d-none")
+    fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
+      .then((res) => res.json())
+      .then((favorito) => {
+        console.log("teste2",favorito[0].id);
+        fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
+          method: "DELETE",
+        })
+        .then((res) => res.json())
+        .then((response) => {
+          console.log(response)
+        })
+        .catch(error => console.error(error)
+      );
+    })
   }
 }

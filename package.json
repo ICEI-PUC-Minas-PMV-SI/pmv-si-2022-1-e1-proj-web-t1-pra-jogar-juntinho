@@ -17,8 +17,7 @@
     "usuarios": "npx json-server src/db/usuarios.json --watch --port 3002",
     "comentarios": "npx json-server src/db/comentarios.json --watch --port 3003",
     "curtidas": "npx json-server src/db/curtidas.json --watch --port 3004",
-    "favoritados": "npx json-server src/db/favoritados.json --watch --port 3005",
-    "artigos": "npx json-server src/db/artigos.json --watch --port 3006",
+    "artigos": "npx json-server src/db/artigos.json --watch --port 3005",
     "noticias": "node ./src/js/server.js"
   },
   "repository": {
