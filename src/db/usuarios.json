@@ -1,10 +1,42 @@
 {
+  "comentarios": [
+    {
+      "id": 1,
+      "usuarioId": 4,
+      "jogoId": 19,
+      "description": "Comentario de teste 1"
+    },
+    {
+      "id": 2,
+      "usuarioId": 1,
+      "jogoId": 19,
+      "description": "Comentario de teste 2"
+    },
+    {
+      "id": 3,
+      "usuarioId": 2,
+      "jogoId": 19,
+      "description": "Comentario de teste 3"
+    },
+    {
+      "id": 4,
+      "usuarioId": 4,
+      "jogoId": 19,
+      "description": "teste123"
+    },
+    {
+      "id": 5,
+      "usuarioId": 4,
+      "jogoId": 9,
+      "description": "Teste4567"
+    }
+  ],
   "usuarios": [
     {
       "id": 1,
       "nome": "Lucas",
       "senha": "Brasil1010",
-      "avatar": ""
+      "avatar": "cody"
     },
     {
       "id": 2,
@@ -16,7 +48,7 @@
       "id": 3,
       "nome": "Vitória3",
       "senha": "Teste",
-      "avatar": ""
+      "avatar": "02"
     },
     {
       "id": 4,

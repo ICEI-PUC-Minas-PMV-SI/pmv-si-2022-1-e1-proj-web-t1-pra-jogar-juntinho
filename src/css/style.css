@@ -56,7 +56,7 @@ html, * {
   padding: 25px 31px 25px 31px;
 }
 
-.fa-paper-plane:hover{
+.fa-steam:hover{
   color: #DC0024 !important;
   cursor: pointer;
 }
@@ -194,4 +194,12 @@ footer{
 
 .fa-heart {
   cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
 }

@@ -100,7 +100,7 @@
 
           <div class="row">
             <!-- Capa do Jogo -->
-            <div class="col-9">
+            <div class="col-md-12 col-lg-9">
               <div class="card">
                 <!-- Trailer -->
                 <video id="trailer" src="#" controls></video>
@@ -112,57 +112,22 @@
                 </div>
               </div>
               <div>
-                <!-- Comentário Usuário -->
+                <!-- Comentários Usuário -->
                 <div class="col-12 mt-5">
                   <div class="card-header">
                     Comentários
                   </div>
-                  <div class="card-body">
+                  <div id="coments" class="card-body">
                     <!-- Comentário -->
-                    <h5 class="card-title">Luíz Otávio</h5>
-                    <img src="/src/img/tela_de_jogo/icon1.png" width="80" height="70">
-                    <div class="card">
-                      <div class="card-body">
-                        Ótimo jogo, perfeito para jogar com os amigos
-                      </div>
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
-                    </div>
-                    <!-- ---------------------------------------------- -->
-                    <h5 class="card-title">Marcela Alcantra</h5>
-                    <img src="/src/img/tela_de_jogo/icon2.png" width="80" height="70">
-                    <div class="card">
-                      <div class="card-body">
-                          Gampeplay INSANA, lembra muito Dark Souls, só que com armas de fogo rsrsrs
-                      </div>
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-paper-plane texto-azul justify-content-end"></i>
-                      <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
-                    </div>
-                    <h5 class="card-title">Pedrinho Gamer</h5>
-                    <img src="/src/img/tela_de_jogo/icon3.png" width="80" height="70">
-                    <div class="card">
-                      <div class="card-body">
-                        Arte do jogo muito bonita, boa movimentação, peca em algumas particularidades, mas a nota é 8.
-                      </div>
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-paper-plane texto-azul justify-content-end"></i>
-                      <i class="fa-solid fa-heart texto-vermelho justify-content-end"></i>
-                    </div>
-                    <hr>
-                    <div class="form-group mb-3">
-                      <input type="text" class="form-control" id="exampleInputComent1" aria-describedby="comentHelp" placeholder="Deixe aqui seu comentário">
-                    </div>
-                    <a href="#" class="btn btn-primary">Enviar</a>
+
+                    <!-- Novo Comentário -->
+                    
                   </div>
                 </div>
               </div>
             </div>
             <!-- Informações do Jogo -->
-            <div class="col-3">
+            <div class="col-md-12 col-lg-3">
               <div class="card p-3">
                 <h5 id="title-two" class="h6 card-title"></h5>
                 <img id="img_sm" src="" class="card-img-top" alt="Remnant from the ashes">
@@ -170,8 +135,9 @@
                   <div class="d-flex justify-content-between">
                     <div id="plataforms"></div>
                     <div>
-                      <i class="fa-regular fa-heart texto-vermelho"></i>
-                      <i class="fa-solid fa-paper-plane texto-azul"></i>
+                      <i id="regular_heart" class="fa-regular fa-heart texto-vermelho" onclick="favoritar()"></i>
+                      <i id="solid_heart" class="fa-solid fa-heart texto-vermelho d-none" onclick="desfavoritar()"></i>
+                      <i id="link_steam" class="fa-brands fa-steam texto-azul"></i>
                     </div>
                   </div>
                   <br>
