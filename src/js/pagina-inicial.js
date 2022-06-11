@@ -78,8 +78,8 @@ fetch(URL)
               ${plataformas}
             </div>
             <div>
-              <i id="regular_heart_acao_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'acao')"></i>
-              <i id="solid_heart_acao_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'acao')"></i>
+              <i id="regular_heart_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}"></i>
+              <i id="solid_heart_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'acao')"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
@@ -312,10 +312,6 @@ function favoritar(jogoId, jogoGenero) {
           usuarioId: JSON.parse(window.localStorage.getItem("usuario")).id
         }),
       })
-      .then((res) => res.json())
-      .then((response) => {
-        console.log(response)
-      })
       .catch(error => console.error(error)
     );
   }
@@ -330,16 +326,11 @@ function desfavoritar(jogoId, jogoGenero) {
     fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
       .then((res) => res.json())
       .then((favorito) => {
-        console.log("teste2",favorito[0].id);
         fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
           method: "DELETE",
         })
-        .then((res) => res.json())
-        .then((response) => {
-          console.log(response)
-        })
-        .catch(error => console.error(error)
-      );
-    })
+        .catch(error => console.error(error));
+      })
+      .catch(error => console.error(error));
   }
 }

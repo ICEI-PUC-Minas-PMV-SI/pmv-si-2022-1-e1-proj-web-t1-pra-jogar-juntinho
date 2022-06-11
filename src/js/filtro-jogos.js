@@ -18,6 +18,17 @@ let plataforms = document.querySelector('input[name="radio-plataforma"]:checked'
 let limit = 10;
 let page = 1;
 
+let favoritados = []
+
+// Buscar Favoritados
+fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
+  .then((res) => res.json())
+  .then((favoritadosRes) => {
+    favoritados = favoritadosRes;
+  })
+  .catch(error => console.error(error)
+);
+
 async function getJogos() {
   if (genero === null && nome === null && plataforms === null) {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
@@ -44,13 +55,25 @@ async function showJogos() {
   const jogos = await getJogos();
   jogos.forEach((jogo) => {
     let plataformas = "";
+    let displayNoneRegular = "";
+    let displayNoneSolid = "d-none";
 
     if (jogo.plataforms != null || jogo.plataforms !== []) {
       jogo.plataforms.forEach((plataforma) => {
-        if (plataforma === "Windows") plataformas = plataformas + icone_win;
-        if (plataforma === "MacBook") plataformas = plataformas + icone_mac;
-        if (plataforma === "Linux") plataformas = plataformas + icone_lin;
+        if (plataforma === "Windows")
+          plataformas = plataformas + icone_win;
+        if (plataforma === "MacBook")
+          plataformas = plataformas + icone_mac;
+        if (plataforma === "Linux")
+          plataformas = plataformas + icone_lin;
       });
+    }
+
+    if(favoritados.length > 0) {
+      if(favoritados.some(f => f.jogoId === jogo.id)) {
+        displayNoneRegular = "d-none";
+        displayNoneSolid = "";
+      }
     }
 
     const jogoEl = document.createElement("div");
@@ -70,7 +93,8 @@ async function showJogos() {
               ${plataformas}
             </div>
             <div>
-              <i class="fa-regular fa-heart texto-vermelho"></i>
+            <i id="regular_heart_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id})"></i>
+            <i id="solid_heart_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id})"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-solid fa-paper-plane texto-azul"></i></a>
             </div>
           </div>
@@ -128,17 +152,6 @@ window.addEventListener("scroll", () => {
     if (scrollTop + clientHeight >= scrollHeight - 1) showLoading();
 });
 
-// // Filtra jogos com gênero Aventura
-// jogos = jogos.filter((j) => {
-//   if (j.genres != null || j.genres !== []) {
-//     genero = j.genres.find((g) => g === "RPG");
-//     genero === undefined ? false : true;
-//     return genero;
-//   } else {
-//     return false;
-//   }
-// });
-
 this.showJogos();
 
 async function filtrarJogos() {
@@ -147,4 +160,44 @@ async function filtrarJogos() {
   genero = document.querySelector('input[name="radio-genero"]:checked') === null ? null : document.querySelector('input[name="radio-genero"]:checked').value;
   lista_jogos.innerHTML = "";
   this.showJogos();
+}
+
+function favoritar(jogoId) {
+  if(window.localStorage.getItem('usuario') === null) {
+    window.location.href = "http://127.0.0.1:5500/src/login.html";
+  } else {
+    document.getElementById('regular_heart_' + jogoId).classList.add("d-none")
+    document.getElementById('solid_heart_' + jogoId).classList.remove("d-none")
+    fetch("http://localhost:3001/favoritados", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: null,
+          jogoId: jogoId,
+          usuarioId: JSON.parse(window.localStorage.getItem("usuario")).id
+        }),
+      })
+      .catch(error => console.error(error)
+    );
+  }
+}
+
+function desfavoritar(jogoId) {
+  if(window.localStorage.getItem('usuario') === null) {
+    window.location.href = "http://127.0.0.1:5500/src/login.html";
+  } else {
+    document.getElementById('regular_heart_' + jogoId).classList.remove("d-none")
+    document.getElementById('solid_heart_' + jogoId).classList.add("d-none")
+    fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
+      .then((res) => res.json())
+      .then((favorito) => {
+        fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
+          method: "DELETE",
+        })
+        .catch(error => console.error(error));
+      })
+      .catch(error => console.error(error));
+  }
 }
