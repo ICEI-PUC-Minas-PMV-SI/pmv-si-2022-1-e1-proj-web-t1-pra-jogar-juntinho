@@ -9,6 +9,22 @@ const icone_mac =
 const icone_lin =
   '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>';
 
+// Buscar Artigos
+fetch(`http://localhost:5500`, {
+  headers: {
+    // "Content-Type": "application/json",
+    // "Access-Control-Allow-Origin": "http://localhost:3000",
+    // "Vary": "Origin"
+  },
+  mode: 'cors'
+})
+.then((res) => res.json())
+// .then((res) => res.json())
+.then((response) => {
+  console.log(response.data)
+  console.log(response.body)
+})
+.catch(error => console.error(error));
 
 let favoritados = []
 
@@ -18,8 +34,7 @@ fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStor
   .then((favoritadosRes) => {
     favoritados = favoritadosRes;
   })
-  .catch(error => console.error(error)
-);
+  .catch(error => console.error(error));
 
 // Pegar lista de jogos
 fetch(URL)

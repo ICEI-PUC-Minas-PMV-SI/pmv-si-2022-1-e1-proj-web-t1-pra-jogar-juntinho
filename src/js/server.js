@@ -30,7 +30,7 @@ server.get('/', async (request, response) => {
     }
     articlesData = articles;
 
-    fetch("http://localhost:3006/artigos", {
+    fetch("http://localhost:3004/artigos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
