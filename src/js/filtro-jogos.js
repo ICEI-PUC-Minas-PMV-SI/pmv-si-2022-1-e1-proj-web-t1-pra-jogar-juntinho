@@ -30,25 +30,38 @@ fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStor
 );
 
 async function getJogos() {
-  if (genero === null && nome === null && plataforms === null) {
+  if (genero === null && nome === "") {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
-  } else if (genero !== null && nome === null && plataforms === null) {
+  } else if (genero !== null && nome === "") {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;
-  } else if (genero === null && nome !== null && plataforms === null) {
+  } else if (genero === null && nome !== "") {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&title_like=${nome.replace(' ', '%20')}`
-  } else if (genero !== null && nome !== null && plataforms === null) {
+  } else if (genero !== null && nome !== "") {
     URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&title_like=${nome.replace(' ', '%20')}`
-  } else if (genero === null && nome === null && plataforms !== null) {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&plataforms=${plataforms}`
-  } else if (genero !== null && nome === null && plataforms !== null) {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&plataforms=${plataforms}`
-  } else if (genero !== null && nome !== null && plataforms !== null) {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&plataforms=${plataforms}&title_like=${nome.replace(' ', '%20')}`
   }
+
   const res = await fetch(URL);
   const data = await res.json();
+  let teste = [];
 
-  return data;
+  if(document.querySelector('input[name="radio-plataforma"]:checked') !== null) {
+    if(document.querySelector('input[name="radio-plataforma"]:checked').value !== null) {
+      data.forEach(j => {
+        if(j.plataforms.some(p => p === document.querySelector('input[name="radio-plataforma"]:checked').value)) {
+          teste.push(j);
+        }
+      })
+    }
+  }
+  if(document.querySelector('input[name="radio-plataforma"]:checked') !== null) {
+    if(document.querySelector('input[name="radio-plataforma"]:checked').value !== null) {
+      return teste;
+    } else {
+      return data;
+    }
+  } else {
+    return data;
+  }
 }
 
 async function showJogos() {

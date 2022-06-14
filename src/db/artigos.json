@@ -1,39 +1,39 @@
 {
   "artigos": [
     {
-      "id": 6504523,
-      "title": "Starfield Character Creator Includes Optional Traits, Skill System That \"Combines The Best\" From Previous Bethesda Games",
-      "description": "Fans have finally gotten their first significant look at <a href=\"https://www.gamespot.com/games/starfield/\" data-ref-id=\"5000-483376\">Starfield</a>, and in addition to new details about space exploration and combat, players now know how character creation and skills work in Bethesda's new RPG.",
+      "id": 6504607,
+      "title": "Stalker 2: Heart Of Chornobyl Trailer Confirms Delay To 2023",
+      "description": "Despite the <a href=\"https://www.gamespot.com/articles/xbox-showcase-expresses-ukraine-solidarity-highlighting-stalker-2-studio/1100-6504606/\" data-ref-id=\"1100-6504606\">continuing conflict in its home country of Ukraine</a>, GSC Game World provided an update for Stalker 2: Heart of Chornobyl at the end of the Xbox and Bethesda Extended Showcase, confirming the game's delay to 2023.",
+      "authors": "Jason Fanelli",
+      "img_lg": "https://www.gamespot.com/a/uploads/original/3/37852/3991061-stalker.jpg"
+    },
+    {
+      "id": 6504605,
+      "title": "Forza Horizon 5: Hot Wheels Expansion Will Let You Build Your Own Gravity-Defying Tracks",
+      "description": "As part of Microsoft's Xbox Games Showcase Extended, new details have emerged about <a href=\"https://www.gamespot.com/games/forza-horizon-5/\" data-ref-id=\"5000-533238\">Forza Horizon 5's</a> upcoming <a href=\"https://www.gamespot.com/articles/forza-horizon-5-hot-wheels-expansion-coming-this-july/1100-6504461/\" data-ref-id=\"1100-6504461\">Hot Wheels expansion</a>, including what new cars players will be able to take for a spin and the ability to create custom tracks.",
       "authors": "Cameron Koch",
-      "img_lg": "https://www.gamespot.com/a/uploads/original/1647/16470614/3990044-starfieldskillsandtraits.jpg"
+      "img_lg": "https://www.gamespot.com/a/uploads/original/1647/16470614/3991059-forzahorizon5hotwheelsdetails.jpg"
     },
     {
-      "id": 6504522,
-      "title": "Half-Life: Alyx Fan-Made Levitation Mod Features A Full Campaign",
-      "description": "The 2022 PC Gamer Show closed out its presentation with an extended look at an upcoming mod for the VR game, Half-Life: Alyx called Levitation. The mod is being created by FMPONE and Corey Laddo and imagines what happens after the events of Alyx. It will apparently take players about four to five hours to complete.",
-      "authors": "Kyle Hilliard",
-      "img_lg": "https://www.gamespot.com/a/uploads/original/1755/17559665/3990013-screenshot2022-06-12at4.46.18pm.png"
+      "id": 6504606,
+      "title": "Xbox Showcase Expresses Ukraine Solidarity, Highlighting Stalker 2 Studio",
+      "description": "Microsoft devoted a segment of its Xbox Games Showcase Extended to address the war in Ukraine by highlighting one of the studios directly impacted by it. The dev diary showed developers at GSC Game World, the studio behind Stalker 2, talking about how their lives and work have been impacted since the war began.",
+      "authors": "Steve Watts",
+      "img_lg": "https://www.gamespot.com/a/uploads/original/1585/15855271/3991053-screenshot2022-06-14at2.27.17pm.png"
     },
     {
-      "id": 6504521,
-      "title": "Starfield Includes Over 1,000 Explorable Planets, Base Building, And Ship Combat",
-      "description": "At long last, new details about Bethesda Softwork's heavily anticipated RPG <a href=\"https://www.gamespot.com/games/starfield/\" data-ref-id=\"5000-483376\">Starfield</a> have arrived, and what they show is a game set to embrace its space-setting with a focus on exploring new worlds, resource harvesting, spaceship customization, and base-building.",
-      "authors": "Cameron Koch",
-      "img_lg": "https://www.gamespot.com/a/uploads/original/1647/16470614/3990012-starfieldspaceexplorationinfo.jpg"
+      "id": 6504604,
+      "title": "Slime Rancher 2 Gameplay Trailer Reveals Fall 2022 Release Window",
+      "description": "Slime Rancher players have been waiting to find out when they'll be able to head back down to the slime farms. During the Xbox and Bethesda Extended Showcase, developer Monomi Park finally delivered the goods: Slime Rancher 2 is coming this fall, and it will be a day one addition to Xbox Game Pass.",
+      "authors": "Jason Fanelli",
+      "img_lg": "https://www.gamespot.com/a/uploads/original/3/37852/3991030-slime.jpg"
     },
     {
-      "id": 6504519,
-      "title": "GoldenEye-Like PC Shooter Agent 64 Gets New Trailer And Demo",
-      "description": "Many expected the heavily rumored GoldenEye remaster to be announced during the <a href=\"https://www.gamespot.com/articles/xbox-bethesda-games-showcase-2022-all-the-biggest-game-announcements/1100-6504511/\" data-ref-id=\"1100-6504511\">Xbox showcase today</a>, but it wasn't. James Bond fans weren't entirely out of luck, however, as developer Replicate D6 released a new trailer for its GoldenEye-like title Agent 64 during the PC Gaming Show today.",
+      "id": 6504603,
+      "title": "Halo Is Coming To Fall Guys This Month",
+      "description": "As part of the Xbox Games Showcase Extended event today, Microsoft and developer Mediatonic announced a collaboration that will see Halo characters come to Fall Guys as cosmetic skins.",
       "authors": "Eddie Makuch",
-      "img_lg": "https://www.gamespot.com/a/uploads/original/1179/11799911/3990003-screenshot2022-06-12at4.51.55pm.png"
-    },
-    {
-      "id": 6504516,
-      "title": "System Shock Remake Shown In New Trailer",
-      "description": "Nightdive studio has been working on its remake of the landmark 1994 immersive sim System Shock for some time and today during the PC Gamer Show we got a thorough look at it.",
-      "authors": "Kyle Hilliard",
-      "img_lg": "https://www.gamespot.com/a/uploads/original/1755/17559665/3989999-screenshot2022-06-12at3.29.21pm(2).png"
+      "img_lg": "https://www.gamespot.com/a/uploads/original/1179/11799911/3991052-screenshot2022-06-14at2.22.42pm.jpg"
     }
   ]
 }

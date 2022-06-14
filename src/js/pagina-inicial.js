@@ -9,20 +9,134 @@ const icone_mac =
 const icone_lin =
   '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>';
 
+  // var myHeaders = new Headers();
+  // myHeaders.append('Access-Control-Allow-Origin', '*');
+  // var myInit = { method: 'GET',
+  //              headers: new Headers({
+  //               "Content-Type": "application/json;charset=UTF-8",
+  //               "Access-Control-Allow-Origin": "*"
+  //              }),
+  //              mode: 'cors',
+  //              cache: 'default' };
+  // fetch(`http://localhost:3000`,myInit)
+  // .then((res) => res.json())
+  // .then((artigos) => {
+  //   console.log(artigos)
+  // }).catch(err => console.log(err))
+
 // Buscar Artigos
-fetch(`http://localhost:5500`, {
-  headers: {
-    // "Content-Type": "application/json",
-    // "Access-Control-Allow-Origin": "http://localhost:3000",
-    // "Vary": "Origin"
-  },
-  mode: 'cors'
-})
+fetch(`http://localhost:3004/artigos`)
 .then((res) => res.json())
-// .then((res) => res.json())
-.then((response) => {
-  console.log(response.data)
-  console.log(response.body)
+.then((artigos) => {
+  let botoes = `
+  <button
+    type="button"
+    data-bs-target="#carrossel-jogos"
+    data-bs-slide-to="0"
+    class="active"
+    aria-current="true"
+    aria-label="Slide 1"
+  ></button>
+  <button
+    type="button"
+    data-bs-target="#carrossel-jogos"
+    data-bs-slide-to="1"
+    aria-label="Slide 2"
+  ></button>
+  <button
+    type="button"
+    data-bs-target="#carrossel-jogos"
+    data-bs-slide-to="2"
+    aria-label="Slide 3"
+  ></button>
+  <button
+    type="button"
+    data-bs-target="#carrossel-jogos"
+    data-bs-slide-to="3"
+    aria-label="Slide 4"
+  ></button>
+  <button
+    type="button"
+    data-bs-target="#carrossel-jogos"
+    data-bs-slide-to="4"
+    aria-label="Slide 5"
+  ></button>
+`
+document.getElementById('botoes-carrossel').innerHTML = botoes;
+
+  let slides = `
+  <div class="carousel-item active" data-bs-interval="4000">
+    <img
+      src="${artigos[0].img_lg}"
+      height="200"
+      class="d-block w-100"
+      alt="${artigos[0].title}"
+    />
+    <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
+      <h5 class="text-white">${artigos[0].title}</h5>
+      <p class="text-white">
+        ${artigos[0].description} - <i>${artigos[0].authors}</i>
+      </p>
+    </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="4000">
+    <img
+      src="${artigos[1].img_lg}"
+      height="200"
+      class="d-block w-100"
+      alt="${artigos[1].title}"
+    />
+    <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
+      <h5 class="text-white">${artigos[1].title}</h5>
+      <p class="text-white">
+        ${artigos[1].description} - <i>${artigos[1].authors}</i>
+      </p>
+    </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="4000">
+    <img
+      src="${artigos[2].img_lg}"
+      height="200"
+      class="d-block w-100"
+      alt="${artigos[2].title}"
+    />
+    <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
+      <h5 class="text-white">${artigos[2].title}</h5>
+      <p class="text-white">
+        ${artigos[2].description} - <i>${artigos[2].authors}</i>
+      </p>
+    </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="4000">
+    <img
+      src="${artigos[3].img_lg}"
+      height="200"
+      class="d-block w-100"
+      alt="${artigos[3].title}"
+    />
+    <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
+      <h5 class="text-white">${artigos[3].title}</h5>
+      <p class="text-white">
+        ${artigos[3].description} - <i>${artigos[3].authors}</i>
+      </p>
+    </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="4000">
+    <img
+      src="${artigos[4].img_lg}"
+      height="200"
+      class="d-block w-100"
+      alt="${artigos[4].title}"
+    />
+    <div class="bg-black pb-4 px-3 pt-3 d-none d-md-block">
+      <h5 class="text-white">${artigos[4].title}</h5>
+      <p class="text-white">
+        ${artigos[4].description} - <i>${artigos[4].authors}</i>
+      </p>
+    </div>
+  </div>
+`
+document.getElementById('artigos-carrossel').innerHTML = slides;
 })
 .catch(error => console.error(error));
 

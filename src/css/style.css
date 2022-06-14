@@ -48,6 +48,10 @@ html, * {
   border-color: #DC0024 !important;
 }
 
+.btn-vermelho:hover {
+  opacity: 0.9;
+}
+
 .texto-vermelho {
   color: #DC0024 !important;
 }

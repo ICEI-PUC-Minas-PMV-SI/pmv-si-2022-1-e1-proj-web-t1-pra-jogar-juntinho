@@ -270,3 +270,8 @@ function desfavoritar(jogoId) {
     })
   }
 }
+
+document.getElementById('logout').addEventListener('click', () => {
+  window.localStorage.removeItem('usuario');
+  window.location.href = "http://127.0.0.1:5500/src/index.html";
+})
