@@ -9,23 +9,29 @@ const icone_mac =
 const icone_lin =
   '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>';
 
-  // var myHeaders = new Headers();
-  // myHeaders.append('Access-Control-Allow-Origin', '*');
-  // var myInit = { method: 'GET',
-  //              headers: new Headers({
-  //               "Content-Type": "application/json;charset=UTF-8",
-  //               "Access-Control-Allow-Origin": "*"
-  //              }),
-  //              mode: 'cors',
-  //              cache: 'default' };
-  // fetch(`http://localhost:3000`,myInit)
-  // .then((res) => res.json())
-  // .then((artigos) => {
-  //   console.log(artigos)
-  // }).catch(err => console.log(err))
+  var myHeaders = new Headers();
+  myHeaders.append('Access-Control-Allow-Origin', '*');
+  var myInit = { method: 'GET',
+               headers: new Headers({
+                "Content-Type": "application/json;charset=UTF-8",
+                "Access-Control-Allow-Origin": "*"
+               }),
+               mode: 'cors',
+               cache: 'default' };
+  fetch(`http://localhost:3000`,myInit)
+  .then((res) => res.json())
+  .then((artigos) => {
+    console.log(artigos)
+  }).catch(err => console.log(err))
+
+  fetch(`https://www.gamespot.com/api/articles?api_key=26fe1805330b5dafd2b07677de397e70eff7426b&format=json&limit=5&sort=publish_date:desc`,myInit)
+  .then((res) => res.json())
+  .then((artigos) => {
+    console.log(artigos)
+  }).catch(err => console.log(err))
 
 // Buscar Artigos
-fetch(`http://localhost:3004/artigos`)
+fetch(`http://localhost:3003/artigos`)
 .then((res) => res.json())
 .then((artigos) => {
   let botoes = `
