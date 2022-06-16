@@ -153,12 +153,14 @@ document.getElementById('artigos-carrossel').innerHTML = slides;
 let favoritados = []
 
 // Buscar Favoritados
-fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
+if(JSON.parse(window.localStorage.getItem("usuario")) !== null) {
+  fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
   .then((res) => res.json())
   .then((favoritadosRes) => {
     favoritados = favoritadosRes;
   })
   .catch(error => console.error(error));
+}
 
 // Pegar lista de jogos
 fetch(URL)
