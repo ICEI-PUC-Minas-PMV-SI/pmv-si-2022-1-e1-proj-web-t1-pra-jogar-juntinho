@@ -2,14 +2,18 @@ usuario = JSON.parse(window.localStorage.getItem("usuario"))
 let nomeUsuario = `<h2 class="pixxelari">${usuario.nome}</h2>`
 
 if (usuario.avatar !== ""){
-    let avtHtml = `<img src="/src/img/icones/${usuario.avatar}.png" class="card-img-top" alt="...">`
+    let avtHtml = `<img src="/src/img/icones/${usuario.avatar}.png" class="card-img-top" alt="${usuario.avatar}">`
     document.getElementById("imagem-de-perfil").classList.add("d-none")
     document.getElementById("imagem-avatar").innerHTML = avtHtml
 }
 
+document.getElementById('nome').value = usuario.nome
+document.getElementById('senha').value = usuario.senha
+document.getElementById('confirmar-senha').value = usuario.senha
+
 document.getElementById("perfil-card-text").innerHTML = nomeUsuario
 
-URL = "http://localhost:3002/usuarios"; //Usuários cadastrados
+URL = "https://fake-api-pra-jogar-juntinhos.herokuapp.com/usuarios"; //Usuários cadastrados
 
 document.getElementById("salvar").addEventListener("click",(evt) => {
     evt.preventDefault();

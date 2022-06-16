@@ -49,7 +49,7 @@ document.getElementById('release_date').innerHTML = jogoDados.release_date
 document.getElementById('link_steam').addEventListener('click', (evt) => {window.location.href = jogoDados.steam_link})
 
 // Verificar se o jogo foi favoritado pelo usuario
-fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id}`)
+fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id}`)
   .then((res) => res.json())
   .then((favorito) => {
     if(favorito.length > 0) {
@@ -64,7 +64,7 @@ let comentarios = []
 const lista_comentarios = document.getElementById("coments");
 
 // Buscar Comentários
-fetch(`http://localhost:3002/comentarios?_expand=usuario&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id.toString()}`)
+fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios?_expand=usuario&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id.toString()}`)
   .then((res) => res.json())
   .then((comentarios) => {
     let comentarioHTML = "";
@@ -112,7 +112,7 @@ fetch(`http://localhost:3002/comentarios?_expand=usuario&jogoId=${JSON.parse(win
 );
 
 function comentar() {
-  fetch("http://localhost:3002/comentarios", {
+  fetch("https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -132,7 +132,7 @@ function favoritar() {
   } else {
     document.getElementById('regular_heart').classList.add("d-none")
     document.getElementById('solid_heart').classList.remove("d-none")
-    fetch("http://localhost:3001/favoritados", {
+    fetch("https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -154,10 +154,10 @@ function desfavoritar() {
   } else {
     document.getElementById('regular_heart').classList.remove("d-none")
     document.getElementById('solid_heart').classList.add("d-none")
-    fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id}`)
+    fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id}`)
       .then((res) => res.json())
       .then((favorito) => {
-        fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
+        fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados/${favorito[0].id}`, {
           method: "DELETE",
         })
         .catch(error => console.error(error));

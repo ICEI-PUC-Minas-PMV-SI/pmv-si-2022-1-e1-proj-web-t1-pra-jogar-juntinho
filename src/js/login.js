@@ -1,5 +1,5 @@
 // URL DA API DE DADOS
-URL = "http://localhost:3002/usuarios"; //Usuários cadastrados
+URL = "https://fake-api-pra-jogar-juntinhos.herokuapp.com/usuarios"; //Usuários cadastrados
 
 const logar = document.getElementById("logar");
 var localStorage = Window.localStorage;
@@ -37,32 +37,3 @@ logar.addEventListener("click", (evt) => {
     })
     .catch((error) => console.error(error));
 });
-
-// function logar() {
-//   let usuario = document.getElementById("nome");
-//   let senha = document.getElementById("senha");
-//   let listaUser = [];
-//   let userValid = {
-//     nome: " ",
-//     senha: " ",
-//   };
-
-//   listaUser = JSON.parse(URL);
-
-//   listaUser.ForEach((item) => {
-//     if (usuario.value == item.nome && senha.value == item.senha) {
-//       userValid = {
-//         nome: item.nome,
-//         senha: item.senha,
-//       };
-//     }
-//   });
-
-//   if (usuario.value != userValid.usuario && senha.value != userValid.senha) {
-//     usuario.setAttribute("style", "color-red");
-//     senha.setAttribute("style", "color-red");
-//     alert("Usuário não cadastrado");
-//   } else {
-//     window.location.href = "/src/index.html";
-//   }
-// }

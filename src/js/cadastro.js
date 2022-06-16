@@ -1,5 +1,5 @@
 // URL DA API DE DADOS
-URL = "http://localhost:3002/usuarios";
+URL = "https://fake-api-pra-jogar-juntinhos.herokuapp.com/usuarios";
 
 const cadastroForm = document.getElementById("cadastro-form");
 

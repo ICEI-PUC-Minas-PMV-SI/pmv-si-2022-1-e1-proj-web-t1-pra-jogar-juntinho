@@ -21,7 +21,7 @@ let page = 1;
 let favoritados = []
 
 // Buscar Favoritados
-fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
+fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
   .then((res) => res.json())
   .then((favoritadosRes) => {
     favoritados = favoritadosRes;
@@ -31,13 +31,13 @@ fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStor
 
 async function getJogos() {
   if (genero === null && nome === "") {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}`;
+    URL = `https://fake-api-pra-jogar-juntinhos.herokuapp.com/jogos?_limit=${limit}&_page=${page}`;
   } else if (genero !== null && nome === "") {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;
+    URL = `https://fake-api-pra-jogar-juntinhos.herokuapp.com/jogos?_limit=${limit}&_page=${page}&genres=${genero}`;
   } else if (genero === null && nome !== "") {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&title_like=${nome.replace(' ', '%20')}`
+    URL = `https://fake-api-pra-jogar-juntinhos.herokuapp.com/jogos?_limit=${limit}&_page=${page}&title_like=${nome.replace(' ', '%20')}`
   } else if (genero !== null && nome !== "") {
-    URL = `http://localhost:3001/jogos?_limit=${limit}&_page=${page}&genres=${genero}&title_like=${nome.replace(' ', '%20')}`
+    URL = `https://fake-api-pra-jogar-juntinhos.herokuapp.com/jogos?_limit=${limit}&_page=${page}&genres=${genero}&title_like=${nome.replace(' ', '%20')}`
   }
 
   const res = await fetch(URL);
@@ -181,7 +181,7 @@ function favoritar(jogoId) {
   } else {
     document.getElementById('regular_heart_' + jogoId).classList.add("d-none")
     document.getElementById('solid_heart_' + jogoId).classList.remove("d-none")
-    fetch("http://localhost:3001/favoritados", {
+    fetch("https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -203,10 +203,10 @@ function desfavoritar(jogoId) {
   } else {
     document.getElementById('regular_heart_' + jogoId).classList.remove("d-none")
     document.getElementById('solid_heart_' + jogoId).classList.add("d-none")
-    fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
+    fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
       .then((res) => res.json())
       .then((favorito) => {
-        fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
+        fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados/${favorito[0].id}`, {
           method: "DELETE",
         })
         .catch(error => console.error(error));

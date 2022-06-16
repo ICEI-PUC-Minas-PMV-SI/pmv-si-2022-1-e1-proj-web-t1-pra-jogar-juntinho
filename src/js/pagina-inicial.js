@@ -1,5 +1,5 @@
 // URL DA API DE DADOS
-URL = "http://localhost:3001/jogos?_page=0&_limit=300";
+URL = "https://fake-api-pra-jogar-juntinhos.herokuapp.com/jogos?_page=0&_limit=300";
 
 // Plantaformas HTML
 const icone_win =
@@ -35,7 +35,7 @@ const icone_lin =
   // }).catch(err => console.log(err))
 
 // Buscar Artigos
-fetch(`http://localhost:3003/artigos`)
+fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/artigos`)
 .then((res) => res.json())
 .then((artigos) => {
   let botoes = `
@@ -153,7 +153,7 @@ document.getElementById('artigos-carrossel').innerHTML = slides;
 let favoritados = []
 
 // Buscar Favoritados
-fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
+fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
   .then((res) => res.json())
   .then((favoritadosRes) => {
     favoritados = favoritadosRes;
@@ -440,7 +440,7 @@ function favoritar(jogoId, jogoGenero) {
   } else {
     document.getElementById('regular_heart_' + jogoGenero + '_' + jogoId).classList.add("d-none")
     document.getElementById('solid_heart_' + jogoGenero + '_' + jogoId).classList.remove("d-none")
-    fetch("http://localhost:3001/favoritados", {
+    fetch("https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -462,10 +462,10 @@ function desfavoritar(jogoId, jogoGenero) {
   } else {
     document.getElementById('regular_heart_' + jogoGenero + '_' + jogoId).classList.remove("d-none")
     document.getElementById('solid_heart_' + jogoGenero + '_' + jogoId).classList.add("d-none")
-    fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
+    fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
       .then((res) => res.json())
       .then((favorito) => {
-        fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
+        fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados/${favorito[0].id}`, {
           method: "DELETE",
         })
         .catch(error => console.error(error));

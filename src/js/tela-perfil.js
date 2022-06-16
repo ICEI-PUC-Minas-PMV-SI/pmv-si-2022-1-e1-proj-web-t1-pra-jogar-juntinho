@@ -2,15 +2,15 @@ usuario = JSON.parse(window.localStorage.getItem("usuario"))
 let nomeUsuario = `<h2 class="pixxelari mt-3">${usuario.nome}</h2>`
 
 if (usuario.avatar !== ""){
-    let avtHtml = `<img src="/src/img/icones/${usuario.avatar}.png" class="card-img-top" alt="...">`
+    let avtHtml = `<img src="/src/img/icones/${usuario.avatar}.png" class="card-img-top" alt="${usuario.avatar}">`
     document.getElementById("imagem-de-perfil").classList.add("d-none")
     document.getElementById("imagem-avatar").innerHTML = avtHtml
 }
 
 document.getElementById("perfil-card-text").innerHTML = nomeUsuario
 
-URL = "http://localhost:3001/jogos"
-URL = "http://localhost:3002/usuarios"
+URL = "https://fake-api-pra-jogar-juntinhos.herokuapp.com/jogos"
+URL = "https://fake-api-pra-jogar-juntinhos.herokuapp.com/usuarios"
 
 // Plantaformas HTML
 const icone_win =
@@ -39,7 +39,7 @@ async function getJogos(URL) {
 // Jogos Favoritados ====================================================================
 
 async function showJogosFavoritos() {
-  const favoritados = await getJogos(`http://localhost:3001/favoritados?usuarioId=${usuario.id}&_expand=jogo&_limit=${limit}&_page=${page}`);
+  const favoritados = await getJogos(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${usuario.id}&_expand=jogo&_limit=${limit}&_page=${page}`);
   favoritados.forEach((favorito) => {
     let jogo = favorito.jogo;
     let plataformas = "";
@@ -134,8 +134,8 @@ this.showJogosFavoritos();
 // Jogos Comentados ====================================================================
 
 async function showJogosComentarios() {
-    const favoritados = await getJogos(`http://localhost:3001/favoritados?usuarioId=${usuario.id}&_expand=jogo&_limit=${limit}&_page=${page}`);
-    const comentarios = await getJogos(`http://localhost:3002/comentarios?usuarioId=${usuario.id}`);
+    const favoritados = await getJogos(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${usuario.id}&_expand=jogo&_limit=${limit}&_page=${page}`);
+    const comentarios = await getJogos(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios?usuarioId=${usuario.id}`);
     let comentariosFiltrados = [];
     comentarios.forEach(c => {
       if(comentariosFiltrados.length === 0) {
@@ -149,7 +149,7 @@ async function showJogosComentarios() {
     
    
     comentariosFiltrados.forEach(comentario => {
-      fetch(`http://localhost:3001/jogos?id=${comentario.jogoId}`)
+      fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/jogos?id=${comentario.jogoId}`)
         .then(res => res.json())
         .then(response => {
       let jogo = response[0];
@@ -244,7 +244,7 @@ function favoritar(jogoId) {
   } else {
     document.getElementById('regular_heart_' + jogoId).classList.add("d-none")
     document.getElementById('solid_heart_' + jogoId).classList.remove("d-none")
-    fetch("http://localhost:3001/favoritados", {
+    fetch("https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -270,11 +270,10 @@ function desfavoritar(jogoId) {
   } else {
     document.getElementById('regular_heart_' + jogoId).classList.remove("d-none")
     document.getElementById('solid_heart_' + jogoId).classList.add("d-none")
-    fetch(`http://localhost:3001/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
+    fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}&jogoId=${jogoId}`)
       .then((res) => res.json())
       .then((favorito) => {
-        console.log("teste2",favorito[0].id);
-        fetch(`http://localhost:3001/favoritados/${favorito[0].id}`, {
+        fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados/${favorito[0].id}`, {
           method: "DELETE",
         })
         .then((res) => res.json())
