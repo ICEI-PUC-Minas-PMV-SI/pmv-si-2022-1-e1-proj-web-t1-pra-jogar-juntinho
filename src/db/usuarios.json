@@ -29,6 +29,18 @@
       "usuarioId": 4,
       "jogoId": 9,
       "description": "Teste4567"
+    },
+    {
+      "id": 6,
+      "usuarioId": 4,
+      "jogoId": 3,
+      "description": "teste"
+    },
+    {
+      "id": 7,
+      "usuarioId": 4,
+      "jogoId": 3,
+      "description": "Comentario teste"
     }
   ],
   "usuarios": [

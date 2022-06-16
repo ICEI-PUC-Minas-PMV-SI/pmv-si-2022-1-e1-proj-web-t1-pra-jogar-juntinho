@@ -16,18 +16,8 @@
       "usuarioId": 4
     },
     {
-      "id": 4,
-      "jogoId": 13,
-      "usuarioId": 4
-    },
-    {
       "id": 12,
       "jogoId": 25,
-      "usuarioId": 4
-    },
-    {
-      "id": 13,
-      "jogoId": 5,
       "usuarioId": 4
     },
     {
@@ -58,6 +48,11 @@
     {
       "id": 19,
       "jogoId": 19,
+      "usuarioId": 4
+    },
+    {
+      "id": 20,
+      "jogoId": 3,
       "usuarioId": 4
     }
   ],

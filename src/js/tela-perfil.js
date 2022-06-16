@@ -43,6 +43,8 @@ async function showJogosFavoritos() {
   favoritados.forEach((favorito) => {
     let jogo = favorito.jogo;
     let plataformas = "";
+    let displayNoneRegular = "";
+    let displayNoneSolid = "d-none";
 
     if (jogo.plataforms != null || jogo.plataforms !== []) {
       jogo.plataforms.forEach((plataforma) => {
@@ -132,9 +134,29 @@ this.showJogosFavoritos();
 // Jogos Comentados ====================================================================
 
 async function showJogosComentarios() {
-    const jogos = await getJogos();
-    jogos.forEach((jogo) => {
+    const favoritados = await getJogos(`http://localhost:3001/favoritados?usuarioId=${usuario.id}&_expand=jogo&_limit=${limit}&_page=${page}`);
+    const comentarios = await getJogos(`http://localhost:3002/comentarios?usuarioId=${usuario.id}`);
+    let comentariosFiltrados = [];
+    comentarios.forEach(c => {
+      if(comentariosFiltrados.length === 0) {
+        comentariosFiltrados.push(c);
+      } else {
+        if(comentariosFiltrados.find(cf => cf.jogoId === c.jogoId) === undefined) {
+          comentariosFiltrados.push(c);
+        }
+      }
+    })
+    
+   
+    comentariosFiltrados.forEach(comentario => {
+      fetch(`http://localhost:3001/jogos?id=${comentario.jogoId}`)
+        .then(res => res.json())
+        .then(response => {
+      let jogo = response[0];
+      console.log("j",jogo)
       let plataformas = "";
+      let displayNoneRegular = "";
+      let displayNoneSolid = "d-none";
   
       if (jogo.plataforms != null || jogo.plataforms !== []) {
         jogo.plataforms.forEach((plataforma) => {
@@ -142,6 +164,13 @@ async function showJogosComentarios() {
           if (plataforma === "MacBook") plataformas = plataformas + icone_mac;
           if (plataforma === "Linux") plataformas = plataformas + icone_lin;
         });
+      }
+
+      if(favoritados.length > 0) {
+        if(favoritados.some(f => f.jogoId === jogo.id)) {
+          displayNoneRegular = "d-none";
+          displayNoneSolid = "";
+        }
       }
   
       const jogoEl = document.createElement("div");
@@ -189,22 +218,10 @@ async function showJogosComentarios() {
           </div>
         </div>
           `;
-  
+          console.log("ele",jogoEl)
           lista_jogos_comentados.appendChild(jogoEl);
-    });
-}
-
-function showLoading() {
-  loading.classList.add("show");
-
-  setTimeout(() => {
-    loading.classList.remove("show");
-
-    setTimeout(() => {
-      page++;
-      showJogosComentarios();
-    }, 300);
-  }, 1000);
+        })
+    })
 }
 
 window.addEventListener("scroll", () => {

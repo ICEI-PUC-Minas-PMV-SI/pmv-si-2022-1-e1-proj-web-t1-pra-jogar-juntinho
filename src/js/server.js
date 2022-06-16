@@ -30,19 +30,33 @@ server.get('/', async (request, response) => {
     }
     articlesData = articles;
 
-    fetch("http://localhost:3004/artigos", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(articlesData),
-    }).then(res => articles.push(res))
+    // fetch("http://localhost:3003/artigos", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(articlesData),
+    // }).then(res => articles.push(res))
 
     return articles;
   });
 
   await browser.close();
 
+  // response.header({
+    //   "Content-Type": "application/json;charset=UTF-8",
+  //   "Access-Control-Allow-Origin": "*"
+  // })
+
+  // response.set({
+  //   'Content-Type': 'application/json',
+  //   'Content-Encoding': 'UTF-8',
+  //   'Access-Control-Allow-Origin': '*',
+  //   'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
+  // })
+  // response.status(200).send({
+  //   teste: "teste"
+  // })
   response.send({
     pageContent
   })
