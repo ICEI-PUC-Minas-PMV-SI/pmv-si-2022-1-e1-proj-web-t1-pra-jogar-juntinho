@@ -128,7 +128,7 @@ function comentar() {
 
 function favoritar() {
   if(window.localStorage.getItem('usuario') === null) {
-    window.location.href = "http://127.0.0.1:5500/src/login.html";
+    window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/login.html";
   } else {
     document.getElementById('regular_heart').classList.add("d-none")
     document.getElementById('solid_heart').classList.remove("d-none")
@@ -150,7 +150,7 @@ function favoritar() {
 
 function desfavoritar() {
   if(window.localStorage.getItem('usuario') === null) {
-    window.location.href = "http://127.0.0.1:5500/src/login.html";
+    window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/login.html";
   } else {
     document.getElementById('regular_heart').classList.remove("d-none")
     document.getElementById('solid_heart').classList.add("d-none")

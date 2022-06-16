@@ -62,7 +62,7 @@ function salvar() {
             avatar: avt,
           })
         );
-        window.location.href = "http://127.0.0.1:5500/src/edicao-perfil.html";
+        window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/edicao-perfil.html";
       })
       .catch((error) => console.error(error));
   } else {

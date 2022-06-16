@@ -38,7 +38,7 @@ cadastroForm.addEventListener("submit", (evt) => {
                   avatar: usuario.avatar
                 })
               );
-              window.location.href = "http://127.0.0.1:5500/src/index.html";
+              window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/index.html";
             })
             .catch(error => console.error(error)); // Retorna error no console
         } else {

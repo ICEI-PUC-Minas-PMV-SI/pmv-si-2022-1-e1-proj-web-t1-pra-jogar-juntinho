@@ -235,12 +235,12 @@ function maisInformacoes(id, title, description, developers, distributor, serie,
     id, title, description, developers, distributor, serie, release_date, genres: genres.split(','), plataforms: plataforms.split(','), tags: tags.split(','), img_sm, img_md, img_lg, trailer, steam_link
   }))
 
-  window.location.href = "http://127.0.0.1:5500/src/informacoes-jogo.html";
+  window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/informacoes-jogo.html";
 }
 
 function favoritar(jogoId) {
   if(window.localStorage.getItem('usuario') === null) {
-    window.location.href = "http://127.0.0.1:5500/src/login.html";
+    window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/login.html";
   } else {
     document.getElementById('regular_heart_' + jogoId).classList.add("d-none")
     document.getElementById('solid_heart_' + jogoId).classList.remove("d-none")
@@ -266,7 +266,7 @@ function favoritar(jogoId) {
 
 function desfavoritar(jogoId) {
   if(window.localStorage.getItem('usuario') === null) {
-    window.location.href = "http://127.0.0.1:5500/src/login.html";
+    window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/login.html";
   } else {
     document.getElementById('regular_heart_' + jogoId).classList.remove("d-none")
     document.getElementById('solid_heart_' + jogoId).classList.add("d-none")
@@ -288,5 +288,5 @@ function desfavoritar(jogoId) {
 
 document.getElementById('logout').addEventListener('click', () => {
   window.localStorage.removeItem('usuario');
-  window.location.href = "http://127.0.0.1:5500/src/index.html";
+  window.location.href = "https://meek-paprenjak-b33f2f.netlify.app/src/index.html";
 })
