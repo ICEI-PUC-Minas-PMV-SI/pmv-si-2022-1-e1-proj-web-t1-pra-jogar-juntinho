@@ -153,7 +153,6 @@ async function showJogosComentarios() {
         .then(res => res.json())
         .then(response => {
       let jogo = response[0];
-      console.log("j",jogo)
       let plataformas = "";
       let displayNoneRegular = "";
       let displayNoneSolid = "d-none";
@@ -218,7 +217,7 @@ async function showJogosComentarios() {
           </div>
         </div>
           `;
-          console.log("ele",jogoEl)
+
           lista_jogos_comentados.appendChild(jogoEl);
         })
     })
