@@ -219,8 +219,8 @@ fetch(URL)
               ${plataformas}
             </div>
             <div>
-              <i id="regular_heart_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}"></i>
-              <i id="solid_heart_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'acao')"></i>
+              <i id="regular_heart_acao_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'acao')"></i>
+              <i id="solid_heart_acao_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'acao')"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-brands fa-steam texto-azul"></i></a></a>
             </div>
           </div>
@@ -306,7 +306,7 @@ fetch(URL)
               ${plataformas}
             </div>
             <div>
-            <i id="regular_heart_aventura_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'aventura')"></i>
+              <i id="regular_heart_aventura_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id}, 'aventura')"></i>
               <i id="solid_heart_aventura_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id}, 'aventura')"></i>
               <a href="${jogo.steam_link}" target="_blank"><i class="fa-brands fa-steam texto-azul"></i></a></a>
             </div>

@@ -69,39 +69,43 @@
       <!----------------------CARD PERFIL--------------------------------->
       <section>
         <div class="row justify-content-center">
-          <div class="col-sm-7 col-md-4 col-lg-3 centralizar">
-            <div id="Card centralizar" style="width: 18rem;">
-              <div class="d-flex">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
 
-                <div id="imagem-avatar" class="shadow-lg rounded-circle" > 
-                  <img id="imagem-de-perfil" src="/src/img/tela_de_perfil/perfil-de-usuario.png" class="card-img-top" alt="Avatar">
+                <div class="d-flex" style="justify-content: center;">
+
+                  <!-- Avatar -->
+                  <div id="imagem-avatar" class="shadow-lg rounded-circle" > 
+                    <img id="imagem-de-perfil" src="/src/img/tela_de_perfil/perfil-de-usuario.png" class="card-img-top" alt="Avatar" style="height: 288px !important;">
+                  </div>
+
+                  <!-- Botão de editar avatar -->
+                  <a id="Bottom-ConfigFoto" href="/src/troca-icone-perfil.html">
+                    <button type="button" class="btn btn-secondary rounded-pill text-right border border-dark" style="height: 44px;margin-left: -75px;margin-top: 202px;">
+                      <i class="fa-solid fa-pencil"></i>
+                      <div id="bottom-EditarFoto">
+                      </div>
+                    </button>
+                  </a>
+
                 </div>
-
-                <a id="Bottom-ConfigFoto" href="/src/troca-icone-perfil.html">
-                  <button type="button" class="btn btn-secondary rounded-pill text-right border border-dark" style="height: 44px;margin-left: -75px;margin-top: 202px;">
-                    <i class="fa-solid fa-pencil"></i>
-                    <div id="bottom-EditarFoto">
-                    </div>
-                  </button>
-                </a>
 
               </div>
-
-              <div class="col-sm-12 col-md-10 col-lg-12 centralizar">
-                <div class="card-body-Perfil text-center mt-2">
-                  <div id="perfil-card-text">
-
-                  </div>
+              <div class="col-12 d-flex" style="justify-content: center;">
+                <div id="perfil-card-text">
+                  <!-- Nome do Usuário -->
                 </div>
-                <div class="col-sm-12 col-md-10 col-lg-12 centralizar">
-                  <div class="text-center">
-                    <a href="edicao-perfil.html" class="btn btn-primary btn-sm">
-                      Editar Perfil
-                    </a>
-                    <button id="logout" class="btn btn-vermelho text-white btn-sm">
-                      Logout
-                    </button>
-                  </div>
+              </div>
+              <div class="col-12 d-flex" style="justify-content: center;">
+                <!-- Botão de editar perfile e botao de logout -->
+                <div class="text-center">
+                  <a href="edicao-perfil.html" class="btn btn-primary btn-sm">
+                    Editar Perfil
+                  </a>
+                  <button id="logout" class="btn btn-vermelho text-white btn-sm">
+                    Logout
+                  </button>
                 </div>
               </div>
             </div>
@@ -121,7 +125,7 @@
                 </div>
               </div>
               <!--Lista-->
-              <div class="col-12" style="padding-right: 30px;">
+              <div class="col-12">
                 <div class="Container-Scroll">
                   <!--Cards-->
                   <div id="lista-jogos" class="row">
@@ -149,7 +153,7 @@
                 </div>
               </div>
               <!--Lista-->
-              <div class="col-12" style="padding-left: 30px;">
+              <div class="col-12">
                 <div class="Container-Scroll">
                 <!--Cards-->
                   <div class="row" id="lista-jogos">
