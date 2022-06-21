@@ -83,13 +83,17 @@ Para atender ao requisito RF-006 foi desenvolvido a página de Login.
 
 Ao clicar em fazer login, disponível no menu da página inicial, irá carregar a tela de login para o usuário.
 
+<div align="center">
 ![login](img/entrega03/login.JPG)
+</div>
 
 Será exibido dois títulos, Nome/Nickname e Password do tipo `label` respectivamente, logo em seguida mais dois campos do tipo `imput` para receber os valores que o usuário digitar para fazer login no site. Os botões que são do tipo `button` com personalização do boostrap com a classe `btn-primary` são para cadastrar um usuário caso não possua acesso ao site e o outro para enviar a requisição do usuário que irá logar no site. Os dados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/login.js`.
 
 Em caso de erro ao autenticar o login será exibido um model informando que os dados estão errados.
 
+<div align="center">
 ![modal-erro-login](img/entrega03/model-erro.JPG)
+</div>
 <br/>
 
 ## Cadastro
@@ -150,4 +154,3 @@ Ao clicar no botão onde estiver escrito seu Nome/NickName no menu disponivel ap
 Nela o usuário podera visualizar a lista de jogos favoritadas e comentados, além de poder editar informações como o ícone de perfil, nome/nickname e senha.
 
 <br/>
-````
