@@ -4,8 +4,17 @@
 
 | Nº Teste | Página | Cenário de teste |
 |-----------|-----------------------------------------|----|
-|TF-001| Home | Ao abrir a index, é esperado que sejam carregados os "cards" de Depoimento, Denúncia, Redes de Apoio e o carrossel de notícias, bem como a topbar e a footbar. |
-|TF-001| Home | Ao abrir a index, é esperado que sejam carregados os "cards" de Depoimento, Denúncia, Redes de Apoio e o carrossel de notícias, bem como a topbar e a footbar. |
+|TF-001| Home | Disponibilizar área com lista de jogos eletrônicos cooperativos em categorias |
+|TF-002| Jogo | Exibir página com informações do jogo eletrônico cooperativo selecionado |
+|TF-003| Filtro | Filtrar jogos eletrônicos cooperativos por categorias |
+|TF-004| Home | Permitir que o usuário navegue pelas categorias de jogos |
+|TF-005| Cadastro | Permitir cadastro de usuário |
+|TF-006| Login | Permitir login do usuário |
+|TF-007| Várias | Permitir o usuário a favoritar jogos |
+|TF-008| Perfil | Exibir lista de jogos favoritado do usuário logado |
+|TF-009| Jogo | Permitir usuário avaliar um jogo |
+|TF-010| Jogo | Permitir usuário a postar comentários no jogo |
+|TF-011| Jogo | Exibir comentários de outro usuário na página com informações do jogo selecionado |
 
 # Registro de Testes de Software
 
@@ -13,8 +22,17 @@
 
 | Nº Teste | Página | Resultado do Teste | Bugs? |
 |----|-----------------------------------------|----|----|
-|RTF-001| Home | Todos os "cards" previstos foram carregados na index/homepage sem atrasos ou bugs. | NÃO |
-|RTF-002| Home | O botão direciona corretamente o usuário para a página esperada. | NÃO |
+|RTF-001| Home |  | NÃO |
+|RTF-002| Home | | NÃO |
+|RTF-003| Filtro-jogos | | NÃO |
+|RTF-004| Home | | NÃO |
+|RTF-005| Cadastro | | NÃO |
+|RTF-006| Login | | NÃO |
+|RTF-007| Várias | | NÃO |
+|RTF-008| Perfil | | NÃO |
+|RTF-009| Jogo | | NÃO |
+|RTF-010| Jogo | | NÃO |
+|RTF-011| Jogo | | NÃO |
 
 ## Avaliação
 

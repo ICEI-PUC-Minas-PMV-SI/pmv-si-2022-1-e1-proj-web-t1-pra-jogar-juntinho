@@ -91,11 +91,11 @@ Ao clicar em fazer login, disponível no menu da página inicial, irá carregar 
 
 Será exibido dois títulos, Nome/Nickname e Password do tipo `label` respectivamente, logo em seguida mais dois campos do tipo `imput` para receber os valores que o usuário digitar para fazer login no site. Os botões que são do tipo `button` com personalização do boostrap com a classe `btn-primary` são para cadastrar um usuário caso não possua acesso ao site e o outro para enviar a requisição do usuário que irá logar no site. Os dados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/login.js`.
 
-Em caso de erro ao autenticar o login será exibido um model informando que os dados estão errados.
+Em caso de erro ao autenticar o login será exibido um modal informando que os dados estão errados.
 
 <div align="center">
 
-![modal-erro-login](img/entrega03/model-erro.JPG)
+![modal-erro-login](img/entrega03/modal_usernotfound.png)
 
 </div>
 <br/>
@@ -108,7 +108,7 @@ Em caso de erro ao autenticar o login será exibido um model informando que os d
 
 Para atender ao requisito RF-005 foi desenvolvido a página de Cadastro.
 
-Será disponibilizado ao usuário um formulário composto por `label`, `imput` e um `button` onde ele poderá cadastrar suas informações como Nome/Nickname e senha para criar um usuário no site e fazer login futuramente. Estes usuários cadastrados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/cadastro.js`.
+Será disponibilizado ao usuário um formulário composto por `label`, `input` e um `button` onde ele poderá cadastrar suas informações como Nome/Nickname e senha para criar um usuário no site e fazer login futuramente. Estes usuários cadastrados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/cadastro.js`.
 
 ![cadastro](img/entrega03/cadastro.JPG)
 
@@ -123,8 +123,14 @@ Após inserir seus dados, para confirmar cadastro no Pra Jogar Juntinho basta cl
       "avatar": "cody"
     },
 ```
+Em caso de erro ao autenticar o cadastro será exibido um modal informando o que não está conforme.
 
-<br/>
+<div align="center">
+
+![modal-erro-cadastro](img/entrega03/modal_senhasdiferem.png)
+![modal-erro-cadastro2](img/entrega03/modal_userexist.png)
+
+</div>
 
 ## Favoritar e Avaliar um Jogo
 
