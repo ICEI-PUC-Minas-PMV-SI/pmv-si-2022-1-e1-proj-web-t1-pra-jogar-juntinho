@@ -16,17 +16,17 @@
 |TF-010| Filtro de Jogos | Ao clicar em "Buscar" o filtro deve retornar os jogos presentes no site que correspondam aos critérios adicionados pelo usuário.|
 |TF-011| Login | Ao carregar a página é esperado um formulário onde o usuario poderá preencher com nome/nickname e senha.|
 |TF-012| Login | Ao clicar em "Entrar" é esperado que o usuário seja direcionado para a página index com o usuário logado.|
-|TF-013| Login | Ao clicar em "Entrar" e os dados de login não existirem no banco de dados é esperado um popup que informe que Usuário e/ou senha não foram encontrados.|
+|TF-013| Login | Ao clicar em "Entrar" e os dados de login não existirem no banco de dados é esperado um modal que informe que Usuário e/ou senha não foram encontrados.|
 |TF-014| Login | Ao clicar em "Cadastrar" é esperado que o usuário seja direcionado para a página de cadastro.|
 |TF-015| Cadastro | Ao carregar a página é esperado um formulário onde o usuário poderá preencher informações como Nome/Nickname e senha para criar um usuário no site e fazer login futuramente.|
 |TF-016| Cadastro | Ao clicar em "Cadastrar" é esperado que o usuário seja direcionado para a página index com o usuário logado.|
-|TF-017| Várias | No card de cada Jogo ao clicar em "Mais Informações" é esperado que o usuário seja direcionado para a página do jogo selecionado.|
-|TF-018| Página do Jogo | Ao carregar a página é esperado informações como o vídeo do jogo e uma descrição do jogo, imagem do jogo acompanhada de ícones descritivos, informações sobre o tipo de co-op disponível, as plataformas que o usuário poderá jogar o jogo, gêneros, tema e a data de lançamento, bem como uma área de comentários dos usuários.|
+|TF-017| Card de Jogo | No card de cada Jogo ao clicar em "Mais Informações" é esperado que o usuário seja direcionado para a página do jogo selecionado.|
+|TF-018| Página do Jogo | Ao carregar a página é esperado informações como o vídeo do jogo e uma descrição do jogo, imagem do jogo acompanhada de ícones descritivos, as plataformas que o usuário poderá jogar o jogo, gêneros, tags, tema e a data de lançamento, bem como uma área de comentários dos usuários.|
 |TF-019| Página do Jogo | É esperado que o usuário possa clicar no botão em formato de coração favoritando o jogo.|
 |TF-019| Página do Jogo | Ao clicar em "Deixe aqui seu comentário" é esperado que o usuário possa digitar seu comentário.|
 |TF-020| Página do Jogo | Ao clicar em "Enviar" é esperado que o comentário seja enviado e apareça na página do jogo.|
-|TF-021| Várias | No card de cada Jogo é esperado que o usuário possa clicar no botão em formato de coração favoritando o jogo.|
-|TF-022| Várias | Ao clicar no botão com o nome do usuário (que substitui o botão de login) é esperado que o usuário seja direcionado para a página de perfil do usuário.|
+|TF-021| Card de Jogo | No card de cada Jogo é esperado que o usuário possa clicar no botão em formato de coração favoritando o jogo.|
+|TF-022| Botão de Perfil | Ao clicar no botão com o nome do usuário (que substitui o botão de login) é esperado que o usuário seja direcionado para a página de perfil do usuário.|
 |TF-023| Perfil de usuário | Ao carregar a página é esperado a foto de perfil do usuário, nome do perfil, duas listas com cards de jogos favoritados e outra de jogos comentados.|
 |TF-024| Perfil de usuário | Ao clicar em "Editar Perfil" é esperado que o usuário seja direcionado para a página de edição do perfil.|
 |TF-025| Perfil de usuário | Ao clicar em "Logout" é esperado que o usuário seja direcionado para a página index com o usuário deslogado.|
