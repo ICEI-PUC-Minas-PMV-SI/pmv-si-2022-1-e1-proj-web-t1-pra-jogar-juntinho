@@ -95,7 +95,6 @@ fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios?_expand=us
           </div>
           <hr style="height: 2px;">
         `
-      
       })
     }
 
