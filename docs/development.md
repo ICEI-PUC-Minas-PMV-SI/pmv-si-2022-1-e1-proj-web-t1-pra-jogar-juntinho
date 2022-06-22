@@ -4,11 +4,11 @@ Nesta seção estão descritos os artefatos e estruturas de dados criados para a
 
 ## Página Inicial
 
-Aqui onde nosso site se inicia, uma tela repleta de funções que faz ligação com as demais do site. No início da página será disponibilizado um carrossel das principais notícias no mundo dos jogos
+Aqui onde nosso site se inicia, uma tela repleta de funções que faz ligação com as demais do site. No início da página será disponibilizado um carrossel das principais notícias no mundo dos jogos.
 
 ![carrosel](img/entrega03/carrossel.JPG)
 
-Logo em seguida terá um legenda com informações sobre qual plataforma os jogos se encontram disponíveis.
+Logo em seguida será exibido o botão que recolhe e expande onde o usuário terá acesso a uma legenda dos ícones que ele encontrará nos cards dos jogos que facilitará quais plataformas o jogo se encontra.
 
 ![legenda](img/entrega03/legenda.JPG)
 
@@ -16,7 +16,7 @@ E por fim a exibição dos jogos em formato de cards com alguma seleções de g�
 
 ![cards](img/entrega03/cards.JPG)
 
-Caso prefira buscar por outras modalidades basta ir no botão "Filtro de Jogos" que se encontra na nosso Menu
+Caso prefira buscar por outras modalidades basta ir no botão "Filtro de Jogos" que se encontra na nosso Menu.
 
 <br/>
 
@@ -30,11 +30,7 @@ Caso prefira buscar por outras modalidades basta ir no botão "Filtro de Jogos" 
 
 Para atender aos requisitos RF-001, RF-003 e RF-004 foi desenvolvido a página de Filtro de Jogos.
 
-Será exibido um botão que recolhe e expande onde o usuário terá acesso a uma legenda dos ícones que ele encontrará nos cards dos jogos que facilitará quais plataformas o jogo se encontra.
-
-![legenda](img/entrega03/legenda.JPG)
-
-Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponíveis no site.
+ Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuário podera colocar informações como nome do jogo, gênero e plataforma desejada, podendo assim fazer pesquisas nos jogos disponíveis no site.
 
 ![filtro](img/entrega03/filtro.JPG)
 
@@ -71,8 +67,6 @@ Abaixo do vídeo e da descrição aparecerá os comentários que já foram feito
 
 Os comentários foram feitos da `seguinte forma`
 
-<br/>
-
 ## Login
 
 ### Requisitos
@@ -83,22 +77,13 @@ Para atender ao requisito RF-006 foi desenvolvido a página de Login.
 
 Ao clicar em fazer login, disponível no menu da página inicial, irá carregar a tela de login para o usuário.
 
-<div align="center">
-
 ![login](img/entrega03/login.JPG)
-
-</div>
 
 Será exibido dois títulos, Nome/Nickname e Password do tipo `label` respectivamente, logo em seguida mais dois campos do tipo `imput` para receber os valores que o usuário digitar para fazer login no site. Os botões que são do tipo `button` com personalização do boostrap com a classe `btn-primary` são para cadastrar um usuário caso não possua acesso ao site e o outro para enviar a requisição do usuário que irá logar no site. Os dados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/login.js`.
 
 Em caso de erro ao autenticar o login será exibido um modal informando que os dados estão errados.
 
-<div align="center">
-
 ![modal-erro-login](img/entrega03/modal_usernotfound.png)
-
-</div>
-<br/>
 
 ## Cadastro
 
@@ -125,12 +110,8 @@ Após inserir seus dados, para confirmar cadastro no Pra Jogar Juntinho basta cl
 ```
 Em caso de erro ao autenticar o cadastro será exibido um modal informando o que não está conforme.
 
-<div align="center">
-
 ![modal-erro-cadastro](img/entrega03/modal_senhasdiferem.png)
 ![modal-erro-cadastro2](img/entrega03/modal_userexist.png)
-
-</div>
 
 ## Favoritar e Avaliar um Jogo
 
@@ -139,14 +120,31 @@ Em caso de erro ao autenticar o cadastro será exibido um modal informando o que
 - RF-007 - Permitir o usuário a favoritar jogos
 - RF-009 - Permitir usuário avaliar um jogo
 
-Para atender aos requisitos RF-007 foi desenvolvido nos cards dos jogos um botão com símbolo de coração.
+O botão sem o jogo favoritado ficará assim:
+<div align="center">
 
-![favoritos](img/entrega03/favoritar.JPG)
+![favoritar](img/entrega03/favoritar.JPG)
 
-Os jogos favoritados ficará disponível no perfil do usuário.
+</div>
 
-`Falta ainda a parte de avaliar o jogo`
+E com o jogo favoritado assim:
+<div align="center">
 
+![favoritado](img/entrega03/jogo-favoritado.JPG)
+
+</div>
+
+Para atender ao requisito RF-007 foi desenvolvido nos cards dos jogos um botão com símbolo de coração. Se o usuário não estiver logado e tentar mesmo assim favoritar um jogo o site redireciona para a tela de login.
+Caso estiver logado o evento será acionado por meio de um `onclick` executando a função `favoritar` armazenada no arquivo `src/js/informacoes-jogo.js`. Caso deseja remover dos favoritos o jogo basta clicar no ícone novamente que irá chamar a função `desfavoritar` e o mesmo será removido. Os jogos favoritados e os comentários feitos ficará disponível na tela de perfil
+
+Agora para o requisito RF-009 foi disponilizado uma seção de comentários que se encontra na tela de Informações do Jogo.
+
+![comentarios](img/entrega03/comentar.JPG)
+
+No `imput` você coloca o comentário que deseja sobre o jogo selecionado e para enviar basta clicar no `btn btn-primary` do Boostrap. Nesse botão se encontra um evento de `onclick` que chama a função `comentar` armazenada no arquivo `src/js/informacoes-jogo.js`. Pronto seu comentário foi publicado no site
+
+![comentado](img/entrega03/comentado.JPG)
+ 
 <br/>
 
 ## Tela de Perfil
