@@ -1,24 +1,23 @@
 # Programação de Funcionalidades
 
-Nesta seção estão descritos os artefatos e estruturas de dados criados para atender aos requisitos previstos nas <a href="./especification.md">Especificações do Projeto</a>, bem como as instruções para acesso e verificação da implementação. As tecnologias utilizadas se baseiam nas linguagens HTML, CSS e JavaScript.
+Nesta seção estão descritos os artefatos e estruturas de dados criados para atender aos requisitos previstos nas <a href="./especification.md">Especificações do Projeto</a>, bem como as instruções para acesso e verificação da implementação. Desenvolvemos nosso site atráves de HTML, CSS e da linguagem JavaScript.
 
 ## Página Inicial
 
-Aqui onde nosso site se inicia, uma tela repleta de funções que faz ligação com as demais do site. No início da página será disponibilizado um carrossel das principais notícias no mundo dos jogos.
+Aqui onde nosso site se inicia, uma tela repleta de funções que faz ligação com as demais do site. No início da página será disponibilizado um `carrossel` das principais notícias no mundo dos jogos. As notícias funcionam atráves de uma API da gamespot, e são armazenadas no arquivo `\src\db\artigos.json`. No carrossel há dois `buttons` em forma de seta para navegar entre elas.
 
 ![carrosel](img/entrega03/carrossel.JPG)
 
-Logo em seguida será exibido o botão que recolhe e expande onde o usuário terá acesso a uma legenda dos ícones que ele encontrará nos cards dos jogos que facilitará quais plataformas o jogo se encontra.
+Logo em seguida será exibido um `button` que recolhe e expande (`arcodeão`) onde o usuário terá acesso a uma legenda dos ícones que ele encontrará nos cards dos jogos que facilitará quais plataformas o jogo se encontra.
 
 ![legenda](img/entrega03/legenda.JPG)
 
-E por fim a exibição dos jogos em formato de cards com alguma seleções de gêneros pré definidos.
+E por fim a exibição dos jogos em formato de cards atráves de um `ul` onde cada `id` se relaciona a um gênero, que já são predefinidos.
 
 ![cards](img/entrega03/cards.JPG)
 
-Caso prefira buscar por outras modalidades basta ir no botão "Filtro de Jogos" que se encontra na nosso Menu.
+Caso prefira buscar por outras modalidades basta ir no botão "Filtro de Jogos" que se encontra no nosso menu `Navbar`.
 
-<br/>
 
 ## Filtro de Jogos
 
@@ -79,7 +78,7 @@ Ao clicar em fazer login, disponível no menu da página inicial, irá carregar 
 
 ![login](img/entrega03/login.JPG)
 
-Será exibido dois títulos, Nome/Nickname e Password do tipo `label` respectivamente, logo em seguida mais dois campos do tipo `imput` para receber os valores que o usuário digitar para fazer login no site. Os botões que são do tipo `button` com personalização do boostrap com a classe `btn-primary` são para cadastrar um usuário caso não possua acesso ao site e o outro para enviar a requisição do usuário que irá logar no site. Os dados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/login.js`.
+Será exibido dois títulos, Nome/Nickname e Password do tipo `label` respectivamente, logo em seguida mais dois campos do tipo `input` para receber os valores que o usuário digitar para fazer login no site. Os botões que são do tipo `button` com personalização do boostrap com a classe `btn-primary` são para cadastrar um usuário caso não possua acesso ao site e o outro para enviar a requisição do usuário que irá logar no site. Os dados são registrados no localStorage do navegador de acordo com a estrutura de dados presente em `src/js/login.js`.
 
 Em caso de erro ao autenticar o login será exibido um modal informando que os dados estão errados.
 
@@ -141,7 +140,7 @@ Agora para o requisito RF-009 foi disponilizado uma seção de comentários que 
 
 ![comentarios](img/entrega03/comentar.JPG)
 
-No `imput` você coloca o comentário que deseja sobre o jogo selecionado e para enviar basta clicar no `btn btn-primary` do Boostrap. Nesse botão se encontra um evento de `onclick` que chama a função `comentar` armazenada no arquivo `src/js/informacoes-jogo.js`. Pronto seu comentário foi publicado no site
+No `input` você coloca o comentário que deseja sobre o jogo selecionado e para enviar basta clicar no `btn btn-primary` do Boostrap. Nesse botão se encontra um evento de `onclick` que chama a função `comentar` armazenada no arquivo `src/js/informacoes-jogo.js`. Pronto seu comentário foi publicado no site
 
 ![comentado](img/entrega03/comentado.JPG)
  
