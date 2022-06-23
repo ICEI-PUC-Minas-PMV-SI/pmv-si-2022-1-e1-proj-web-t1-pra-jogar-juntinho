@@ -17,7 +17,8 @@ Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 
 ## Integrantes
 
-<a href="https://github.com/ArielRetask"  width="100" height="100"><img src="Ariel.jpg" class="media-object  img-responsive img-thumbnail"></a>
+<a href="https://github.com/ArielRetask"><img src="img/Ariel.jpg" class="media-object  img-responsive img-thumbnail "width="100vw" style="max-width: 100%;"></a>
+
 
 [![alttext](/src/img/carlos.png = 100x100)](https://github.com/CarlosEduardoAP)
 
