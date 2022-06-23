@@ -153,12 +153,14 @@ No `imput` você coloca o comentário que deseja sobre o jogo selecionado e para
 
 - RF-008 - Exibir lista de jogos favoritado do usuário logado
 
-Para atender ao requisito foi desenvolvido a página de Tela de Perfil.
-
-Ao clicar no botão onde estiver escrito seu Nome/NickName no menu disponivel após o login aparecerá a tela de perfil.
+Para atender ao requisito foi desenvolvido a página de Tela de Perfil. Para acessar a página basta somente clicar no botão onde estiver escrito seu Nome/NickName no menu disponível após o login ser realizado.
 
 ![perfil](img/entrega03/telaPerfil.JPG)
 
-Nela o usuário podera visualizar a lista de jogos favoritadas e comentados, além de poder editar informações como o ícone de perfil, nome/nickname e senha.
+Aqui é onde fica armazenada as informações tais como avatar de perfil, nome de usuário, jogos favoritados e comentados. Para editar o avatar de perfil foi disponibilizado um botão com ícone de lápis. Ao acionar esse botão ele carrega uma nova página armazenada no arquivo `src/troca-icone-perfil.html` que irá carregar diversas opções de avatar predefinido, basta somente escolher o desejado e clinar no botão `salvar` para confirmar sua edição. Esse botão acionará a `function salvar()` que se encontra no arquivo `src/js/troca-icone.js` e retorna para a página `src/edicao-perfil.html`.
+
+Essa página irá carregar um `form` trazendo campos para alteração de `Nome/Nickname, password e confirmar password` e um botão `btn btn-primary` com o nome `Salvar` para salvar as informações alteradas. Essa ação é capturada por meio do DOM através do `addEventListener("click")` que se encontra no arquivo `src/js/edicao-perfil`. E um outro botão logo em baixo caso não deseje alterar nada que tem uma `href` para a página `TelaPerfil.html`.
+
+Logo abaixo dessa tela se encontra dois `grid` que irá mostrar jogos favoritos e jogos comentados respectivamente. A seguinte `function` é acionada para carregar os jogos favoritados `async function showJogosFavoritos()` e para jogos comentados `async function showJogosComentarios()`, elas se encontram no caminho `src/js/tela-perfil`. Os jogos serão exibidos em forma de cards conforme a página inicial e se desejar você pode desfavoritar o jogo clicando no ícone `coração` para remover da sua lista, ou se deseja visualizar o jogo basta clicar no botão com o nome `Mais informações` para carregar a tela de informações do jogo.
 
 <br/>
