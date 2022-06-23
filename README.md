@@ -1,5 +1,3 @@
-<center>
-
 # Pra Jogar Juntinho
 
 ![alttext](/src/img/fundo%20readme.jpg)
@@ -7,7 +5,7 @@
 Sistemas de Informação
 Projeto - Aplicações Web | 1º Semestre
 
-</center>
+
 
 Os jogos que possuem o modo cooperativo atendem uma grande parcela do público da indústria, sempre crescente, de jogos eletrônicos. Por se tratar de um modo de jogo que necessita exclusivamente do envolvimento de mais de uma pessoa, a complexidade no processo de escolha do jogo se torna maior.
 
@@ -17,24 +15,15 @@ Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 
 ## Integrantes
 
-<a href="https://github.com/ArielRetask"  width="100" height="100"><img src="Ariel.jpg" class="media-object  img-responsive img-thumbnail"></a>
 
-[![alttext](/src/img/carlos.png = 100x100)](https://github.com/CarlosEduardoAP)
+Ariel de Almeida Rodrigues 
+Carlos Eduardo Alves de Paula
+Filipe Augusto Silveira e Silva
+Lucas de Oliveira Fonseca
+Sandro Antônio Souza
+Victor Almeida e Silva do Prado Staccioli
+Vitória Teixeira Alves de Souza
 
-[![alttext](/src/img/Filipe.png = 100x100)](https://github.com/FlpAugusto)
-
-[![alttext](/src/img/lucas.jpg = 100x100)](https://github.com/Lucas-OFonseca)
-
-[![alttext](/src/img/sandro.jpg = 100x100)](https://github.com/SandroAS)
-
-[![alttext](/src/img/victorstaccioli.jpg = 100x100)](https://github.com/Staccioli)
-
-[![alttext](/src/img/vitoria.png = 100x100)](https://github.com/alvesVih)
-
-<center>
-Ariel de Almeida Rodrigues - Carlos Eduardo Alves de Paula - Filipe Augusto Silveira e Silva - Lucas de Oliveira Fonseca
-Sandro Antônio Souza - Victor Almeida e Silva do Prado Staccioli  - Vitória Teixeira Alves de Souza
-</center>
 
 ## Orientador
 
