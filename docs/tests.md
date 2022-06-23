@@ -44,45 +44,51 @@
 
 | Nº Teste | Página | Resultado do Teste | Bugs? |
 |----|-----------------------------------------|----|----|
-|TF-001| Home | Não |
-|TF-002| Home | Não |
-|TF-003| Home | Não |
-|TF-004| Home | Não |
-|TF-005| Home | Não |
-|TF-006| Home | Não |
-|TF-007| Home | Não |
-|TF-008| Filtro de Jogos | Não |
-|TF-009| Filtro de Jogos | Não |
-|TF-010| Filtro de Jogos | Não |
-|TF-011| Login | Não |
-|TF-012| Login | Não |
-|TF-013| Login | Não |
-|TF-014| Login | Não |
-|TF-015| Cadastro | Não |
-|TF-016| Cadastro | Não |
-|TF-017| Várias | Não |
-|TF-018| Página do Jogo | Não |
-|TF-019| Página do Jogo | Não |
-|TF-019| Página do Jogo | Não |
-|TF-020| Página do Jogo | Não |
-|TF-021| Várias | Não |
-|TF-022| Várias | Não |
-|TF-023| Perfil de usuário | Não |
-|TF-024| Perfil de usuário | Não |
-|TF-025| Perfil de usuário | Não |
-|TF-026| Edição de Perfil | Não |
-|TF-027| Edição de Perfil | Não |
-|TF-028| Edição de Perfil | Não |
-|TF-029| Edição de Perfil | Não |
-|TF-030| Edição de Ícone de Perfil | Não |
-|TF-031| Edição de Ícone de Perfil | Não |
-|TF-032| Edição de Ícone de Perfil | Não |
+|TF-001| Home | Os cards são carregados corretamente. | Não |
+|TF-002| Home | O usuário é direcionado para a página Index. |Não |
+|TF-003| Home | O usuário é direcionado para a página Quem Somos. |Não |
+|TF-004| Home | O usuário é direcionado para a página Filtro de Jogos. | Não |
+|TF-005| Home | O usuário é direcionado para a página de Login. | Não |
+|TF-006| Home | O carrossel é exibido com cinco notícias diferentes. | Não |
+|TF-007| Home | O botão funciona corretamente. | Não |
+|TF-008| Filtro de Jogos | O botão funciona corretamente. | Não |
+|TF-009| Filtro de Jogos | O filtro é exibido corretamente. | Não |
+|TF-010| Filtro de Jogos | Os resultados são retornados conforme solicitação. | Não |
+|TF-011| Login | O formulário é exibido corretamente. | Não |
+|TF-012| Login | O usuário é direcionado para a página Index logado. | Não |
+|TF-013| Login | O modal aparece corretamente. | Não |
+|TF-014| Login | O usuário é direcionado para a página de cadastro. | Não |
+|TF-015| Cadastro | O formulário é exibido corretamente. | Não |
+|TF-016| Cadastro | O usuário é direcionado para a página Index logado. | Não |
+|TF-017| Card do Jogo | O usuário é direcionado para a página do Jogo Solicitada. | Não |
+|TF-018| Página do Jogo | As informações da página são exibidas corretamente. | Não |
+|TF-019| Página do Jogo | O botão de favoritar funciona corretamnete. | Não |
+|TF-019| Página do Jogo | O usuário pode realizar comentários. | Não |
+|TF-020| Página do Jogo | O comentário é enviado mas a página não é carregada para que ele apareça. | Sim |
+|TF-021| Card de Jogo | O botão de favoritar funciona corretamnete. |Não |
+|TF-022|Botão de Perfil | O usuário é direcionado para a página de perfil do usuário. | Não |
+|TF-023| Perfil de usuário | A página é carregada corretamente. | Não |
+|TF-024| Perfil de usuário | O usuário é direcionado para a página de Edição de Perfil. | Não |
+|TF-025| Perfil de usuário | O usuário é direcionado para a página Index com o usuário deslogado. | Não |
+|TF-026| Edição de Perfil | O formulário é exibido corretamente. | Não |
+|TF-027| Edição de Perfil | A página é recarregada com as informações atualizadas. | Não |
+|TF-028| Edição de Perfil | O usuário é direcionado para a página de Edição de Ícone de Perfil. | Não |
+|TF-029| Edição de Perfil | O usuário é direcionado para a página de Perfil. | Não |
+|TF-030| Edição de Ícone de Perfil | A página é exibida corretamente. | Não |
+|TF-031| Edição de Ícone de Perfil | O ícone é atualizado corretamente. | Não |
+|TF-032| Edição de Ícone de Perfil | O usuário é direcionado para a página de Perfil com o ícone atualizado. | Não |
 
 ## Avaliação
 
 Foram realizados testes funcionais do sistema, de acordo com o Plano de testes funcionais, no ambiente de produção no dia 23 de Junho de 2022 às 18h42.
 
-Não foram reportados bugs.
+Foi reportado o seguinte bug:
+
+ * (TF-020) O comentário é enviado mas a página não é carregada para que ele apareça.
+
+O bug ainda não foi resolvido até a escrita deste documento.
+
+Novos testes serão realizados em breve após a correção do problema.
 
 <hr>
  
