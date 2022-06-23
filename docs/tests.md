@@ -45,52 +45,44 @@
 | Nº Teste | Página | Resultado do Teste | Bugs? |
 |----|-----------------------------------------|----|----|
 |TF-001| Home | Não |
-|TF-002| Home | |
-|TF-003| Home | |
-|TF-004| Home | |
-|TF-005| Home | |
-|TF-006| Home | |
-|TF-007| Home | |
-|TF-008| Filtro de Jogos | |
-|TF-009| Filtro de Jogos | |
-|TF-010| Filtro de Jogos | |
-|TF-011| Login | |
-|TF-012| Login | |
-|TF-013| Login | |
-|TF-014| Login | |
-|TF-015| Cadastro | |
-|TF-016| Cadastro | |
-|TF-017| Várias | |
-|TF-018| Página do Jogo | |
-|TF-019| Página do Jogo | |
-|TF-019| Página do Jogo | |
-|TF-020| Página do Jogo | |
-|TF-021| Várias | |
-|TF-022| Várias | |
-|TF-023| Perfil de usuário | |
-|TF-024| Perfil de usuário | |
-|TF-025| Perfil de usuário | |
-|TF-026| Edição de Perfil | |
-|TF-027| Edição de Perfil | |
-|TF-028| Edição de Perfil | |
-|TF-029| Edição de Perfil | |
-|TF-030| Edição de Ícone de Perfil | |
-|TF-031| Edição de Ícone de Perfil | |
-|TF-032| Edição de Ícone de Perfil | |
+|TF-002| Home | Não |
+|TF-003| Home | Não |
+|TF-004| Home | Não |
+|TF-005| Home | Não |
+|TF-006| Home | Não |
+|TF-007| Home | Não |
+|TF-008| Filtro de Jogos | Não |
+|TF-009| Filtro de Jogos | Não |
+|TF-010| Filtro de Jogos | Não |
+|TF-011| Login | Não |
+|TF-012| Login | Não |
+|TF-013| Login | Não |
+|TF-014| Login | Não |
+|TF-015| Cadastro | Não |
+|TF-016| Cadastro | Não |
+|TF-017| Várias | Não |
+|TF-018| Página do Jogo | Não |
+|TF-019| Página do Jogo | Não |
+|TF-019| Página do Jogo | Não |
+|TF-020| Página do Jogo | Não |
+|TF-021| Várias | Não |
+|TF-022| Várias | Não |
+|TF-023| Perfil de usuário | Não |
+|TF-024| Perfil de usuário | Não |
+|TF-025| Perfil de usuário | Não |
+|TF-026| Edição de Perfil | Não |
+|TF-027| Edição de Perfil | Não |
+|TF-028| Edição de Perfil | Não |
+|TF-029| Edição de Perfil | Não |
+|TF-030| Edição de Ícone de Perfil | Não |
+|TF-031| Edição de Ícone de Perfil | Não |
+|TF-032| Edição de Ícone de Perfil | Não |
 
 ## Avaliação
 
-Foram realizados testes funcionais do sistema, de acordo com o Plano de testes funcionais, no ambiente de produção no dia 00 de Junho de 2022 às 00h00.
+Foram realizados testes funcionais do sistema, de acordo com o Plano de testes funcionais, no ambiente de produção no dia 23 de Junho de 2022 às 18h42.
 
-Foram reportados os seguintes bugs:
-
-- (RTF-004) Ao clicar na opção "Ver mais" em um dos cards "Redes de Apoio" da homepage, o usuário é direcionado para a página de Redes de Apoio sem a apresentação das informações da instituição selecionada na index.
-
-- (RTF-009) Ao fazer a seleção de uma cidade na página "Redes de Apoio", os dados da cidade selecionada anteriormente permanecem na tela, apenas acumulando as informações junto às da nova seleção.
-
-Os bugs ainda não foram resolvidos até a escrita deste documento.
-
-Novos testes serão realizados em breve após a correção dos problemas.
+Não foram reportados bugs.
 
 <hr>
  
