@@ -16,7 +16,8 @@ Observando a inexistência de plataformas que centralizem em um só lugar as div
 Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 
 ## Integrantes
-![alttext](/src/img/Ariel.jpg){width=30x30}](https://github.com/ArielRetask)
+
+<a href="https://github.com/ArielRetask"  width="100" height="100"><img src="img/Ariel.jpg" class="media-object  img-responsive img-thumbnail"></a>
 
 [![alttext](/src/img/carlos.png = 100x100)](https://github.com/CarlosEduardoAP)
 
