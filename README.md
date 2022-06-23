@@ -16,13 +16,13 @@ Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 ## Integrantes
 
 
-Ariel de Almeida Rodrigues 
-Carlos Eduardo Alves de Paula
-Filipe Augusto Silveira e Silva
-Lucas de Oliveira Fonseca
-Sandro Antônio Souza
-Victor Almeida e Silva do Prado Staccioli
-Vitória Teixeira Alves de Souza
+* Ariel de Almeida Rodrigues 
+* Carlos Eduardo Alves de Paula
+* Filipe Augusto Silveira e Silva
+* Lucas de Oliveira Fonseca
+* Sandro Antônio Souza
+* Victor Almeida e Silva do Prado Staccioli
+* Vitória Teixeira Alves de Souza
 
 
 ## Orientador
