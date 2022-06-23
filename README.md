@@ -2,7 +2,7 @@
 
 # Pra Jogar Juntinho
 
-[![alttext](/src/img/fundo%20readme.jpg){width=250}]
+![alttext](/src/img/fundo%20readme.jpg)
 ## Pontifícia Universidade Católica de Minas Gerais
 Sistemas de Informação
 Projeto - Aplicações Web | 1º Semestre
@@ -16,7 +16,7 @@ Observando a inexistência de plataformas que centralizem em um só lugar as div
 Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 
 ## Integrantes
-[![alttext](/src/img/Ariel.jpg){width=30px}](https://github.com/ArielRetask)
+![alttext](/src/img/Ariel.jpg){width=30x30}](https://github.com/ArielRetask)
 
 [![alttext](/src/img/carlos.png = 100x100)](https://github.com/CarlosEduardoAP)
 
