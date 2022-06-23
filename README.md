@@ -1,9 +1,12 @@
 <center>
+
 # Pra Jogar Juntinho
 
+[![alttext](/src/img/fundo%20readme.jpg){width=250}]
 ## Pontifícia Universidade Católica de Minas Gerais
 Sistemas de Informação
 Projeto - Aplicações Web | 1º Semestre
+
 </center>
 
 Os jogos que possuem o modo cooperativo atendem uma grande parcela do público da indústria, sempre crescente, de jogos eletrônicos. Por se tratar de um modo de jogo que necessita exclusivamente do envolvimento de mais de uma pessoa, a complexidade no processo de escolha do jogo se torna maior.
@@ -13,12 +16,18 @@ Observando a inexistência de plataformas que centralizem em um só lugar as div
 Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 
 ## Integrantes
-[![alttext](/src/img/Ariel.jpg = 100x100)](https://github.com/ArielRetask)
+[![alttext](/src/img/Ariel.jpg){width=30px}](https://github.com/ArielRetask)
+
 [![alttext](/src/img/carlos.png = 100x100)](https://github.com/CarlosEduardoAP)
+
 [![alttext](/src/img/Filipe.png = 100x100)](https://github.com/FlpAugusto)
+
 [![alttext](/src/img/lucas.jpg = 100x100)](https://github.com/Lucas-OFonseca)
+
 [![alttext](/src/img/sandro.jpg = 100x100)](https://github.com/SandroAS)
+
 [![alttext](/src/img/victorstaccioli.jpg = 100x100)](https://github.com/Staccioli)
+
 [![alttext](/src/img/vitoria.png = 100x100)](https://github.com/alvesVih)
 
 <center>
