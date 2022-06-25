@@ -38,7 +38,13 @@ Abaixo da legenda do lado esquerdo se encontra o Filtro de Jogos, onde o usuári
 
 ![filtro](img/entrega03/filtro.JPG)
 
-Feito o processo de filtro o usuário deverá clicar no botão buscar que retornará os resultados da pesquisa feita pelo usuário. O resultado da pesquisa será apresentado ao lado do Filtro de Jogos em forma de lista, onde apareceram os cards com algumas informações do jogos, podendo também favoritar, compartilhar o link do jogo ou ver mais informações do jogos escolhido.
+Feito o processo de filtro o usuário deverá clicar no botão buscar, que por meio de uma função Javascript no caminho `src/js/filtro-jogos.js` que além de realizar a criação do card de maneira dinamica buscará também os jogos filtrados em um arquivos .json que possue alguns jogos cadastrados e retornará os resultados da pesquisa feita pelo usuário. O resultado da pesquisa será apresentado ao lado do Filtro de Jogos em forma de lista, onde apareceram os cards com algumas informações do jogos, podendo também favoritar, compartilhar o link do jogo ou ver mais informações do jogos escolhido.
+
+Exemplo busca por tipo
+
+![filtro](img/entrega03/jogos-filtrados.JPG)
+
+A página de filtro de jogos também possui uma funcionalidade de carregamento sob demanda, isso significa que a página assim que carregada possui um número específico de cards que podem ser carregados de uma vez, porém assim que essa primeira lista de jogos chega ao fim ela realiza automáticamente uma nova busca no arquivo .json por meio do Javascript trazendo novos cards de jogos respeitando os parâmetros passado pelo filtro.
 
 <br/>
 
