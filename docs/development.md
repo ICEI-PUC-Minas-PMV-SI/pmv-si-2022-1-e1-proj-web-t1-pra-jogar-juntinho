@@ -35,7 +35,11 @@ Para atender aos requisitos RF-001, RF-003 e RF-004 foi desenvolvido a página d
 
 ![filtro](img/entrega03/filtro.JPG)
 
-Feito o processo de filtro o usuário deverá clicar no botão buscar, que por meio de uma função Javascript no caminho `src/js/filtro-jogos.js` que além de realizar a criação do card de maneira dinamica buscará também os jogos filtrados em um arquivos .json que possue alguns jogos cadastrados e retornará os resultados da pesquisa feita pelo usuário. O resultado da pesquisa será apresentado ao lado do Filtro de Jogos em forma de lista, onde apareceram os cards com algumas informações do jogos, podendo também favoritar, compartilhar o link do jogo ou ver mais informações do jogos escolhido.
+Feito o processo de filtro o usuário deverá clicar no botão "buscar" de tipo `button`, ativando o evento `onclick` responsável por realizar a execução da função `getJogos();` localizada no caminho `src/js/filtro-jogos.js` que irá comparar os filtros utilizados e passará como parâmetro para realizar a busca dos jogos disponíveis na API e retornar os resultados da pesquisa feita pelo usuário. O resultado da pesquisa será apresentado ao lado do Filtro de Jogos em forma de lista, onde apareceram os cards com algumas informações do jogos, podendo também favoritar, compartilhar o link do jogo ou ver mais informações do jogos escolhido.
+
+![filtro](img/entrega03/codigo-filtro.JPG)
+
+A montagem dos cards dos jogos são realizadas de maneira dinâmica e para realizar essa criação de maneira dinâmica foi desenvolvido uma função `async` chamada `showJogos()` essa função basicamente pega o retorno de cada jogo da função `getJogos();` e realiza a criação do card com as informações que retornaram. Essa função é acionada sempre que a página de filtro de jogos recarrega, sempre que se é realizado um novo filtro e sempre que tem a necessidade de trazer novos jogos por meio do carregamento sob demanda.
 
 Exemplo busca por tipo
 
@@ -50,7 +54,7 @@ A página de filtro de jogos também possui uma funcionalidade de carregamento s
   });
 ```
 
-O código acima é referente ao carregamento sob demanda, esse código identifica em qual posição da página o usuário se encontra e assim que ele chegar em uma determinada parte dessa página ele realiza a função chamada showLoading, a função showLoading é uma função que deixa visivel ao usuário que esta havendo um novo carregamento na lista de jogos para trazer novos cards com novas opções ao usuário adicionando também mais um número de página referente aos jogos a ser consumido na API.
+O código acima é referente ao carregamento sob demanda, esse código identifica em qual posição da página o usuário se encontra e assim que ele chegar em uma determinada parte dessa página ele realiza a função chamada `showLoading();`, a função `showLoading();` é uma função que deixa visivel ao usuário que esta havendo um novo carregamento na lista de jogos para trazer novos cards com novas opções ao usuário adicionando também mais um número de página referente aos jogos a ser consumido na API.
 
 <br/>
 
