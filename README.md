@@ -15,12 +15,6 @@ Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 
 ## Integrantes
 
-<<<<<<< HEAD
-<a href="https://github.com/ArielRetask"><img src="img/Ariel.jpg" class="media-object  img-responsive img-thumbnail "width="100vw" style="max-width: 100%;"></a>
-
-=======
->>>>>>> 2ceaecbaa2ae9b5fec94941e30d66ad2553d75c0
-
 * Ariel de Almeida Rodrigues 
 * Carlos Eduardo Alves de Paula
 * Filipe Augusto Silveira e Silva
@@ -41,7 +35,7 @@ Acesse: https://meek-paprenjak-b33f2f.netlify.app/src/index.html
 | ETAPA 1       | 07/03/2022 - 01/04/2022   |[Documentação de Contexto](docs/context.md) <br> [Especificação do Projeto](docs/especification.md) |
 | ETAPA 2       | 04/04/2022 - 29/04/2022   |[Projeto de Interface](docs/interface.md) <br> [Template Padrão](docs/template.md) |
 | ETAPA 3       | 02/05/2022 - 27/05/2022   |[Programação de Funcionalidades - HTML e CSS](docs/development.md) |
-| ETAPA 4       | 30/05/2022 - 24/06/2022   |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md) |
+| ETAPA 4       | 30/05/2022 - 24/06/2022   |[Programação de Funcionalidades - Javascript](docs/development.md) <br> [Testes de Software ](docs/tests.md)<br> [Testes de SUsabilidade ](docs/usabilidade.md) |
 | ETAPA 5       | 27/06/2022 - 08/07/2022   | [Apresentação](presentation/README.md) |
 
 # Código
