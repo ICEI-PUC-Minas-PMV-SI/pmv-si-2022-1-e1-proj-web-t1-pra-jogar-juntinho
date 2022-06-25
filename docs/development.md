@@ -43,6 +43,15 @@ Exemplo busca por tipo
 
 A página de filtro de jogos também possui uma funcionalidade de carregamento sob demanda, isso significa que a página assim que carregada possui um número específico de cards que podem ser carregados de uma vez, porém assim que essa primeira lista de jogos chega ao fim ela realiza automáticamente uma nova busca no arquivo .json por meio do Javascript trazendo novos cards de jogos respeitando os parâmetros passado pelo filtro.
 
+```
+  window.addEventListener("scroll", () => {
+      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      if (scrollTop + clientHeight >= scrollHeight - 1) showLoading();
+  });
+```
+
+O código acima é referente ao carregamento sob demanda, esse código identifica em qual posição da página o usuário se encontra e assim que ele chegar em uma determinada parte dessa página ele realiza a função chamada showLoading, a função showLoading é uma função que deixa visivel ao usuário que esta havendo um novo carregamento na lista de jogos para trazer novos cards com novas opções ao usuário adicionando também mais um número de página referente aos jogos a ser consumido na API.
+
 <br/>
 
 ## Informações do Jogo
