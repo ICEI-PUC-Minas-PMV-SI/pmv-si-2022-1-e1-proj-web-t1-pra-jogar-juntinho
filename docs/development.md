@@ -46,7 +46,7 @@ A página de filtro de jogos também possui uma funcionalidade de carregamento s
 ```
   window.addEventListener("scroll", () => {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      if (scrollTop + clientHeight >= scrollHeight - 1) showLoading();
+      if (scrollTop + clientHeight >= scrollHeight - 1) showLoading(); 
   });
 ```
 
