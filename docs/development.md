@@ -16,7 +16,9 @@ E por fim a exibição dos jogos em formato de cards atráves de um `ul` onde ca
 
 ![cards](img/entrega03/cards.JPG)
 
-Caso prefira buscar por outras modalidades basta ir no botão "Filtro de Jogos" que se encontra no nosso menu `Navbar`.
+No nosso menu `Navbar` temos o botão home e a própria logo do site que redirecionam atráves de um comando `'href'` dentro de uma âncora `'a'` para a página inicial do site. Logo ao lado temos o "Quem Somos" para conhecerem melhor as pessoas envolvidas no projeto, após, o butão de "Filtro de Jogos" permite ao usuário ter mais opções de escolha na hora de filtrar seus games. Por último temos um botão de "Login" para os usuários conseguirem favoritar e comentar seus jogos favoritos!
+
+![navbar](img/entrega03/navbar.png)
 
 
 ## Filtro de Jogos
