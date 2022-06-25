@@ -2,6 +2,7 @@
 ## Plano de Testes
 Tarefa 01
 Descrição da Tarefa: Pesquisar por um jogo a critério do usuário no site.
+
 Critérios de Avaliação:
 * Taxa de Sucesso – 
 Conseguiu concluir a tarefa: Sim / Não
@@ -13,6 +14,7 @@ Nota de 1 a 5, sendo 5 como totalmente satisfeito e 1 como totalmente insatisfei
 
 Tarefa 02
 Descrição da Tarefa: Criar um usuário e fazer login.
+
 Critérios de Avaliação:
 * Taxa de Sucesso – 
 Conseguiu concluir a tarefa: Sim / Não
@@ -24,6 +26,7 @@ Nota de 1 a 5, sendo 5 como totalmente satisfeito e 1 como totalmente insatisfei
 
 Tarefa 03
 Descrição da Tarefa: Favoritar um jogo qualquer a critério do usuário e encontrá-lo em seu perfil.
+
 Critérios de Avaliação:
 * Taxa de Sucesso – 
 Conseguiu concluir a tarefa: Sim / Não
