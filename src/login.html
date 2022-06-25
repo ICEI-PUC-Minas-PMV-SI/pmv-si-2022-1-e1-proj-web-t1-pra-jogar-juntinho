@@ -69,23 +69,20 @@
       <div class="row">
         <form id="pegar-usu">
           <div class="col-12 d-flex justify-content-center">
-
             <!-- Card -->
             <div class="card text-white bg-vermelho mb-3">
               <div class="card-header">
                 <h1 class="pixxelari text-center mb-0">Faça Login</h1>
               </div>
               <div class="card-body row">
-
                 <!-- Nome do Jogador -->
                 <div class="col-12">
-                  <label for="exampleDataList" class="form-label">Nome/Nickname</label>
+                  <label for="exampleDataList" class="form-label"><i class="fa-solid fa-user"></i> Nome/Nickname</label>
                   <input class="form-control" type="text" placeholder="Digite seu Nome/Nickname" id="nome" />
                 </div>
-
                 <!-- Senha -->
                 <div class="col-12 mt-3">
-                  <label for="inputPassword" class="form-label">Password</label>
+                  <label for="inputPassword" class="form-label">Senha</label>
                   <input type="password" class="form-control" id="senha" />
                 </div>
                 <!-- Botão de Logar -->
@@ -100,6 +97,24 @@
               </div>
             </div>
           </div>
+          <!-- Modal Confirmar Login JavaScript -->
+          <div class="modal fade" id="modallogin" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h4 class="modal-title w-100">Usuário e/ou senha não encontrados</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Não foi possível fazer login pois o usuário ou senha utilizado não existem! Favor tentar novamente ou realizar o cadastro de usuário.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary mt-3 w-100" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim do Modal -->
         </form>
       </div>
     </div>

@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-
   <!-- Meta tags -->
   <title>Tela de perfil</title>
   <link rel="shortcut icon" type="imagex/png" href="/src/img/logo.png" />
@@ -76,13 +75,15 @@
                 <div class="d-flex" style="justify-content: center;">
 
                   <!-- Avatar -->
-                  <div id="imagem-avatar" class="shadow-lg rounded-circle" > 
-                    <img id="imagem-de-perfil" src="/src/img/tela_de_perfil/perfil-de-usuario.png" class="card-img-top" alt="Avatar" style="height: 288px !important;">
+                  <div id="imagem-avatar" class="shadow-lg rounded-circle">
+                    <img id="imagem-de-perfil" src="/src/img/tela_de_perfil/perfil-de-usuario.png" class="card-img-top"
+                      alt="Avatar" style="height: 288px !important;">
                   </div>
 
                   <!-- Botão de editar avatar -->
                   <a id="Bottom-ConfigFoto" href="/src/troca-icone-perfil.html">
-                    <button type="button" class="btn btn-secondary rounded-pill text-right border border-dark" style="height: 44px;margin-left: -75px;margin-top: 202px;">
+                    <button type="button" class="btn btn-secondary rounded-pill text-right border border-dark"
+                      style="height: 44px;margin-left: -75px;margin-top: 202px;">
                       <i class="fa-solid fa-pencil"></i>
                       <div id="bottom-EditarFoto">
                       </div>
@@ -115,61 +116,61 @@
       <!----------------------LISTAS DE JOGOS--------------------------------->
       <section class="mt-5 row" id="Jogos">
 
-          <!----------------------CARDES DESEJOS--------------------------------->
-          <div class="col-sm-12 col-md-6 col-lg-6 mb-5 AJ-CARDS" id="Jogos-Desejados">
-            <div class="row">
-              <!--Titulo-->
-              <div class="card text-dark bg-light mb-3">
-                <div class="">
-                  <h3 class="pixxelari text-center"> Meus jogos favoritos </h3>
-                </div>
-              </div>
-              <!--Lista-->
-              <div class="col-12">
-                <div class="Container-Scroll">
-                  <!--Cards-->
-                  <div id="lista-jogos" class="row">
-                    <div class="card-body">
-                      <div class="row" id="lista-jogos-favoritos"></div>
-                    </div>
-                    <div class="loader">
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                    </div>
-                  </div>
-                </div>
+        <!----------------------CARDES DESEJOS--------------------------------->
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-5 AJ-CARDS" id="Jogos-Desejados">
+          <div class="row">
+            <!--Titulo-->
+            <div class="card text-dark bg-light mb-3">
+              <div class="">
+                <h3 class="pixxelari text-center"> Meus jogos favoritos </h3>
               </div>
             </div>
-          </div>
-
-          <!----------------------CARDES COMENTADOS--------------------------------->
-          <div class="col-sm-12 col-md-6 col-lg-6 mb-5 AJ-CARDS" id="Jogos-Comentados">
-            <div class="row">
-              <!--Titulo-->
-              <div class="card text-dark bg-light mb-3">
-                <div class="">
-                  <h3 class="pixxelari text-center"> Jogos que eu comentei </h3>
-                </div>
-              </div>
-              <!--Lista-->
-              <div class="col-12">
-                <div class="Container-Scroll">
+            <!--Lista-->
+            <div class="col-12">
+              <div class="Container-Scroll">
                 <!--Cards-->
-                  <div class="row" id="lista-jogos">
-                    <div class="card-body">
-                      <div class="row" id="lista-jogos-comentados"></div>
-                    </div>
-                    <div class="loader">
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                      <div class="circle"></div>
-                    </div>
+                <div id="lista-jogos" class="row">
+                  <div class="card-body">
+                    <div class="row" id="lista-jogos-favoritos"></div>
+                  </div>
+                  <div class="loader">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <!----------------------CARDES COMENTADOS--------------------------------->
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-5 AJ-CARDS" id="Jogos-Comentados">
+          <div class="row">
+            <!--Titulo-->
+            <div class="card text-dark bg-light mb-3">
+              <div class="">
+                <h3 class="pixxelari text-center"> Jogos que eu comentei </h3>
+              </div>
+            </div>
+            <!--Lista-->
+            <div class="col-12">
+              <div class="Container-Scroll">
+                <!--Cards-->
+                <div class="row" id="lista-jogos">
+                  <div class="card-body">
+                    <div class="row" id="lista-jogos-comentados"></div>
+                  </div>
+                  <div class="loader">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     </div>
