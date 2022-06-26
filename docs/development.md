@@ -70,7 +70,7 @@ Para atender aos requisitos RF-002, RF-010 e RF-011 foi desenvolvido a página d
 
 Ao clicar em um card de um jogo específico aparecerá para o usuário a página de Informações do Jogo, nela ele tera acesso à esquerda um vídeo do jogo acompanhado de uma descrição do jogo.
 
-> adicioanar imagem do video e da descrição (ainda não funciona)
+![telajogo](src/img/tela_de_jogo/telainfo.jpg)
 
 O vídeo foi adicionado da `seguinte maneira` e a descrição `assim`.
 
