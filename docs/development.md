@@ -73,12 +73,15 @@ Ao clicar em um card de um jogo específico aparecerá para o usuário a página
 ![telajogo](https://user-images.githubusercontent.com/101337049/175794900-26cdae67-1f1b-43df-a25a-a1c86a2fa753.jpg)
 
 O vídeo foi adicionado da `seguinte maneira` e a descrição `assim`.
+![codigo_trailer](https://user-images.githubusercontent.com/101337049/175795233-ea833a10-005c-44fd-bc94-1bb13f82afe1.png)
 
 Do lado direito da página aparecerá as informações do jogo, tais como uma imagem do jogo acompanhada de ícones descritivos, informações sobre o tipo de co-op disponível, as plataformas que o usuário poderá jogar o jogo, gêneros, tema e a data de lançamento.
 
-> adicionar imagem do card lateral
+![menu-lateral](https://user-images.githubusercontent.com/101337049/175794926-6e512a88-c692-406d-87bc-7e3d2e895654.png)
 
 As informações foram implementadas da `seguinte maneira`.
+
+![codigo-menu-lateral](https://user-images.githubusercontent.com/101337049/175795244-998f23a7-5fff-493c-8049-4404344ea2b7.png)
 
 Abaixo do vídeo e da descrição aparecerá os comentários que já foram feitos por outros usuários sobre aquele jogo, quando logado aparecerá o campo onde o usuário poderá fazer o próprio comentário.
 
