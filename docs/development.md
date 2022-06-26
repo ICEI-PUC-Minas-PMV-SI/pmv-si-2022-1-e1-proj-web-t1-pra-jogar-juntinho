@@ -90,7 +90,7 @@ Abaixo do vídeo e da descrição aparecerá os comentários que já foram feito
 ![img-comentandado](img/entrega03/comentado.JPG)
 
 Os comentários foram feitos da `seguinte forma`
-![img-comentario-codigo](img/entrega03/comentariocodg.JPG)
+![img-comentario-codigo](https://user-images.githubusercontent.com/101337049/175797769-6214dcb2-290c-4bf2-bf10-b3398e54e103.png)
 
 ## Login
 
