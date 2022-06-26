@@ -85,10 +85,12 @@ As informações foram implementadas da `seguinte maneira`.
 
 Abaixo do vídeo e da descrição aparecerá os comentários que já foram feitos por outros usuários sobre aquele jogo, quando logado aparecerá o campo onde o usuário poderá fazer o próprio comentário.
 
-> adicionar imagem dos comentarios sem login
-> adicionar imagem dos comentarios com login
+![img-comentario-nlogado](img/entrega03/comentariodeslog.jpg)
+![img-comentario-logado](img/entrega03/comentar.jpg)
+![img-comentandado](img/entrega03/comentado.jpg)
 
 Os comentários foram feitos da `seguinte forma`
+![img-comentario-codigo](img/entrega03/comentariocodg.jpg)
 
 ## Login
 
