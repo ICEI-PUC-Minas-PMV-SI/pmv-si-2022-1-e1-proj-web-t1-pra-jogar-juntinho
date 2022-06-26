@@ -86,12 +86,10 @@ As informações foram implementadas da `seguinte maneira`.
 Abaixo do vídeo e da descrição aparecerá os comentários que já foram feitos por outros usuários sobre aquele jogo, quando logado aparecerá o campo onde o usuário poderá fazer o próprio comentário.
 
 ![img-comentario-nlogado](img/entrega03/comentariodeslog.JPG)
-![img-comentario-logado](img/entrega03/comentar.JPG)
 ![img-comentandado](img/entrega03/comentado.JPG)
 
-Os comentários foram feitos da `seguinte forma`
 ![img-comentario-codigo](https://user-images.githubusercontent.com/101337049/175797769-6214dcb2-290c-4bf2-bf10-b3398e54e103.png)
-
+Os comentários foram feitos da `seguinte forma`
 ## Login
 
 ### Requisitos
