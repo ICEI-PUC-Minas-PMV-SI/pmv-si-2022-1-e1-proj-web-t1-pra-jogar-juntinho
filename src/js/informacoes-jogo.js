@@ -96,7 +96,6 @@ function buscarComentarios() {
           </div>
           <hr style="height: 2px;">
         `
-      
       })
     }
 

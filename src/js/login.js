@@ -29,7 +29,8 @@ logar.addEventListener("click", (evt) => {
           })
         );
       } else {
-        alert("Usuário e/ou senha não encontrado, tente novamente");
+        var modallogin = new bootstrap.Modal(document.getElementById('modallogin'), {})
+        modallogin.show()
         return false;
       }
 
