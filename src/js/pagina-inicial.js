@@ -9,31 +9,6 @@ const icone_mac =
 const icone_lin =
   '<i class="fa-brands fa-linux texto-azul margin-icone-plataforma"></i>';
 
-  // var myHeaders = new Headers();
-  // myHeaders.append('Access-Control-Allow-Origin', '*');
-  // var myInit = {
-  //   method: 'GET',
-  //   headers: new Headers({
-  //     'Content-Type': 'application/json',
-  //     'Content-Encoding': 'UTF-8',
-  //     'Access-Control-Allow-Origin': '*',
-  //     'Access-Control-Allow-Methods': 'POST, GET, OPTIONS'
-  //   }),
-  //   mode: 'no-cors',
-  //   cache: 'default' 
-  // };
-  // fetch(`http://localhost:3000`,myInit)
-  // .then((res) => console.log(res))
-  // .then((artigos) => {
-  //   console.log(artigos)
-  // }).catch(err => console.log(err))
-
-  // fetch(`https://www.gamespot.com/api/articles?api_key=26fe1805330b5dafd2b07677de397e70eff7426b&format=json&limit=5&sort=publish_date:desc`,myInit)
-  // .then((res) => res.json())
-  // .then((artigos) => {
-  //   console.log(artigos)
-  // }).catch(err => console.log(err))
-
 // Buscar Artigos
 fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/artigos`)
 .then((res) => res.json())
@@ -205,14 +180,32 @@ fetch(URL)
       }
 
       lista_jogos += `
-    <li class="" style="
+    <li class="card-jogo-animacao" style="
       display: inline-block;
       width: 210px;
       margin-right: 10px;"
     >
       <div class="card shadow-lg">
-        <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
-        <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+        <a href="#" onclick="maisInformacoes(
+          ${jogo.id},
+          '${jogo.title}',
+          '${jogo.description}',
+          '${jogo.developers}',
+          '${jogo.distributor}',
+          '${jogo.serie}',
+          '${jogo.release_date}',
+          '${jogo.genres}',
+          '${jogo.plataforms}',
+          '${jogo.tags}',
+          '${jogo.img_sm}',
+          '${jogo.img_md}',
+          '${jogo.img_lg}',
+          '${jogo.trailer}',
+          '${jogo.steam_link}'
+        )" class="btn btn-vermelho text-white link-jogo">
+          <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
+          <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+        </a>
         <div class="card-body corpo-jogo-card">
           <div class="d-flex justify-content-between">
             <div>

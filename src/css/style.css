@@ -207,3 +207,7 @@ footer{
 .w-full {
   width: 100%;
 }
+
+.card-jogo-animacao:hover {
+  transform: scale(1.1);
+}
