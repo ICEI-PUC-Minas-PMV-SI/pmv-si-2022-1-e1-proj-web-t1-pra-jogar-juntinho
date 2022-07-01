@@ -82,11 +82,15 @@
 
 Foram realizados testes funcionais do sistema, de acordo com o Plano de testes funcionais, no ambiente de produção no dia 23 de Junho de 2022 às 18h42.
 
-Foi reportado o seguinte bug:
+Foi reportado o seguintes bugs:
 
  * (TF-020) O comentário é enviado mas a página não é carregada para que ele apareça.
 
 O bug foi resolvido com testes no dia 01 de Julho de 2022 as 19:43 com a implementação de uma nova function para recarregar os comentários quando a página do jogos for aberta e quando publicar um novo comentário.
+
+* (TF- 020) Um usuário podia deletar comentários de outros usuários.
+
+Foi criada uma validação para verificar se o Id de um é diferente de outro. Se for diferente o botão para deletar comentários é escondido nos comentários de outros usuários.
 
 <hr>
  
