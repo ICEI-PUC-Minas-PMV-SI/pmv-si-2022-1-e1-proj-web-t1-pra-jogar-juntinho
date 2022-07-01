@@ -88,8 +88,9 @@ function buscarComentarios() {
             <div class="d-flex">
               <img src="${avatar}" width="80" height="70" style="background-color: ${backColor}">
               <div class="card w-full">
-                <div class="card-body">
-                  ${comentario.description}
+                <div class="card-body d-flex justify-content-between">
+                  <span>${comentario.description}</span>
+                  <i class="fa-solid fa-trash-can" onclick="deletar(${comentario.id})"></i>
                 </div>
               </div>
             </div>
@@ -112,6 +113,14 @@ function buscarComentarios() {
 }
 this.buscarComentarios();
 
+// Deletar Comentário
+function deletar(comentarioId) {
+  fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios/${comentarioId}`, {
+    method: "DELETE"
+  })
+}
+
+// Publicar Comentário
 function comentar() {
   fetch("https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios", {
     method: "POST",
