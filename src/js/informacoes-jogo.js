@@ -64,7 +64,8 @@ let comentarios = []
 const lista_comentarios = document.getElementById("coments");
 
 // Buscar Comentários
-fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios?_expand=usuario&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id.toString()}`)
+function buscarComentarios() {
+  fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios?_expand=usuario&jogoId=${JSON.parse(window.localStorage.getItem("jogo")).id.toString()}`)
   .then((res) => res.json())
   .then((comentarios) => {
     let comentarioHTML = "";
@@ -108,8 +109,9 @@ fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios?_expand=us
     `
     lista_comentarios.innerHTML = comentarioHTML;
   })
-  .catch(error => console.error(error)
-);
+  .catch(error => console.error(error));
+}
+this.buscarComentarios();
 
 function comentar() {
   fetch("https://fake-api-pra-jogar-juntinhos.herokuapp.com/comentarios", {
@@ -123,7 +125,9 @@ function comentar() {
       jogoId: JSON.parse(window.localStorage.getItem("jogo")).id,
       description: document.getElementById('novo-comentario').value
     }),
-  })
+  }).then(() => {
+    this.buscarComentarios();
+  }).catch(err => console.error(err))
 }
 
 function favoritar() {
