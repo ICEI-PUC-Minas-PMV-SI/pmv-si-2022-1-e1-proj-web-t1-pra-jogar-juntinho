@@ -67,8 +67,7 @@ async function getJogos() {
 }
 
 async function showJogos() {
-  const jogos = [];
-  jogos = await getJogos();
+  const jogos = await getJogos();
   if(jogos.length > 0) {
     if(showAlertJogos === true) document.getElementById('alert-jogos').classList.add("d-none")
     jogos.forEach((jogo) => {
