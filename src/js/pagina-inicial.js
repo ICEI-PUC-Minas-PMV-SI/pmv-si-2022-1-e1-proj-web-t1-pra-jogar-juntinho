@@ -285,14 +285,32 @@ fetch(URL)
       }
 
       lista_jogos += `
-      <li class="" style="
+      <li class="card-jogo-animacao" style="
       display: inline-block;
       width: 210px;
       margin-right: 10px;"
     >
       <div class="card shadow-lg">
-        <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
-        <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+        <a href="#" onclick="maisInformacoes(
+          ${jogo.id},
+          '${jogo.title}',
+          '${jogo.description}',
+          '${jogo.developers}',
+          '${jogo.distributor}',
+          '${jogo.serie}',
+          '${jogo.release_date}',
+          '${jogo.genres}',
+          '${jogo.plataforms}',
+          '${jogo.tags}',
+          '${jogo.img_sm}',
+          '${jogo.img_md}',
+          '${jogo.img_lg}',
+          '${jogo.trailer}',
+          '${jogo.steam_link}'
+        )" style="text-decoration: none; color: #000;">
+          <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
+          <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+        </a>
         <div class="card-body corpo-jogo-card">
           <div class="d-flex justify-content-between">
             <div>
@@ -372,14 +390,32 @@ fetch(URL)
       }
 
       lista_jogos += `
-      <li class="" style="
+      <li class="card-jogo-animacao" style="
         display: inline-block;
         width: 210px;
         margin-right: 10px;"
       >
         <div class="card shadow-lg">
-          <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
-          <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+          <a href="#" onclick="maisInformacoes(
+            ${jogo.id},
+            '${jogo.title}',
+            '${jogo.description}',
+            '${jogo.developers}',
+            '${jogo.distributor}',
+            '${jogo.serie}',
+            '${jogo.release_date}',
+            '${jogo.genres}',
+            '${jogo.plataforms}',
+            '${jogo.tags}',
+            '${jogo.img_sm}',
+            '${jogo.img_md}',
+            '${jogo.img_lg}',
+            '${jogo.trailer}',
+            '${jogo.steam_link}'
+          )" style="text-decoration: none; color: #000;">
+            <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
+            <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+          </a>
           <div class="card-body corpo-jogo-card">
             <div class="d-flex justify-content-between">
               <div>
