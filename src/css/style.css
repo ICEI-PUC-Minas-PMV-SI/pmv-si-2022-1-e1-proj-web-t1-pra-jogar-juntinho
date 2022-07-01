@@ -211,3 +211,7 @@ footer{
 .card-jogo-animacao:hover {
   transform: scale(1.1);
 }
+
+i {
+  font-size: 25px !important;
+}
