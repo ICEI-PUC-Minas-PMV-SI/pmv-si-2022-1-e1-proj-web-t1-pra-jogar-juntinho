@@ -90,7 +90,11 @@ function buscarComentarios() {
               <div class="card w-full">
                 <div class="card-body d-flex justify-content-between align-items-center">
                   <span>${comentario.description}</span>
-                  <i class="fa-solid fa-trash-can texto-vermelho" onclick="deletar(${comentario.id})" style="cursor: pointer"></i>
+                  ${
+                    comentario.usuarioId === JSON.parse(window.localStorage.getItem('usuario')).id
+                    ? `<i class="fa-solid fa-trash-can texto-vermelho" onclick="deletar(${comentario.id})" style="cursor: pointer"></i>`
+                    : `<div></div>`
+                  }
                 </div>
               </div>
             </div>
