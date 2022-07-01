@@ -71,7 +71,8 @@ Cenário 03 -
 ## Resultado dos Testes
 
 | Critério | Cenário 01 | Cenário 02 | Cenário 03 | Mínimo / Máximo Aceitável |
-| Taxa de Sucesso | 100% | 100% | 100% | 90% | 90% / 100% |
+|-----|-----|-----|-----|-----|
+| Taxa de Sucesso | 100% | 100% | 100% | 90% / 100% |
 | Taxa de Erro | 1,2 | 0,8 | 0,2 | 0 / 2 |
 | Satisfação Subjetiva| 3,6 | 4,8 | 4,2 | 3 / 5 |
 
