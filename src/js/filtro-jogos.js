@@ -20,6 +20,8 @@ let page = 1;
 
 let favoritados = []
 
+let showAlertJogos = false;
+
 // Buscar Favoritados
 fetch(`https://fake-api-pra-jogar-juntinhos.herokuapp.com/favoritados?usuarioId=${JSON.parse(window.localStorage.getItem("usuario")).id}`)
   .then((res) => res.json())
@@ -65,73 +67,42 @@ async function getJogos() {
 }
 
 async function showJogos() {
-  const jogos = await getJogos();
-  jogos.forEach((jogo) => {
-    let plataformas = "";
-    let displayNoneRegular = "";
-    let displayNoneSolid = "d-none";
-
-    if (jogo.plataforms != null || jogo.plataforms !== []) {
-      jogo.plataforms.forEach((plataforma) => {
-        if (plataforma === "Windows")
-          plataformas = plataformas + icone_win;
-        if (plataforma === "MacBook")
-          plataformas = plataformas + icone_mac;
-        if (plataforma === "Linux")
-          plataformas = plataformas + icone_lin;
-      });
-    }
-
-    if(favoritados.length > 0) {
-      if(favoritados.some(f => f.jogoId === jogo.id)) {
-        displayNoneRegular = "d-none";
-        displayNoneSolid = "";
+  const jogos = [];
+  jogos = await getJogos();
+  if(jogos.length > 0) {
+    if(showAlertJogos === true) document.getElementById('alert-jogos').classList.add("d-none")
+    jogos.forEach((jogo) => {
+      let plataformas = "";
+      let displayNoneRegular = "";
+      let displayNoneSolid = "d-none";
+  
+      if (jogo.plataforms != null || jogo.plataforms !== []) {
+        jogo.plataforms.forEach((plataforma) => {
+          if (plataforma === "Windows")
+            plataformas = plataformas + icone_win;
+          if (plataforma === "MacBook")
+            plataformas = plataformas + icone_mac;
+          if (plataforma === "Linux")
+            plataformas = plataformas + icone_lin;
+        });
       }
-    }
-
-    const jogoEl = document.createElement("div");
-    jogoEl.classList.add("jogos");
-    jogoEl.classList.add("col-sm-12");
-    jogoEl.classList.add("col-md-12");
-    jogoEl.classList.add("col-lg-4");
-    jogoEl.classList.add("mb-3");
-    jogoEl.innerHTML = `
-
-      <div class="card-jogo-animacao card shadow-lg">
-        <a href="#" onclick="maisInformacoes(
-          ${jogo.id},
-          '${jogo.title}',
-          '${jogo.description}',
-          '${jogo.developers}',
-          '${jogo.distributor}',
-          '${jogo.serie}',
-          '${jogo.release_date}',
-          '${jogo.genres}',
-          '${jogo.plataforms}',
-          '${jogo.tags}',
-          '${jogo.img_sm}',
-          '${jogo.img_md}',
-          '${jogo.img_lg}',
-          '${jogo.trailer}',
-          '${jogo.steam_link}'
-        )" style="text-decoration: none; color: #000;">
-          <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
-          <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
-        </a>
-        <div class="card-body corpo-jogo-card">
-          <div class="d-flex justify-content-between">
-            <div>
-              ${plataformas}
-            </div>
-            <div>
-            <i id="regular_heart_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id})"></i>
-            <i id="solid_heart_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id})"></i>
-              <a href="${jogo.steam_link}" target="_blank"><i class="fa-brands fa-steam texto-azul"></i></a>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="d-flex justify-content-center pb-3">
+  
+      if(favoritados.length > 0) {
+        if(favoritados.some(f => f.jogoId === jogo.id)) {
+          displayNoneRegular = "d-none";
+          displayNoneSolid = "";
+        }
+      }
+  
+      const jogoEl = document.createElement("div");
+      jogoEl.classList.add("jogos");
+      jogoEl.classList.add("col-sm-12");
+      jogoEl.classList.add("col-md-12");
+      jogoEl.classList.add("col-lg-4");
+      jogoEl.classList.add("mb-3");
+      jogoEl.innerHTML = `
+  
+        <div class="card-jogo-animacao card shadow-lg">
           <a href="#" onclick="maisInformacoes(
             ${jogo.id},
             '${jogo.title}',
@@ -148,13 +119,51 @@ async function showJogos() {
             '${jogo.img_lg}',
             '${jogo.trailer}',
             '${jogo.steam_link}'
-          )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+          )" style="text-decoration: none; color: #000;">
+            <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
+            <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
+          </a>
+          <div class="card-body corpo-jogo-card">
+            <div class="d-flex justify-content-between">
+              <div>
+                ${plataformas}
+              </div>
+              <div>
+              <i id="regular_heart_${jogo.id}" class="fa-regular fa-heart texto-vermelho ${displayNoneRegular}" onclick="favoritar(${jogo.id})"></i>
+              <i id="solid_heart_${jogo.id}" class="fa-solid fa-heart texto-vermelho ${displayNoneSolid}" onclick="desfavoritar(${jogo.id})"></i>
+                <a href="${jogo.steam_link}" target="_blank"><i class="fa-brands fa-steam texto-azul"></i></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="d-flex justify-content-center pb-3">
+            <a href="#" onclick="maisInformacoes(
+              ${jogo.id},
+              '${jogo.title}',
+              '${jogo.description}',
+              '${jogo.developers}',
+              '${jogo.distributor}',
+              '${jogo.serie}',
+              '${jogo.release_date}',
+              '${jogo.genres}',
+              '${jogo.plataforms}',
+              '${jogo.tags}',
+              '${jogo.img_sm}',
+              '${jogo.img_md}',
+              '${jogo.img_lg}',
+              '${jogo.trailer}',
+              '${jogo.steam_link}'
+            )" class="btn btn-vermelho text-white link-jogo">Mais informações</a>
+          </div>
         </div>
-      </div>
-        `;
-
-    lista_jogos.appendChild(jogoEl);
-  });
+          `;
+  
+      lista_jogos.appendChild(jogoEl);
+    });
+  } else {
+    document.getElementById('alert-jogos').classList.remove("d-none")
+    showAlertJogos = true;
+  }
 }
 
 function maisInformacoes(id, title, description, developers, distributor, serie, release_date, genres, plataforms, tags, img_sm, img_md, img_lg, trailer, steam_link) {
