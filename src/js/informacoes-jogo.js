@@ -88,9 +88,9 @@ function buscarComentarios() {
             <div class="d-flex">
               <img src="${avatar}" width="80" height="70" style="background-color: ${backColor}">
               <div class="card w-full">
-                <div class="card-body d-flex justify-content-between">
+                <div class="card-body d-flex justify-content-between align-items-center">
                   <span>${comentario.description}</span>
-                  <i class="fa-solid fa-trash-can" onclick="deletar(${comentario.id})"></i>
+                  <i class="fa-solid fa-trash-can texto-vermelho" onclick="deletar(${comentario.id})"></i>
                 </div>
               </div>
             </div>
