@@ -64,7 +64,7 @@
 |TF-018| Página do Jogo | As informações da página são exibidas corretamente. | Não |
 |TF-019| Página do Jogo | O botão de favoritar funciona corretamnete. | Não |
 |TF-019| Página do Jogo | O usuário pode realizar comentários. | Não |
-|TF-020| Página do Jogo | O comentário é enviado mas a página não é carregada para que ele apareça. | Sim |
+|TF-020| Página do Jogo | O comentário é enviado mas a página não é carregada para que ele apareça. Qualquer usuário pode deletar comentários de um outro usuário. | Sim |
 |TF-021| Card de Jogo | O botão de favoritar funciona corretamnete. |Não |
 |TF-022|Botão de Perfil | O usuário é direcionado para a página de perfil do usuário. | Não |
 |TF-023| Perfil de usuário | A página é carregada corretamente. | Não |
