@@ -86,9 +86,7 @@ Foi reportado o seguinte bug:
 
  * (TF-020) O comentário é enviado mas a página não é carregada para que ele apareça.
 
-O bug ainda não foi resolvido até a escrita deste documento.
-
-Novos testes serão realizados em breve após a correção do problema.
+O bug foi resolvido com testes no dia 01 de Julho de 2022 as 19:43 com a implementação de uma nova function para recarregar os comentários quando a página do jogos for aberta e quando publicar um novo comentário.
 
 <hr>
  
