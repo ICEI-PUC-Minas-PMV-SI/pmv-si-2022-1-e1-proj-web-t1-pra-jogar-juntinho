@@ -202,7 +202,7 @@ fetch(URL)
           '${jogo.img_lg}',
           '${jogo.trailer}',
           '${jogo.steam_link}'
-        )" class="btn btn-vermelho text-white link-jogo">
+        )">
           <h5 class="h6 card-title titulo-jogo-card">${jogo.title}</h5>
           <img src="${jogo.img_sm}" class="card-img-top" alt="${jogo.title}">
         </a>
