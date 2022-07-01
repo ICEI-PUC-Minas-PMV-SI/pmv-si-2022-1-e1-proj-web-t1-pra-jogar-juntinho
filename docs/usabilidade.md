@@ -84,9 +84,13 @@ No primeiro cenário a interface parece confusa para o usuário, o local e a man
 
 As sugestões são: a inserção de uma barra de busca / o filtro de jogos ser exibido na página Home / acrescentar um icone de lupa ao botão de filtro / mudar o nome do botão de filtro de jogos para "Buscar Jogo", quando o site não retornar nenhum jogo por exemplo em busca por nome retornar ao usuário que não foi encontrado o jogo e outra sugestão data por usuários foi de poder tirar a seleção dos inputs de gênero e plataformas.
 
-Para concluir a segunda tarefa o usuário encontra com certa demora o botão de cadastro, por terem que passar inicialmente pelo botão de login para só ai chegar ao cadastro em certo momento o usuário não considerou o botão de login como trajeto lógico para chegar ao cadastro. A sugestão de melhoria é: Alterar o nome o botão de login para "Login / Cadastro" ou então "Entrar".
+Para concluir a segunda tarefa o usuário encontra com certa demora o botão de cadastro, por terem que passar inicialmente pelo botão de login para só ai chegar ao cadastro em certo momento o usuário não considerou o botão de login como trajeto lógico para chegar ao cadastro. 
 
-A terceira tarefa apresenta facilidades e dificuldades, o card do jogo é facil de achar mas a página do jogo só é exibida clicando em mais informações e não clicando no card, o perfil foi encontrado com facilidade. As sugestões são: Tornar o card do jogo um botão que leve à página do jogo, excluindo o botão de mais informações / Aumentar os icones do card pois estão muito pequenos, deixa para comentar anonimamente no detalhe do jogo, pois de acordo com um dos usuários o motivo de ter que criar um login para poder contribuir com o feedback sobre o jogo o faz desistir de comentar e colocar links para download do jogo na aba de "mais informações" do jogo. 
+A sugestão de melhoria é: Alterar o nome o botão de login para "Login / Cadastro" ou então "Entrar".
+
+A terceira tarefa apresenta facilidades e dificuldades, o card do jogo é facil de achar mas a página do jogo só é exibida clicando em mais informações e não clicando no card, o perfil foi encontrado com facilidade. 
+
+As sugestões são: Tornar o card do jogo um botão que leve à página do jogo, excluindo o botão de mais informações / Aumentar os icones do card pois estão muito pequenos, deixa para comentar anonimamente no detalhe do jogo, pois de acordo com um dos usuários o motivo de ter que criar um login para poder contribuir com o feedback sobre o jogo o faz desistir de comentar e colocar links para download do jogo na aba de "mais informações" do jogo. 
 
 ## Demandas encontradas após avaliação
 
