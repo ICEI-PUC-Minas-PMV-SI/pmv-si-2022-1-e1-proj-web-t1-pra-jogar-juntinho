@@ -103,7 +103,7 @@ As sugestões são: Tornar o card do jogo um botão que leve à página do jogo,
 
 ### Cenário 01
 
-* Criar um filtro de jogos idêntico ao da página de FIltro na página Home, quando o usuário clicar em "buscar" direcionar o usuário com os resultados para a página de filtro.
+* Criar uma barra de pesquisa que direcione o usuáriopara a página de filtro.
 
 * Criar um aviso de Jogo não encontrado quando o filtro não retornar resultados.
 
@@ -116,3 +116,5 @@ As sugestões são: Tornar o card do jogo um botão que leve à página do jogo,
 * Tornar o card de jogo um botão que leve à página do jogo, retirando o botão de mais informações.
 
 * Aumentar o tamanho dos ícones que aparecem no card, incluindo o de favoritar.
+
+Todas as demandas foram resovidas no dia 01 de Julho de 2022 às 20:48.
