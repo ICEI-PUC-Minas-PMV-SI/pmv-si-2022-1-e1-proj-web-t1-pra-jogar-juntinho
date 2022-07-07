@@ -12,4 +12,4 @@
 
 ### Vídeo de apresentação
 
-[![Video de Apresentação](img/img-video.png)](apresentacao-jogarjuntinho.mp4)
+[![Video de Apresentação](img/img-video.png)](img/apresentacao-jogarjuntinho.mp4)
