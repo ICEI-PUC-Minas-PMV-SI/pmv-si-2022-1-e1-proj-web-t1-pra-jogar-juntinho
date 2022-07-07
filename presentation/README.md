@@ -12,5 +12,4 @@
 
 ### Vídeo de apresentação
 
-<video src='Apresentacao%20-%20JogarJuntinho.mp4)' width=180/>
-
+[![Video de Apresentação](img/img-video.png)](apresentacao-jogarjuntinho.mp4)
