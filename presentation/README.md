@@ -1,8 +1,4 @@
-# Apresentação
-
-## Pra Jogar juntinho
-
-![logo](img/logo.png)
+# Apresentação - Pra Jogar juntinho
 
 ### Conjunto de Slides
 
@@ -16,4 +12,5 @@
 
 ### Vídeo de apresentação
 
-![video de apresentação](img/Apresentacao%20-%20JogarJuntinho.mp4)
+<video src='Apresentacao%20-%20JogarJuntinho.mp4)' width=180/>
+
