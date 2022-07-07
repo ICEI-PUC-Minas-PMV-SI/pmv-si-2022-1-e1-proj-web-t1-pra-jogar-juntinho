@@ -12,4 +12,12 @@
 
 ### Vídeo de apresentação
 
-[![Video de Apresentação](img/img-video.png)](img/apresentacao-jogarjuntinho.mp4)
+<div align="center">
+
+###### Assista online
+[![Video de Apresentação](img/img-video.png)](https://drive.google.com/file/d/1H6VD7p5k9VSx_XglvTfmXPLLn13O67Bs/view)
+
+###### ou
+###### [Baixe o vídeo direto do github](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2022-1-e1-proj-web-t1-pra-jogar-juntinho/blob/main/presentation/img/apresentacao-jogarjuntinho.mp4?raw=true)
+
+<div>
