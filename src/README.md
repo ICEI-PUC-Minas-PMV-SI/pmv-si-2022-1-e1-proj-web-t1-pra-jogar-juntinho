@@ -6,7 +6,7 @@ O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em 
 
 ## Histórico de versões
 
-### [1.0] - 07/07/2022
+### 1.0v - 07/07/2022
 #### Adicionado
 - Adicionado documentação
 - Adicionado bootstrap
